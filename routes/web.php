@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/test', 'App\Http\Controllers\HomePageController@index');
+
+Route::group(['prefix'=>'admin'], function(){
+    Route::get('/home', 'App\Http\Controllers\admin\HomeController@index');
+});
