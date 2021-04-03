@@ -43,135 +43,117 @@
     position: absolute;
 }
 
-/*! CSS Used from: https://gtrvietnam.com/templates/default/public/css/header/header5.css?v=1 */
-.typeheader-5{background-color:#fff;}
-@media (min-width: 768px){
-    .typeheader-5 .header-middle > .container{padding-right:135px;position:relative;}
+.common-not-home .header-main_area-2 .custom-category_col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 18%;
+    -ms-flex: 0 0 18%;
+    flex: 0 0 18%;
+    max-width: 18%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    display: inline-block;
+    width: 18%;
 }
-.typeheader-5 .logo-w{padding:8px 0;}
-.typeheader-5 .middle-right{padding:8px 0;}
-.typeheader-5 .logo{max-width:215px;}
-.typeheader-5 .search-header-w{margin-top:5px;margin-right:12px;float:right;}
-.typeheader-5 .search-header-w .ico-search{width:36px;height:36px;text-align:center;line-height:32px;border-radius:100%;border:2px solid #e5e5e5;font-size:14px;color:#282828;}
-.typeheader-5 .search-header-w .ico-search:hover{cursor:pointer;}
-.typeheader-5 #sosearchpro{position:absolute;top:23px;display:none;right:53px;}
-.typeheader-5 #sosearchpro .search{position:relative;margin:0;border:2px solid #e5e5e5;border-radius:5px;width:100%;}
-.typeheader-5 #sosearchpro .search .select_category{border:none;width:180px;background-color:#fff;border-right:1px solid #ddd;border-top-left-radius:5px;border-bottom-left-radius:5px;}
-.typeheader-5 #sosearchpro .search .select_category select{height:40px;line-height:40px;color:#484848;font-size:13px;padding:0 15px;}
-.typeheader-5 #sosearchpro .search .select_category select:hover{cursor:pointer;}
-.typeheader-5 #sosearchpro .search .select_category.icon-select:after{color:#484848;font-size:14px;line-height:40px;right:0;left:auto;font-family:"FontAwesome";content:"\f0d7";position:absolute;height:100%;width:25px;}
-.typeheader-5 #sosearchpro .search button{position:absolute;top:-2px;right:-2px;height:44px;text-align:center;line-height:44px;padding:0 15px;font-size:18px;border-top-right-radius:5px;border-bottom-right-radius:5px;}
-.typeheader-5 #sosearchpro .search button i{font-size:18px;color:#fff;}
-.typeheader-5 #sosearchpro .search input{border:none;border-radius:5px;background-color:#fff;z-index:0;height:40px;padding-left:20px;width:100%;background-color:#fff;color:#b8b8b8;border-top-right-radius:5px;border-bottom-right-radius:5px;}
-.typeheader-5 #sosearchpro .search input::-moz-placeholder{color:#888;opacity:1;}
-.typeheader-5 #sosearchpro .search input:-ms-input-placeholder{color:#888;}
-.typeheader-5 #sosearchpro .search input::-webkit-input-placeholder{color:#888;}
-.typeheader-5 #sosearchpro .search input:focus{z-index:0;}
-.typeheader-5 .megamenu-style-dev .navbar-default{background:transparent;}
-@media (min-width: 1200px){
-    .typeheader-5 .main-menu-w{width:90%;}
+
+.common-not-home .header-main_area-2 .custom-menu_col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    display: inline-block;
+    width: 50%;
 }
-.typeheader-5 .container-megamenu.horizontal ul.megamenu > li{padding:0 25px 0 0;margin:0;}
-.typeheader-5 .container-megamenu.horizontal ul.megamenu > li > a{background-color:transparent;position:relative;padding:0px;line-height:50px;}
-.typeheader-5 .container-megamenu.horizontal ul.megamenu > li > a:hover strong::before{width:30px;}
-/*! CSS Used from: https://gtrvietnam.com/templates/default/public/custom_mobile.css?v=1.4.8 */
-.fixed_topmenu{position:fixed;top:92px;background-color:#dedede;display:block;width:100%;z-index:9999;border-top:2px solid #b1b1b1;}
-.fixed_topmenu ul{padding:0;margin:0;list-style:none;}
-.fixed_topmenu ul li{display:inline-block;width:24.33%;float:left;text-align:center;padding:10px 0;border-left:1px solid #fff;}
-.fixed_topmenu ul li:last-child{border-right:1px solid transparent;}
-.fixed_topmenu ul li i{display:block;}
-header.typeheader-5 .header-middle{position:fixed;z-index:3;background-color:rgba(255, 255, 255, 0.8);display:block;width:100%;height:92px;}
-header.typeheader-5 .logo-w{padding:6px 8px;background-color:#000;}
-.search-header-w .fa-search:before{color:#fff;}
-header.typeheader-5 .search-header-w{float:right;margin:0 0px 12px 20px;top:0;position:fixed;right:12px;top:48px;}
-header.typeheader-5 #sosearchpro{position:fixed;top:6px;right:40px;width:80%;left:15px;}
-.fixed_toggle_menu{background:transparent;border:none;}
-.fixed_toggle_menu:before,.fixed_toggle_menu:after,.fixed_toggle_menu:focus{background:transparent;border:none;outline:0;}
-header.typeheader-5 .header-middle{z-index:99999;}
-button:focus{outline:none;}
-.fixed_topmenu a{color:#4e4e4e;}
-[class*="col-"]{padding:0 12px;}
-.container:last-of-type{padding-top:0px;}
-.sec_head_hotline{height:40px;background-color:#272727;}
-.sec_head_hotline a{color:#fff;line-height:22px;padding-top:10px;display:block;}
-.sec_head_hotline a:after,.sec_head_hotline a:focus{text-decoration:none;}
-.sec_head_hotline a.contact{text-align:right;}
-.ani-box{position:fixed;right:15px;top:calc(90% - 1px);z-index:999999;border-radius:50%;height:60px;width:60px;}
-.ani-box .ani-content{float:right;width:100%;height:100%;position:relative;}
-.ani-box .ani-box-shadow{border:3px solid #d61f26;border-radius:50%;overflow:hidden;height:110px;width:110px;position:absolute;animation:myScale 2.3s infinite ease-in-out;top:-25px;left:-25px;}
-.ani-box .ani-border{height:80px;width:80px;animation:circle-fill 2.2s infinite ease-in-out;position:absolute;background-color:#ed650c;top:-10px;left:-10px;border-radius:50%;}
-.ani-box .btn-gioi-thieu-ngay{position:absolute;border-radius:50%;overflow:hidden;display:inline-block;height:60px;width:60px;text-align:center;background-color:#d61f26;color:#fff;text-transform:uppercase;padding-top:14px;font-size:1.8rem;font-weight:600;animation-name:mySwing;animation-duration:2.2s;animation-iteration-count:infinite;}
-.ani-box .btn-gioi-thieu-ngay:hover,.ani-box .btn-gioi-thieu-ngay:focus,.ani-box .btn-gioi-thieu-ngay:active{text-decoration:none;color:#fff;outline:0;}
-/*showmenu*/
-.so-megamenu-active {
-    visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+
+.common-not-home .header-main_area-2 .custom-setting_col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 32%;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    display: inline-block;
+    width: 32%;
 }
-.so-megamenu-active #remove-megamenu {
-    visibility: visible; display:block;
+
+.common-not-home .header-main_area .custom-search_col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 36%;
+    -ms-flex: 0 0 36%;
+    flex: 0 0 36%;
+    max-width: 36%;
 }
-.megamenu-style-dev.responsive .so-megamenu-active #remove-megamenu {
-    color: #fff; }
-.megamenu-style-dev .navbar-default .horizontal .megamenu-wrapper ul.megamenu > li > a {
-    color: #fff !important;
-    padding: 20px 0;
-    font-size: 14px;
-    line-height: 29px !important;
+
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.megamenu-style-dev .navbar-default .horizontal .megamenu-wrapper {
-    background: #333 !important;
-    padding: 20px !important;
+.product-desc_info:hover{
+    z-index: 999;
 }
-.megamenu-style-dev.responsive ul.megamenu > li {
-    display: block;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1px 0;
-    overflow: hidden;
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block !important;
+    }
 }
-/*! CSS Used from: https://gtrvietnam.com/templates/default/public/custom_mobile.css?v=1.4.8 */
-.fixed_topmenu{position:fixed;top:92px;background-color:#dedede;display:block;width:100%;z-index:9999;border-top:2px solid #b1b1b1;}
-.fixed_topmenu ul{padding:0;margin:0;list-style:none;}
-.fixed_topmenu ul li{display:inline-block;width:24.33%;float:left;text-align:center;padding:10px 0;border-left:1px solid #fff;}
-.fixed_topmenu ul li:last-child{border-right:1px solid transparent;}
-.fixed_topmenu ul li i{display:block;}
-header.typeheader-5 .header-middle{position:fixed;z-index:3;background-color:rgba(255, 255, 255, 0.8);display:block;width:100%;height:92px;}
-header.typeheader-5 .logo-w{padding:6px 8px;background-color:#000;}
-.search-header-w .fa-search:before{color:#fff;}
-header.typeheader-5 .search-header-w{float:right;margin:0 0px 12px 20px;top:0;position:fixed;right:12px;top:48px;}
-header.typeheader-5 #sosearchpro{position:fixed;top:6px;right:40px;width:80%;left:15px;}
-.fixed_toggle_menu{background:transparent;border:none;}
-.fixed_toggle_menu:before,.fixed_toggle_menu:after,.fixed_toggle_menu:focus{background:transparent;border:none;outline:0;}
-header.typeheader-5 .header-middle{z-index:99999;}
-button:focus{outline:none;}
-.fixed_topmenu a{color:#4e4e4e;}
-[class*="col-"]{padding:0 12px;}
-.container:last-of-type{padding-top:0px;}
-.sec_head_hotline{height:40px;background-color:#272727;}
-.sec_head_hotline a{color:#fff;line-height:22px;padding-top:10px;display:block;}
-.sec_head_hotline a:after,.sec_head_hotline a:focus{text-decoration:none;}
-.sec_head_hotline a.contact{text-align:right;}
-.ani-box{position:fixed;right:15px;top:calc(90% - 1px);z-index:999999;border-radius:50%;height:60px;width:60px;}
-.ani-box .ani-content{float:right;width:100%;height:100%;position:relative;}
-.ani-box .ani-box-shadow{border:3px solid #d61f26;border-radius:50%;overflow:hidden;height:110px;width:110px;position:absolute;animation:myScale 2.3s infinite ease-in-out;top:-25px;left:-25px;}
-.ani-box .ani-border{height:80px;width:80px;animation:circle-fill 2.2s infinite ease-in-out;position:absolute;background-color:#ed650c;top:-10px;left:-10px;border-radius:50%;}
-.ani-box .btn-gioi-thieu-ngay{position:absolute;border-radius:50%;overflow:hidden;display:inline-block;height:60px;width:60px;text-align:center;background-color:#d61f26;color:#fff;text-transform:uppercase;padding-top:14px;font-size:1.8rem;font-weight:600;animation-name:mySwing;animation-duration:2.2s;animation-iteration-count:infinite;}
-.ani-box .btn-gioi-thieu-ngay:hover,.ani-box .btn-gioi-thieu-ngay:focus,.ani-box .btn-gioi-thieu-ngay:active{text-decoration:none;color:#fff;outline:0;}
-/*! CSS Used from: https://gtrvietnam.com/templates/default/public/css/themecss/so_megamenu.css */
-.so-megamenu .navbar-default{background:transparent;}
-.container-megamenu{padding-left:0px;padding-right:0px;width:auto;}
-.megamenu-wrapper{position:relative;}
-ul.megamenu{margin:0px;padding:0px;list-style:none;position:relative;}
-ul.megamenu > li{float:left;margin-right:1px;}
-ul.megamenu > li > a{display:block;position:relative;color:#fff;font-size:14px;padding:15px 18px;}
-@media (max-width: 991px){
-    .responsive ul.megamenu > li{display:block;float:none;width:auto;background:none;border-top:1px solid #e6e6e6;position:relative;margin:0px -1px;}
-    .responsive ul.megamenu > li > a{text-shadow:none;color:#666;padding:10px;height:auto;}
+
+@media (min-width: 992px) {
+    .d-lg-none {
+        display: none !important;
+    }
 }
-@media (min-width: 961px){
-    .megamenu-wrapper{display:block;}
+
+@media (max-width: 1599px) {
+    .common-not-home .header-main_area-2 .custom-category_col {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 22%;
+        -ms-flex: 0 0 22%;
+        flex: 0 0 22%;
+        max-width: 22%;
+        display: inline-block;
+        width: 22%;
+    }
+
+    .common-not-home .header-main_area-2 .custom-menu_col {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 53%;
+        -ms-flex: 0 0 53%;
+        flex: 0 0 53%;
+        max-width: 53%;
+        display: inline-block;
+        width: 53%;
+    }
+
+    .common-not-home .header-main_area-2 .custom-setting_col {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        display: inline-block;
+        width: 25%;
+    }
+
+    .common-not-home .header-main_area .custom-search_col {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
 }
-@media (max-width: 991px){
-    .megamenu-wrapper{position:fixed;top:0px;left:0;background-color:#fff;height:100%;width:280px;padding:10px;z-index:999;overflow-x:hidden;overflow-y:auto;visibility:hidden;-webkit-transform:translate3d(-280px, 0, 0);transform:translate3d(-280px, 0, 0);-webkit-transition:all 0.5s ease-in-out 0s;transition:all 0.5s ease-in-out 0s;border:1px solid #e6e6e6;}
-}
-#remove-megamenu{padding:10px;z-index:10;cursor:pointer;visibility:hidden;font-size:20px;text-align:right;display:none;}

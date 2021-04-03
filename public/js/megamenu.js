@@ -4,7 +4,6 @@ var itemver = 11;
 var show_itemver = itemver - 1;
 $(document).ready(function () {
     $(".vertical .megamenu .loadmore").click(function () {
-        console.log(123123)
         if ($(this).hasClass('open')) {
             $('ul.megamenu li.item-vertical').each(function (i) {
                 if (i > show_itemver) {
@@ -34,11 +33,18 @@ $(document).ready(function () {
 
 
     var wd_width = $(window).width();
-    if (wd_width <= 991) {
+    if (wd_width <= 768) {
+        $("#header-pc").css("display","none")
+        $("#header").addClass("typeheader-5")
+        $(".header-middle ").css("background-color","#212529")
         $("ul.megamenu > li.hover").unbind('mouseenter mouseleave');
         removeWidthSubmenu();
         clickMegaMenu();
     } else {
+        $("#header-mobile").css("display","none")
+        $("#header").addClass("header-main_area")
+        $("#header").addClass("header-main_area-2")
+        $("#header").addClass("bg--black")
         $("ul.megamenu > li.hover").unbind("click");
         hoverMegaMenu();
         renderWidthSubmenu();
@@ -46,12 +52,25 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         var sp_width = $(window).width();
-        if (sp_width <= 991) {
+        if (sp_width <= 768) {
+            $("#header-pc").css("display","none")
+            $("#header-mobile").css("display","block")
+            $("#header").removeClass("header-main_area")
+            $("#header").removeClass("header-main_area-2")
+            $("#header").removeClass("bg--black")
+            $("#header").addClass("typeheader-5")
+            $(".header-middle ").css("background-color","#212529")
             $("ul.megamenu > li.hover").unbind('mouseenter mouseleave');
             removeWidthSubmenu();
             clickMegaMenu();
         }
         else {
+            $("#header-pc").css("display","block")
+            $("#header-mobile").css("display","none")
+            $("#header").removeClass("typeheader-5")
+            $("#header").addClass("header-main_area")
+            $("#header").addClass("header-main_area-2")
+            $("#header").addClass("bg--black")
             $("ul.megamenu > li.hover").unbind("click");
             hoverMegaMenu();
             renderWidthSubmenu();
@@ -112,7 +131,6 @@ $(document).ready(function () {
             $(".active_menu_product").trigger("click");
     });
     $("#show-megamenu-service").click(function () {
-        console.log(12234556)
         if ($('.megamenu-wrapper').hasClass('so-megamenu-active'))
             $('.megamenu-wrapper').removeClass('so-megamenu-active');
         else

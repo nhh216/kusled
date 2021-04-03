@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/test', 'App\Http\Controllers\HomePageController@index');
+Route::get('/', 'App\Http\Controllers\HomePageController@index');
 
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', 'App\Http\Controllers\admin\HomeController@index');
