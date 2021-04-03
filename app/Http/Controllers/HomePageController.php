@@ -9,6 +9,6 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 class HomePageController extends Controller
 {
     public function index() {
-        return view('./HomePage/home_page');
+        return view('./UserSite/HomePage/HomePage');
     }
 }
