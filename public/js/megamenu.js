@@ -3,6 +3,9 @@ var hover = false;
 var itemver = 11;
 var show_itemver = itemver - 1;
 $(document).ready(function () {
+    $("#slider").carousel({
+      interval: 2500
+    })
     $(".vertical .megamenu .loadmore").click(function () {
         if ($(this).hasClass('open')) {
             $('ul.megamenu li.item-vertical').each(function (i) {
@@ -36,6 +39,8 @@ $(document).ready(function () {
     if (wd_width <= 768) {
         $("#header-pc").css("display","none")
         $("#header").addClass("typeheader-5")
+        $("#main-wrapper").addClass("main-wrapper")
+        $("#products-page").addClass("main-container")
         $(".header-middle ").css("background-color","#212529")
         $("ul.megamenu > li.hover").unbind('mouseenter mouseleave');
         removeWidthSubmenu();
@@ -45,6 +50,8 @@ $(document).ready(function () {
         $("#header").addClass("header-main_area")
         $("#header").addClass("header-main_area-2")
         $("#header").addClass("bg--black")
+        $("#main-wrapper").removeClass("main-wrapper")
+        $("#products-page").removeClass("main-container")
         $("ul.megamenu > li.hover").unbind("click");
         hoverMegaMenu();
         renderWidthSubmenu();
@@ -53,24 +60,28 @@ $(document).ready(function () {
     $(window).resize(function () {
         var sp_width = $(window).width();
         if (sp_width <= 768) {
-            $("#header-pc").css("display","none")
-            $("#header-mobile").css("display","block")
+            // $("#header-pc").css("display","none")
+            // $("#header-mobile").css("display","block")
             $("#header").removeClass("header-main_area")
             $("#header").removeClass("header-main_area-2")
             $("#header").removeClass("bg--black")
             $("#header").addClass("typeheader-5")
+            $("#main-wrapper").addClass("main-wrapper")
+            $("#products-page").addClass("main-container")
             $(".header-middle ").css("background-color","#212529")
             $("ul.megamenu > li.hover").unbind('mouseenter mouseleave');
             removeWidthSubmenu();
             clickMegaMenu();
         }
         else {
-            $("#header-pc").css("display","block")
-            $("#header-mobile").css("display","none")
+            // $("#header-pc").css("display","block")
+            // $("#header-mobile").css("display","none")
             $("#header").removeClass("typeheader-5")
             $("#header").addClass("header-main_area")
             $("#header").addClass("header-main_area-2")
             $("#header").addClass("bg--black")
+            $("#products-page").removeClass("main-container")
+            $("#main-wrapper").removeClass("main-wrapper")
             $("ul.megamenu > li.hover").unbind("click");
             hoverMegaMenu();
             renderWidthSubmenu();

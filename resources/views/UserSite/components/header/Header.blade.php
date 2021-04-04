@@ -12,7 +12,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-8   d-none d-lg-block">
+                <div class="d-none d-lg-block">
                     <div class="header-top_area">
                         <div class="container-fluid">
                             <div class="row">
@@ -80,4 +80,5 @@
 </div>
 <div id="header-mobile">
     @include('UserSite.components.header.HeaderMobile')
+    @include('UserSite.components.mobile_menu.MobileMenu')
 </div>

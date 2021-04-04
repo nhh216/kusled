@@ -1,4 +1,4 @@
-<div class="header-middle hidden-compact">
+<div class="header-middle ">
     <div class="container">
         <div class="row sec_head_hotline" style="height: 40px;background-color: #272727;">
             <div class="col-sm-6 col-xs-6">
@@ -60,10 +60,7 @@
                         </nav>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 </div>

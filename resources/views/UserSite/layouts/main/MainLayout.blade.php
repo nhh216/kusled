@@ -5,9 +5,16 @@
     @include('UserSite.includes.TopScript')
 </head>
 <body class="template-color-1">
-<div class="main-wrapper">
+<div id="main-wrapper">
+    <header id="header">
+        @include('UserSite.components.header.Header')
+    </header>
 
-    @yield('content')
+
+    <!-- Content user site here -->
+    <div class="content">
+        @yield('content')
+    </div>
 
     <!-- Uren's Footer Area End Here -->
     @include('UserSite.components.footer.Footer')
@@ -18,12 +25,12 @@
 
 <!-- jQuery JS -->
 <script src="{{ asset('gtrvn/jquery-1.12.4.min.js') }}"></script>
+<!-- Bootstrap JS -->
+<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>
 <!-- Modernizer JS -->
 <script src="{{ asset('gtrvn/modernizr-2.8.3.min.js') }}"></script>
 <!-- Popper JS -->
 <script src="{{ asset('gtrvn/popper.min.js') }}"></script>
-<!-- Bootstrap JS -->
-<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>
 <!-- Slick Slider JS -->
 <script src="{{ asset('gtrvn/slick.min.js') }}"></script>
 <!-- Barrating JS -->
@@ -36,6 +43,7 @@
 <script src="{{ asset('gtrvn/jquery.sticky-sidebar.min.js') }}"></script>
 <!-- Jquery-ui JS -->
 <script src="{{ asset('gtrvn/jquery-ui.min.js') }}"></script>
+
 <script src="{{ asset('gtrvn/jquery.ui.touch-punch.min.js') }}"></script>
 <!-- Lightgallery JS -->
 <script src="{{ asset('gtrvn/lightgallery.min.js') }}"></script>
@@ -47,17 +55,29 @@
 <script src="{{ asset('gtrvn/waypoints.min.js') }}"></script>
 <!-- jQuery Zoom JS -->
 <script src="{{ asset('gtrvn/jquery.zoom.min.js') }}"></script>
+
 <script src="{{ asset('gtrvn/dotdotdot.js') }}"></script>
+
 <script src="{{ asset('js/megamenu.js') }}"></script>
+
 <script src="{{ asset('gtrvn/main.js') }}"></script>
+
 <script src="{{ asset('gtrvn/custom.js') }}"></script>
 
+{{--<script src="{{ asset('js/rate.min.js') }}"></script>--}}
+
+<script src="{{ asset('js/libraryjs.js') }}"></script>
+
+{{--<script src="{{ asset('js/application.js') }}"></script>--}}
+
+{{--<script src="{{ asset('js/homepage_mobile.js') }}"></script>--}}
+
+{{--<script src="{{ asset('js/custom_mobile.js') }}"></script>--}}
+
+<script src="{{ asset('js/mobile.js') }}"></script>
+
+
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;"><iclass="fa fa-angle-double-up"></i></a>
-<script>
-    $('#slider').carousel({
-        interval: 2000
-    })
-</script>
 <script>
     window.addEventListener('load', function () {
         var allimages = document.getElementsByTagName('img');

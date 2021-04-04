@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\HomePageController@index');
+Route::get('/danh-sach-san-pham', 'App\Http\Controllers\UserSiteController@productsPage');
+Route::get('/danh-sach-san-pham/{productId}', 'App\Http\Controllers\UserSiteController@productDetail');
 
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', 'App\Http\Controllers\admin\HomeController@index');

@@ -1,10 +1,5 @@
 @extends('UserSite.layouts.main.MainLayout',['homepage'=>true])
 @section('content')
-    <header id="header" class="typeheader-5">
-        {{--    <header id="header" class="header-main_area header-main_area-2 bg--black">--}}
-        @include('UserSite.components.header.Header')
-    </header>
-
     <!-- Begin Uren's Banner Area -->
     <div class="slider-banner" style="margin-top: 15px">
 
@@ -20,16 +15,25 @@
                 <h3>Sản phẩm bán chạy</h3>
             </div>
             <div class="row no-gutters">
-                <div class="col-xl-2 col-md-4 col-sm-4">
+                <div id="left-banner" class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 
                     @include('UserSite.components.banner.LeftBanner')
 
                 </div>
-                <div class="col-xl-10 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
                     <div class="row no-gutter">
-
-                        @include('UserSite.components.product.SingleProduct')
-
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-slide_item">
+                            @include('UserSite.components.product.SingleProduct')
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-slide_item">
+                            @include('UserSite.components.product.SingleProduct')
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-slide_item">
+                            @include('UserSite.components.product.SingleProduct')
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-slide_item">
+                            @include('UserSite.components.product.SingleProduct')
+                        </div>
                     </div>
                 </div>
             </div>
