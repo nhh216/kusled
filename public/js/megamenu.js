@@ -36,8 +36,9 @@ $(document).ready(function () {
 
 
     var wd_width = $(window).width();
-    if (wd_width <= 768) {
+    if (wd_width <= 1024) {
         $("#header-pc").css("display","none")
+        $("#column-left").css("display","none")
         $("#header").addClass("typeheader-5")
         $("#main-wrapper").addClass("main-wrapper")
         $("#products-page").addClass("main-container")
@@ -59,9 +60,10 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         var sp_width = $(window).width();
-        if (sp_width <= 768) {
+        if (sp_width <= 1024) {
             // $("#header-pc").css("display","none")
             // $("#header-mobile").css("display","block")
+            $("#column-left").css("display","none")
             $("#header").removeClass("header-main_area")
             $("#header").removeClass("header-main_area-2")
             $("#header").removeClass("bg--black")
@@ -76,6 +78,7 @@ $(document).ready(function () {
         else {
             // $("#header-pc").css("display","block")
             // $("#header-mobile").css("display","none")
+            $("#column-left").css("display","block")
             $("#header").removeClass("typeheader-5")
             $("#header").addClass("header-main_area")
             $("#header").addClass("header-main_area-2")

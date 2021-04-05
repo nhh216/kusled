@@ -166,7 +166,7 @@
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
                             <div data-href="https://gtrvietnam.com/products/chup-cao-su-gtr"
-                                 class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                 class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="product-item-container item--static">
                                     <div class="left-block">
                                         <div class="product-image-container ">
@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-href="https://gtrvietnam.com/products/chup-cao-su-gtr" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div data-href="https://gtrvietnam.com/products/chup-cao-su-gtr" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="product-item-container item--static">
                                     <div class="left-block">
                                         <div class="product-image-container ">
