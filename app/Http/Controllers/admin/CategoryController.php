@@ -39,7 +39,6 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        echo 1;
         dd(1);
     }
 
@@ -86,10 +85,5 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function test()
-    {
-        return view('admin.test');
     }
 }
