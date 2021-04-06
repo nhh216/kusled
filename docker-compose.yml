@@ -8,7 +8,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: laravel-image
-    container_name: laravel-app
+    container_name: kusled-laravel
     volumes:
       - ./:/var/www
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
@@ -17,7 +17,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: laravel-nginx
+    container_name: kusled-nginx
     ports:
       - 8000:80
     volumes:
