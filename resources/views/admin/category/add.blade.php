@@ -30,7 +30,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Tên <code>*</code></label>
-                                        <input name="name" type="text" class="form-control rounded-0" id="exampleInputRounded0">
+                                        <input name="name" type="text" class="form-control rounded-0" id="exampleInputRounded0" required>
                                     </div>
                                 </div>
                             </div>
