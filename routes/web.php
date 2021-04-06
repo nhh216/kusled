@@ -21,4 +21,8 @@ Route::get('/tin-tuc/{postId}', 'App\Http\Controllers\UserSiteController@postDet
 
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', 'App\Http\Controllers\admin\HomeController@index');
+
+    Route::resource('category', 'App\Http\Controllers\admin\CategoryController')->only([
+        'index', 'create', 'store', 'edit', 'update'
+    ]);
 });

@@ -1,0 +1,8 @@
+.btn-card-header {
+    float: right;
+}
+.label-card-title {
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
