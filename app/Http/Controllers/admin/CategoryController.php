@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ValidateCategory;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -38,7 +39,8 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo 1;
+        dd(1);
     }
 
     /**
@@ -84,5 +86,10 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function test()
+    {
+        return view('admin.test');
     }
 }
