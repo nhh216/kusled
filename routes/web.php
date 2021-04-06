@@ -18,3 +18,15 @@ Route::get('/danh-sach-san-pham', 'App\Http\Controllers\UserSiteController@produ
 Route::get('/danh-sach-san-pham/{productId}', 'App\Http\Controllers\UserSiteController@productDetail');
 Route::get('/tin-tuc', 'App\Http\Controllers\UserSiteController@postsPage');
 Route::get('/tin-tuc/{postId}', 'App\Http\Controllers\UserSiteController@postDetail');
+
+Route::group(['prefix'=>'admin'], function(){
+    Route::get('/home', 'App\Http\Controllers\admin\HomeController@index');
+
+    Route::resource('category', 'App\Http\Controllers\admin\CategoryController')->only([
+        'index', 'create', 'store', 'edit', 'update'
+    ]);
+
+    Route::resource('image-config', 'App\Http\Controllers\admin\ImageConfigController')->only([
+        'index', 'create', 'store', 'edit', 'update'
+    ]);
+});

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ValidateCategory;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
