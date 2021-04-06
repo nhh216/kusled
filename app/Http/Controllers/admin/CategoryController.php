@@ -4,6 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Post;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -43,6 +45,7 @@ class CategoryController extends Controller
         $category->type = $request->type;
         $category->slug = changeTitle($request->name);
         $category->save();
+
         return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
     }
 
@@ -65,7 +68,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+
+        return view('admin.category.edit', compact('category'));
     }
 
     /**
@@ -75,9 +80,16 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ValidateCategory $request, $id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->update([
+            'name' => $request->name,
+            'type' => $request->type,
+            'slug' => changeTitle($request->name),
+        ]);
+
+        return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
     }
 
     /**
@@ -89,5 +101,25 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function delete($id)
+    {
+        $products = Product::where('category_id', $id)->get()->toArray();
+        $posts = Post::where('category_id', $id)->get()->toArray();
+        if (count($products) > 0) {
+            $errors[] = 'Vẫn còn sản phẩm thuộc danh mục này';
+        } elseif (count($posts) > 0) {
+            $errors[] = 'Vẫn còn bài viết thuộc danh mục này';
+        } else {
+            $category = Category::find($id);
+            $category->delete();
+        }
+
+        if (count($errors) > 0) {
+            return redirect()->route('admin.category.index')->withErrors($errors);
+        } else {
+            return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+        }
     }
 }

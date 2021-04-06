@@ -5,4 +5,12 @@
     height: 38px;
     display: flex;
     align-items: center;
+    margin: 0 !important;
+}
+.w-100 {
+    width: 100%;
+}
+.icon-action {
+    margin: 10px;
+    cursor: pointer;
 }
