@@ -17,10 +17,10 @@
         <section class="content">
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <from action="{{ route('admin.category.store') }}" method="post" enctype="multipart/form-data">
-                            @csrf
+                <form action="{{ route('admin.category.store') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="card card-success">
                                 <div class="card-header">
                                     <h3 class="card-title label-card-title">Thêm mới danh mục</h3>
@@ -49,9 +49,9 @@
                                 </div>
                                 <!-- /.card-body -->
                             </div>
-                        </from>
+                        </div>
                     </div>
-                </div>
+                </form>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->
         </section>
