@@ -37,9 +37,14 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ValidateCategory $request)
     {
-        dd(1);
+        $category = new Category();
+        $category->name = $request->name;
+        $category->type = $request->type;
+        $category->slug = changeTitle($request->name);
+        $category->save();
+        return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
     }
 
     /**

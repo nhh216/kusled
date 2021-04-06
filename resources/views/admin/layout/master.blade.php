@@ -46,15 +46,27 @@
     @include('admin.layout.menu_left')
 
     <!-- Content Wrapper. Contains page content -->
-    @if (Session::has('error_message'))
-        <div class="container">
+    <div class="content-wrapper">
+        @if (Session::has('flash_message'))
+            <div class="container">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    {{ Session::get('flash_message') }}
+                </div>
+            </div>
+        @endif
+        @if ($errors->any())
             <div class="alert alert-danger">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                {{ Session::get('error_message') }}
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
-        </div>
-    @endif
-    @yield('content')
+        @endif
+        @yield('content')
+    <div>
     <!-- /.content-wrapper -->
 
     @include('admin.layout.footer')
