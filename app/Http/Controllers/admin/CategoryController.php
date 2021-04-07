@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ValidateCategory;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
@@ -40,13 +41,18 @@ class CategoryController extends Controller
      */
     public function store(ValidateCategory $request)
     {
-        $category = new Category();
-        $category->name = $request->name;
-        $category->type = $request->type;
-        $category->slug = changeTitle($request->name);
-        $category->save();
+        try {
+            $category = new Category();
+            $category->name = trim($request->name);
+            $category->type = $request->type;
+            $category->slug = changeTitle(trim($request->name));
+            $category->save();
 
-        return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+            return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+        } catch (\Exception $e) {
+            return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+        }
+
     }
 
     /**
@@ -82,14 +88,19 @@ class CategoryController extends Controller
      */
     public function update(ValidateCategory $request, $id)
     {
-        $category = Category::findOrFail($id);
-        $category->update([
-            'name' => $request->name,
-            'type' => $request->type,
-            'slug' => changeTitle($request->name),
-        ]);
+        try {
+            $category = Category::findOrFail($id);
+            $category->update([
+                'name' => trim($request->name),
+                'type' => $request->type,
+                'slug' => changeTitle(trim($request->name)),
+            ]);
 
-        return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+            return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+        } catch (\Exception $e) {
+            return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+        }
+
     }
 
     /**
