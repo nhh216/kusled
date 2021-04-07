@@ -14,3 +14,13 @@
     margin: 10px;
     cursor: pointer;
 }
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+.image-wrapper {
+    margin: 10px 0;
+}
+.img-preview {
+    max-height: 150px;
+    max-width: 150px;
+}
