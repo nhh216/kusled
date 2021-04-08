@@ -58,6 +58,14 @@
                 </div>
             </div>
         @endif
+        @if (Session::has('error_message'))
+            <div class="container">
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    {{ Session::get('error_message') }}
+                </div>
+            </div>
+        @endif
         @if ($errors->any())
             <div class="alert alert-danger">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -120,10 +128,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
 <script>
     $(document).ready(function() {
         $('#example').DataTable();
     });
 </script>
+
+@stack('scripts')
 </body>
 </html>
