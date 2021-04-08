@@ -11,3 +11,7 @@
     filter: alpha(opacity=80) !important;
     z-index: 9999;
 }
+
+.content-wrapper {
+    padding-top: 20px !important;
+}

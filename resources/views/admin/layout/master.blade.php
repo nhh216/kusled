@@ -52,11 +52,16 @@
     <div class="content-wrapper">
         @if (Session::has('flash_message'))
             <div class="container">
-                <div class="alert alert-success hungbeo-alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <div class="alert alert-success hungbeo-alert" data-id=notification >
+                    <button type="button" class="close" id="btn-noti" data-dismiss="alert" aria-hidden="true">&times;</button>
                     {{ Session::get('flash_message') }}
                 </div>
             </div>
+            <script>
+                setTimeout(function() {
+                    $("#btn-noti").click()
+                }, 3000);
+            </script>
         @endif
         @if (Session::has('error_message'))
             <div class="container">
