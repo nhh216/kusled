@@ -15,4 +15,10 @@ class ImageConfig extends Model
     const TYPE_BANNER = 'BANNER';
     const TYPE_LOGO = 'LOGO';
 
+    protected $fillable = [
+        'name',
+        'link',
+        'type'
+    ];
+
 }

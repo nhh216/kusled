@@ -1,0 +1,13 @@
+.red--text {
+    color: red;
+}
+.hungbeo-alert  {;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 50px;
+    opacity: 0.9;
+    filter: alpha(opacity=80) !important;
+    z-index: 9999;
+}

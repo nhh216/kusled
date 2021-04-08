@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\ImageConfig;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class ImageConfigController extends Controller
 {
@@ -42,7 +43,20 @@ class ImageConfigController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->request);
+        $patch = '/uploads/';
+        $uploadedFile = $request->file('file');
+        $filename = now()->timestamp .'-'.  $request->request->get("name") . '-'.$uploadedFile->getClientOriginalName();
+        Storage::disk('local')->putFileAs(
+            '/public'.$patch,
+            $uploadedFile,
+            $filename
+        );
+        $newImage = new ImageConfig();
+        $newImage->name = $request->request->get("name");
+        $newImage->type = $request->request->get("type");
+        $newImage->link = Storage::disk('local')->path($filename);
+        $newImage->save();
+        return redirect()->route('image-config.create')->with('flash_message', 'Success!');
     }
 
     /**

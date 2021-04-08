@@ -44,6 +44,13 @@
                         <p>Thương hiệu</p>
                     </a>
                 </li>
+                <li class="nav-header">Cấu hình hệ thống</li>
+                <li class="nav-item">
+                    <a href="{{ route('image-config.create') }}" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Ảnh và Banner</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
