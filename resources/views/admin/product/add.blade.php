@@ -113,7 +113,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Mô tả chi tiết <code></code></label>
-                                        <textarea name="short_desc" class="form-control " id="full_desc"></textarea>
+                                        <textarea name="full_desc" class="form-control " id="full_desc"></textarea>
                                     </div>
                                 </div>
                             </div>
