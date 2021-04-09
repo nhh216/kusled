@@ -157,6 +157,7 @@
                                         <img id="img-0" class="img-preview" alt="image" />
                                         <input
                                             name="images[]"
+                                            class="input-img"
                                             type="file"
                                             onchange="document.getElementById('img-0').src = window.URL.createObjectURL(this.files[0])"
                                         >
@@ -167,7 +168,7 @@
                                                <img id="img-{{ $key }}" src="{{ $image->link }}" class="img-preview" alt="image" />
                                                <input
                                                    name="images[]"
-                                                   id="input-0"
+                                                   class="input-img"
                                                    type="file"
                                                    onchange="document.getElementById('img-{{ $key }}').src = window.URL.createObjectURL(this.files[0])"
                                                >
@@ -176,6 +177,7 @@
                                 @endif
                                 </div>
                             </div>
+                            <input type="hidden" id="arrSrcImg" name="arrSrcImg">
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -187,7 +189,7 @@
 </section>
 <!-- /.content -->
 @endsection
-@push('scripts')
+@push('scripts')m
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('ckfinder/ckfinder.js') }}"></script>
     <script>
@@ -208,9 +210,5 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
         } );
-
-        $( document ).ready(function() {
-            $('#input-0').click()
-        });
     </script>
 @endpush
