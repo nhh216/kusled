@@ -14,7 +14,7 @@ class AddDescToImageConfigsTable extends Migration
     public function up()
     {
         Schema::table('image_configs', function (Blueprint $table) {
-            $table->string('desc');
+            $table->string('desc')->nullable();
         });
     }
 

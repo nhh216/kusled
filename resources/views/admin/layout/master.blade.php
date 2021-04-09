@@ -66,9 +66,14 @@
         @if (Session::has('error_message'))
             <div class="container">
                 <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" id="btn-close-noti" data-dismiss="alert" aria-hidden="true">&times;</button>
                     {{ Session::get('error_message') }}
                 </div>
+                <script>
+                    setTimeout(function() {
+                        $("#btn-close-noti").click()
+                    }, 3000);
+                </script>
             </div>
         @endif
         @if ($errors->any())

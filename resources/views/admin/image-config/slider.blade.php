@@ -6,6 +6,9 @@
               enctype="multipart/form-data">
             @csrf
             <div class="row">
+
+                <input hidden name="type" value="SLIDER">
+
                 <div class="col-md-12">
                     <div class="card card-success">
                         <div class="card-header">
@@ -15,93 +18,52 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Mô tả ngắn cho ảnh <code>*</code></label>
-                                                <input name="desc" type="text" class="form-control rounded-0">
+                                    @foreach ($sliders as $key => $slider)
+                                        <input name="link[]" value="{{ $slider->link }}" hidden>
+                                        <input name="id[]" value="{{ $slider->id }}" hidden>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Tên Slide <code>*</code></label>
+                                                    <input name="name[]" value="{{ $slider->name }}" class="form-control rounded-0" type="text">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Chọn Ảnh 1<code>*</code></label>
-                                                <input type="file"
-                                                       name="file"
-                                                       onchange="document.getElementById('slide1').src = window.URL.createObjectURL(this.files[0])">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Mô tả ngắn cho ảnh <code>*</code></label>
+                                                    <input name="desc[]" value="{{ $slider->desc }}" type="text" class="form-control rounded-0">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Mô tả ngắn cho ảnh <code>*</code></label>
-                                                <input name="desc" type="text" class="form-control rounded-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Chọn Ảnh 1<code>*</code></label>
+                                                    <input type="file"
+                                                           name="file-{{ $slider->id }}"
+                                                           name="file-{{ $slider->id }}"
+                                                           onchange="document.getElementById('slide{{$key}}').src = window.URL.createObjectURL(this.files[0])">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Chọn Ảnh 2<code>*</code></label>
-                                                <input type="file"
-                                                       name="file"
-                                                       onchange="document.getElementById('slide2').src = window.URL.createObjectURL(this.files[0])">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Mô tả ngắn cho ảnh <code>*</code></label>
-                                                <input name="desc" type="text" class="form-control rounded-0">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Chọn Ảnh 3<code>*</code></label>
-                                                <input type="file"
-                                                       name="file"
-                                                       onchange="document.getElementById('slide3').src = window.URL.createObjectURL(this.files[0])">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <div class="col-9">
-                                            <img id="slide1"
-                                                 class="mt-2"
-                                                 alt="your image"
-                                                 width="400"
-                                                 height="150"/>
+                                    @foreach ($sliders as $key => $image )
+                                        <div class="row">
+                                            <div class="col-1"></div>
+                                            <div class="col-9">
+                                                <img id="slide{{$key}}"
+                                                     class="mt-2"
+                                                     src="{{asset($image->link)}}"
+                                                     alt="your image"
+                                                     width="400"
+                                                     height="150"/>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <div class="col-9">
-                                            <img id="slide2"
-                                                 class="mt-2"
-                                                 alt="your image"
-                                                 width="400"
-                                                 height="150"/>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <div class="col-9">
-                                            <img id="slide3"
-                                                 class="mt-2"
-                                                 alt="your image"
-                                                 width="400"
-                                                 height="150"/>
-                                        </div>
-                                    </div>
-
+                                    @endforeach
                                 </div>
                             </div>
                             <!-- /.card-body -->
