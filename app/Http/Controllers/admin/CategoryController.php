@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ValidateCategory;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
@@ -39,20 +39,27 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ValidateCategory $request)
+    public function store(Request $request)
     {
-        try {
-            $category = new Category();
-            $category->name = trim($request->name);
-            $category->type = $request->type;
-            $category->slug = changeTitle(trim($request->name));
-            $category->save();
+        $validation = Validator::make($request->all(), [
+            'name' => 'required|max:255|unique:categories',
+            'type' => 'required'
+        ]);
+        if ($validation->passes()) {
+            try {
+                $category = new Category();
+                $category->name = trim($request->name);
+                $category->type = $request->type;
+                $category->slug = changeTitle(trim($request->name));
+                $category->save();
 
-            return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
-        } catch (\Exception $e) {
-            return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+                return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+            } catch (\Exception $e) {
+                return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+            }
+        } else {
+            return redirect()->back()->withInput($request->input())->withErrors($validation->errors());
         }
-
     }
 
     /**
@@ -86,21 +93,28 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ValidateCategory $request, $id)
+    public function update(Request $request, $id)
     {
-        try {
-            $category = Category::findOrFail($id);
-            $category->update([
-                'name' => trim($request->name),
-                'type' => $request->type,
-                'slug' => changeTitle(trim($request->name)),
-            ]);
+        $validation = Validator::make($request->all(), [
+            'name' => 'required|max:255|unique:categories,name,'.$id,
+            'type' => 'required'
+        ]);
+        if ($validation->passes()) {
+            try {
+                $category = Category::findOrFail($id);
+                $category->update([
+                    'name' => trim($request->name),
+                    'type' => $request->type,
+                    'slug' => changeTitle(trim($request->name)),
+                ]);
 
-            return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
-        } catch (\Exception $e) {
-            return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+                return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+            } catch (\Exception $e) {
+                return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+            }
+        } else {
+            return redirect()->back()->withInput($request->input())->withErrors($validation->errors());
         }
-
     }
 
     /**
@@ -116,6 +130,7 @@ class CategoryController extends Controller
 
     public function delete($id)
     {
+        $errors = [];
         $products = Product::where('category_id', $id)->get()->toArray();
         $posts = Post::where('category_id', $id)->get()->toArray();
         if (count($products) > 0) {

@@ -23,7 +23,12 @@
                         <thead>
                         <tr>
                             <th>STT</th>
+                            <th>Trạng thái</th>
                             <th>Tên</th>
+                            <th>Mã sản phẩm</th>
+                            <th>Danh mục</th>
+                            <th>Giá</th>
+                            <th>Khuyến mại (%)</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -31,7 +36,12 @@
                         @foreach($products as $key => $product)
                         <tr>
                             <td>{{ $key + 1 }}</td>
+                            <td>{{ $product->status ? 'Đang hoạt động' : '' }}</td>
                             <td>{{ $product->name }}</td>
+                            <td>{{ $product->code }}</td>
+                            <td>{{ $product->category->name }}</td>
+                            <td>{{ $product->price }}</td>
+                            <td>{{ $product->discount }}</td>
                             <td>
                                 <a class="icon-action" href="{{ route('admin.product.edit', $product->id) }}">
                                     <i class="fas fa-tools" title="Sửa"></i>

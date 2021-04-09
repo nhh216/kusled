@@ -11,43 +11,52 @@
 
 namespace Symfony\Component\HttpKernel\EventListener;
 
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
-use Symfony\Component\HttpKernel\KernelEvents;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Psr\Container\ContainerInterface;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 
 /**
  * Sets the session in the request.
  *
- * @author Johannes M. Schmitt <schmittjoh@gmail.com>
+ * When the passed container contains a "session_storage" entry which
+ * holds a NativeSessionStorage instance, the "cookie_secure" option
+ * will be set to true whenever the current master request is secure.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ *
+ * @final
  */
-abstract class SessionListener implements EventSubscriberInterface
+class SessionListener extends AbstractSessionListener
 {
-    public function onKernelRequest(GetResponseEvent $event)
+    public function __construct(ContainerInterface $container, bool $debug = false)
     {
-        if (!$event->isMasterRequest()) {
+        parent::__construct($container, $debug);
+    }
+
+    public function onKernelRequest(RequestEvent $event)
+    {
+        parent::onKernelRequest($event);
+
+        if (!$event->isMasterRequest() || !$this->container->has('session')) {
             return;
         }
 
-        $request = $event->getRequest();
-        $session = $this->getSession();
-        if (null === $session || $request->hasSession()) {
-            return;
+        if ($this->container->has('session_storage')
+            && ($storage = $this->container->get('session_storage')) instanceof NativeSessionStorage
+            && ($masterRequest = $this->container->get('request_stack')->getMasterRequest())
+            && $masterRequest->isSecure()
+        ) {
+            $storage->setOptions(['cookie_secure' => true]);
+        }
+    }
+
+    protected function getSession(): ?SessionInterface
+    {
+        if (!$this->container->has('session')) {
+            return null;
         }
 
-        $request->setSession($session);
+        return $this->container->get('session');
     }
-
-    public static function getSubscribedEvents()
-    {
-        return array(
-            KernelEvents::REQUEST => array('onKernelRequest', 128),
-        );
-    }
-
-    /**
-     * Gets the session object.
-     *
-     * @return SessionInterface|null A SessionInterface instance or null if no session is available
-     */
-    abstract protected function getSession();
 }
