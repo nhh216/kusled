@@ -19,3 +19,11 @@ Route::resource('product', 'App\Http\Controllers\admin\ProductController')->only
 Route::group(['prefix'=>'product'], function(){
     Route::get('{id}/delete', 'App\Http\Controllers\admin\ProductController@delete')->name('product.delete');
 });
+
+//attribute
+Route::resource('attribute', 'App\Http\Controllers\admin\AttributeController')->only([
+    'index', 'create', 'store', 'edit', 'update'
+]);
+Route::group(['prefix'=>'attribute'], function(){
+    Route::get('{id}/delete', 'App\Http\Controllers\admin\AttributeController@delete')->name('attribute.delete');
+});
