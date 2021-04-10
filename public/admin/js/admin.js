@@ -26,3 +26,43 @@ $("#delete-img").click(function() {
         $('#image-wrapper-' + (num - 1)).remove();
     }
 });
+
+$("#add-product-attribute").click(function () {
+    const num = $('.attribute-wrapper').length;
+    const baseInput = "myInput-" + num;
+    const htmlTemplate = `<div class="row">
+                            <div class="col-md-5 ">
+                                <div class="form-group">
+                                    <label>Tên thuộc tính sản phẩm<code>*</code></label>
+                                    <div class="autocomplete" style="width:300px;">
+                                        <input id="${baseInput}" type="text" name="myCountry" placeholder="Country">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label>Thuộc tính sản phẩm <code>*</code></label>
+                                    <input name="name" type="text" class="form-control rounded-0"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <label>Xóa</label>
+                                    <a class="btn btn-danger btn-circle"
+                                       id="delete-product-attribute"
+                                       onclick="removeProductAttribute('product-attribute-0')"
+                                       title="Xóa thuộc tính">
+                                        <i class="white-text fas fa-minus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+`
+
+    $("#row-product-attribute").append(htmlTemplate);
+});
+
+function removeProductAttribute(className) {
+    $("#"+className).remove();
+}

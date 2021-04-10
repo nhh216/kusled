@@ -6,9 +6,7 @@
               enctype="multipart/form-data">
             @csrf
             <div class="row">
-
                 <input hidden name="type" value="SLIDER">
-
                 <div class="col-md-12">
                     <div class="card card-success">
                         <div class="card-header">
@@ -56,7 +54,7 @@
                                             <div class="col-1"></div>
                                             <div class="col-9">
                                                 <img id="slide{{$key}}"
-                                                     class="mt-2"
+                                                     class="mt-2 ml-10"
                                                      src="{{asset($image->link)}}"
                                                      alt="your image"
                                                      width="400"

@@ -17,7 +17,8 @@
                                 <div class="col-md-6">
                                     <div class="row">
                                         <input hidden name="type" value="LOGO">
-                                        <input hidden name="name" value="ảnh logo">
+                                        <input hidden name="id" value="{{ $logo->id }}">
+                                        <input hidden name="name" value="{{ $logo->name }}">
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label>Chọn Logo<code>*</code></label>
@@ -35,6 +36,7 @@
                                         <div class="col-9">
                                             <img id="logo"
                                                  class="mt-2"
+                                                 src="{{asset($logo->link)}}"
                                                  alt="your image"
                                                  width="360"
                                                  height=74/>

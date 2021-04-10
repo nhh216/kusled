@@ -54,15 +54,12 @@ class ImageConfigController extends Controller
     {
         $type = $request->request->get("type");
         $patch = 'upload/image_configs/';
-        if ($type == ImageConfig::TYPE_LOGO) {
+        if ($type == ImageConfig::TYPE_LOGO || $type == ImageConfig::TYPE_BANNER) {
             $uploadedFile = $request->file('file');
-            $filename = now()->timestamp .'-'.  $request->request->get("name") . '-'.$uploadedFile->getClientOriginalName();
-            $uploadedFile->move(public_path('upload/image_configs'), $filename);
-            $newImage = new ImageConfig();
-            $newImage->name = $request->request->get("name");
-            $newImage->type = $type;
-            $newImage->link =  $patch .$filename;
-            $newImage->save();
+            $id = $request->request->get('id');
+            $fileName = now()->timestamp .'-'.  $id . '-'.$uploadedFile->getClientOriginalName();
+            $uploadedFile->move(public_path('upload/image_configs'), $fileName);
+            ImageConfig::where('id', $id)->update(['link' => $patch .$fileName]);
         } else if ($type ==  ImageConfig::TYPE_SLIDER) {
             $arrId = $request->request->get("id");
             $arrName = $request->request->get("name");
@@ -70,6 +67,7 @@ class ImageConfigController extends Controller
             $arrOldLink = $request->request->get("link");
             for ($i = 0; $i < sizeof($arrId); $i++ ) {
                 $data = [
+                    'name' => $arrName[$i],
                     'desc' => $arrDesc[$i],
                     'link' => $arrOldLink[$i]
                 ];
@@ -78,8 +76,10 @@ class ImageConfigController extends Controller
                     $fileName = now()->timestamp .'-'.  $arrName[$i] . '-'.$file->getClientOriginalName();
                     $file->move(public_path('upload/image_configs'), $fileName);
                     $data['link'] = $patch .$fileName;
-                    ImageConfig::where('name', $arrName[$i])->update($data);
+                    ImageConfig::where('id', $arrId[$i])->update($data);
+                    continue;
                 }
+                ImageConfig::where('id', $arrId[$i])->update($data);
             }
         }
         return redirect()->route('image-config.create')->with('flash_message', 'Success!');

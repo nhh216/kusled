@@ -16,6 +16,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
+                                        <input hidden name="type" value="BANNER">
+                                        <input hidden name="id" value="{{ $banner->id }}">
+                                        <input hidden name="name" value="{{ $banner->name }} ">
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label>Chọn Banner<code>*</code></label>
@@ -32,6 +35,7 @@
                                         <div class="col-9">
                                             <img id="banner"
                                                  class="mt-2"
+                                                 src="{{asset($banner->link)}}"
                                                  alt="your image"
                                                  width="200"
                                                  height="500"/>
