@@ -36,9 +36,10 @@
                                 <a class="icon-action" href="{{ route('admin.attribute.edit', $attribute->id) }}">
                                     <i class="fas fa-tools" title="Sửa"></i>
                                 </a>
-                                <a class="icon-action" href="{{ route('admin.attribute.delete', $attribute->id) }}" onclick="return confirmDelete()">
-                                    <i class="fas fa-trash" title="Xóa"></i>
-                                </a>
+{{--                                 k cho xóa vì những sản phẩm đã chọn key ý r mà xóa đi thì oẳng :))--}}
+{{--                                <a class="icon-action" href="{{ route('admin.attribute.delete', $attribute->id) }}" onclick="return confirmDelete()">--}}
+{{--                                    <i class="fas fa-trash" title="Xóa"></i>--}}
+{{--                                </a>--}}
                             </td>
                         </tr>
                         @endforeach

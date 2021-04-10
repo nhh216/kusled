@@ -137,9 +137,9 @@ class AttributeController extends Controller
     }
 
     public function delete($id) {
-        $arrtibute = Attributes::findOrFail($id);
-        $arrtibute->delete();
-
-        return redirect()->route('admin.attribute.index')->with('flash_message', 'Success!');
+//        $arrtibute = Attributes::findOrFail($id);
+//        $arrtibute->delete();
+//
+//        return redirect()->route('admin.attribute.index')->with('flash_message', 'Success!');
     }
 }

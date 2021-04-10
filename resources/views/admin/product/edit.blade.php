@@ -39,7 +39,7 @@
                                                     id="checkboxPrimary1"
                                                     @if($product->status) checked @endif
                                                 >
-                                                <label class="font-weight-400" for="checkboxPrimary1">Hoạt động</label>
+                                                <label class="font-weight-400 mg-b-15" for="checkboxPrimary1">Hoạt động</label>
                                             </div>
                                         </div>
                                     </div>

@@ -33,10 +33,8 @@
                                                 <label>Trạng thái sản phẩm <code>*</code></label>
                                                 <div class="form-group clearfix">
                                                     <div class="icheck-primary d-inline">
-                                                        <input name="status" type="checkbox" id="checkboxPrimary1"
-                                                               checked>
-                                                        <label class="font-weight-400" for="checkboxPrimary1">Hoạt
-                                                            động</label>
+                                                        <input name="status" type="checkbox" id="checkboxPrimary1" checked>
+                                                        <label class="font-weight-400 mg-b-15" for="checkboxPrimary1">Hoạt động</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -111,22 +109,18 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Thuộc tính sản phẩm <code></code></label>
-                                            <div class="action-img">
-                                                <a class="btn btn-success btn-circle .btn-sm btn-action-img"
-                                                   id="add-product-attribute" title="Thêm thuộc tính">
-                                                    <i class="white-text fas fa-plus"></i>
-                                                </a>
+                                <div class="card-body" id="attributes">
+                                    <div class="row" id="row-select">
+                                        <div class="col-md-12">
+                                            <div class="form-group multiple-select-wrapper">
+                                                <label>Thuộc tính sản phẩm <code>*</code></label>
+                                                <select id="multi-select" multiple>
+                                                    @foreach($attributes as $index => $attribute)
+                                                        <option value="{{ $attribute->key }}">{{ $attribute->text }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row" id="row-product-attribute">
-                                    <div class="col-md-12 attribute-wrapper" id="product-attribute-0">
-
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +177,23 @@
     </section>
     <!-- /.content -->
 @endsection
+@push('styles')
+    <link href="{{ asset('admin/css/example-styles.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/css/demo-styles.css') }}" rel="stylesheet" />
+    <style>
+        .multiple-select-wrapper {
+            display: grid;
+        }
+        .multi-select-button:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+        }
+    </style>
+@endpush
 @push('scripts')
+    <script src="{{ asset('admin/js/jquery.multi-select.js') }}"></script>
+    <script src="{{ asset('admin/js/multiple-select.js') }}"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('ckfinder/ckfinder.js') }}"></script>
     <script>
@@ -203,6 +213,14 @@
             filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+        });
+
+        $(function(){
+            $('#multi-select').multiSelect();
+
+            var arrAttr = '<?php echo $arrAttr; ?>'
+            arrAttr = JSON.parse(arrAttr)
+            loadMultipleSelect(arrAttr)
         });
     </script>
 @endpush
