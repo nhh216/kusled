@@ -148,8 +148,17 @@ class ProductController extends Controller
                     'full_desc' => isset($request->full_desc) ? $request->full_desc : '',
                     'code' => trim($request->code)
                 ]);
+
+                $arrSrcImg = $request->arrSrcImg ? explode(',', $request->arrSrcImg) : [];
                 $imagesOld = Image::where('product_id', $id)->get();
-                dd($request->images);
+
+                foreach ($imagesOld as $img) {
+                    if (!in_array($img->link, $arrSrcImg)) {
+                        File::delete($img->link);
+                        Image::destroy($img->id);
+                    }
+                }
+
                 if (isset($request->images)) {
                     $data = [];
                     foreach ($request->images as $key => $value) {
@@ -161,11 +170,6 @@ class ProductController extends Controller
                         ];
                     }
                     Image::insert($data);
-                }
-
-                foreach ($imagesOld as $imageold) {
-                    File::delete($imageold->link);
-                    Image::destroy($imageold->id);
                 }
 
                 return redirect()->route('admin.product.index')->with('flash_message', 'Success!');
