@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Attributes;
 use App\Models\Category;
 use App\Models\Image;
 use App\Models\Product;
@@ -32,8 +33,14 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::where('type', \App\Models\Category::TYPE_PRODUCT)->orderBy('id', 'desc')->get();
+        $attributes = Attributes::orderBy('id', 'desc')->get();
+        $arrAttr = [];
+        foreach ($attributes as $index => $attribute) {
+            $arrAttr[$attribute->key] = $attribute->text;
+        }
+        $arrAttr = json_encode($arrAttr);
 
-        return view('admin.product.add', compact('categories'));
+        return view('admin.product.add', compact('categories', 'attributes', 'arrAttr'));
     }
 
     /**
@@ -54,6 +61,24 @@ class ProductController extends Controller
         ]);
         if($validation->passes()) {
             try {
+                $info = [];
+                if ($request->product_attributes) {
+                    $attributes = Attributes::all()->toArray();
+                    foreach ($request->product_attributes as $key => $product_attribute) {
+                        foreach ($attributes as $attribute) {
+                            $arrProAttr = [];
+                            if ($key == $attribute['key']) {
+                                $arrProAttr['key'] = $key;
+                                $arrProAttr['text'] = $attribute['text'];
+                                $arrProAttr['value'] = $product_attribute;
+
+                                $info[] = $arrProAttr;
+                            }
+                        }
+                    }
+                }
+                $info = json_encode($info);
+
                 $product = new Product();
                 $product->user_id = 1;
                 $product->name = trim($request->name);
@@ -65,6 +90,7 @@ class ProductController extends Controller
                 $product->short_desc = isset($request->short_desc) ? $request->short_desc : '';
                 $product->full_desc = isset($request->full_desc) ? $request->full_desc : '';
                 $product->code = trim($request->code);
+                $product->info = $info;
 
                 $product->save();
 
