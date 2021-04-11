@@ -39,6 +39,18 @@ function changeTitle($str){
     return $str;
 }
 
+function setKeyAttribute($str){
+    $str = trim($str);
+    if ($str=="") return "";
+    $str =str_replace('"','',$str);
+    $str =str_replace("'",'',$str);
+    $str = stripUnicode($str);
+    $str = mb_convert_case($str,MB_CASE_LOWER,'utf-8');    // MB_CASE_UPPER / MB_CASE_TITLE / MB_CASE_LOWER
+    $str = str_replace(' ','_',$str);
+
+    return $str;
+}
+
 function cate_parent($cate_data, $parent = 0, $str = "--",$select=0){
     foreach ($cate_data as  $cate_item){
         $id = $cate_item["id"];
