@@ -138,8 +138,33 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $categories = Category::where('type', \App\Models\Category::TYPE_PRODUCT)->orderBy('id', 'desc')->get();
+        $attributes = Attributes::orderBy('id', 'desc')->get();
+        $arrAttr = []; // mảng [ 'key1' => 'text1', 'key2' => 'text2']
+        $keyAttrsSelected = []; // mảng [ 'key1', 'key2'] đã lưu trong sp
+        $valueAttrsSelected = []; // mảng [ 'key1' => 'value1', 'key2' => 'value2']
 
-        return view('admin.product.edit', compact('categories', 'product'));
+        foreach ($attributes as $index => $attribute) {
+            $arrAttr[$attribute->key] = $attribute->text;
+        }
+
+        if ($product->info) {
+            $attrsSelected = json_decode($product->info);
+            foreach ($attrsSelected as $item) {
+                $keyAttrsSelected[] = $item->key;
+                $valueAttrsSelected[$item->key] = $item->value;
+            }
+        }
+        $arrAttr = json_encode($arrAttr);
+        $valueAttrsSelected = json_encode($valueAttrsSelected);
+
+        return view('admin.product.edit', compact(
+            'categories',
+            'product',
+            'attributes',
+            'arrAttr',
+            'keyAttrsSelected',
+            'valueAttrsSelected'
+        ));
     }
 
     /**
@@ -162,6 +187,25 @@ class ProductController extends Controller
         if ($validation->passes()) {
             try {
                 $product = Product::findOrFail($id);
+
+                $info = [];
+                if ($request->product_attributes) {
+                    $attributes = Attributes::all()->toArray();
+                    foreach ($request->product_attributes as $key => $product_attribute) {
+                        foreach ($attributes as $attribute) {
+                            $arrProAttr = [];
+                            if ($key == $attribute['key']) {
+                                $arrProAttr['key'] = $key;
+                                $arrProAttr['text'] = $attribute['text'];
+                                $arrProAttr['value'] = $product_attribute;
+
+                                $info[] = $arrProAttr;
+                            }
+                        }
+                    }
+                }
+                $info = json_encode($info);
+
                 $product->update([
                     'user_id' => 1,
                     'name' => trim($request->name),
@@ -172,7 +216,8 @@ class ProductController extends Controller
                     'discount' => $request->discount,
                     'short_desc' => isset($request->short_desc) ? $request->short_desc : '',
                     'full_desc' => isset($request->full_desc) ? $request->full_desc : '',
-                    'code' => trim($request->code)
+                    'code' => trim($request->code),
+                    'info' => $info
                 ]);
 
                 $arrSrcImg = $request->arrSrcImg ? explode(',', $request->arrSrcImg) : [];
