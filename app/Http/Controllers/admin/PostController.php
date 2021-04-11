@@ -68,7 +68,7 @@ class PostController extends Controller
 
 
                 return redirect()->route('admin.post.index')->with('flash_message', 'Success!');
-            }catch (\Exception $e) {
+            } catch (\Exception $e) {
                 return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
             }
         } else {

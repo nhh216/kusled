@@ -24,7 +24,7 @@
                     <div class="card card-warning">
                         <div class="card-header">
                             <h3 class="card-title label-card-title">Sửa bài viết</h3>
-                            <button type="submit" class="btn btn-light btn-card-header">Thêm mới</button>
+                            <button type="submit" class="btn btn-light btn-card-header">Sửa</button>
                         </div>
                         <div class="card-body">
                             <div class="row">

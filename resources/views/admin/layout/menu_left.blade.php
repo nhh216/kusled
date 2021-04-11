@@ -108,7 +108,22 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copyright"></i>
                         <p>Thương hiệu</p>
+                        <i class="fas fa-angle-left right"></i>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('admin.brand.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Danh sách</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.brand.create') }}" class="nav-link">
+                                <i class="fas fa-plus nav-icon"></i>
+                                <p>Thêm mới</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-header">Cấu hình hệ thống</li>
                 <li class="nav-item">
