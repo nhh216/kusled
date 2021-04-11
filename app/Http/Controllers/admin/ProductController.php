@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Image;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 
@@ -80,7 +81,7 @@ class ProductController extends Controller
                 $info = json_encode($info);
 
                 $product = new Product();
-                $product->user_id = 1;
+                $product->user_id = Auth::user()->id;
                 $product->name = trim($request->name);
                 $product->slug = changeTitle(trim($request->name));
                 $product->category_id = $request->category_id;
@@ -207,7 +208,7 @@ class ProductController extends Controller
                 $info = json_encode($info);
 
                 $product->update([
-                    'user_id' => 1,
+                    'user_id' => Auth::user()->id,
                     'name' => trim($request->name),
                     'slug' => changeTitle(trim($request->name)),
                     'category_id' => $request->category_id,
