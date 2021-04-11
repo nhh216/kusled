@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\HomePageController@index');
+Route::get('/', 'App\Http\Controllers\HomePageController@index')->name('homePage');
 Route::get('/danh-sach-san-pham', 'App\Http\Controllers\UserSiteController@productsPage');
 Route::get('/danh-sach-san-pham/{productId}', 'App\Http\Controllers\UserSiteController@productDetail');
 Route::get('/tin-tuc', 'App\Http\Controllers\UserSiteController@postsPage');
@@ -31,6 +31,10 @@ Route::group(['prefix'=>'admin'], function(){
     ]);
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+    'reset' => false,
+    'verify' => false,
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
