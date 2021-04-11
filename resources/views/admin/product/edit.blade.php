@@ -139,48 +139,40 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Mô tả tóm tắt <code></code></label>
-                                                <textarea name="short_desc" class="form-control " id="short_desc">
+                            <div class="card-body">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Mô tả tóm tắt <code></code></label>
+                                        <textarea name="short_desc" class="form-control " id="short_desc">
                                             {{ $product->short_desc }}
                                         </textarea>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Mô tả chi tiết <code></code></label>
+                                        <textarea name="full_desc" class="form-control " id="full_desc">
+                                    {{ $product->full_desc }}
+                                </textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Ảnh <code></code></label>
+                                        <div class="action-img">
+                                            <a class="btn btn-success btn-circle .btn-sm btn-action-img" id="add-img" title="Thêm ảnh">
+                                                <i class="white-text fas fa-plus"></i>
+                                            </a>
+                                            <a class="btn btn-danger btn-circle .btn-sm" id="delete-img" title="Xóa ảnh">
+                                                <i class="white-text fas fa-minus"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Mô tả chi tiết <code></code></label>
-                                                <textarea name="full_desc" class="form-control " id="full_desc">
-                                            {{ $product->full_desc }}
-                                        </textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Ảnh <code></code></label>
-                                                <div class="action-img">
-                                                    <a class="btn btn-success btn-circle .btn-sm btn-action-img" id="add-img" title="Thêm ảnh">
-                                                        <i class="white-text fas fa-plus"></i>
-                                                    </a>
-                                                    <a class="btn btn-danger btn-circle .btn-sm" id="delete-img" title="Xóa ảnh">
-                                                        <i class="white-text fas fa-minus"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php
+                                </div>
+                                <?php
                                     $images = \App\Models\Image::where('product_id', $product->id)->get();
-                                    ?>
-                                    <div class="row">
-                                        <div class="col-md-12 show-image">
+                                ?>
+                                <div class="col-md-12 show-image">
                                             @if(!isset($images) || count($images) == 0)
                                                 <div class="image-wrapper" id="image-wrapper-0">
                                                     <img id="img-0" class="img-preview" alt="image" />
@@ -205,9 +197,7 @@
                                                 @endforeach
                                             @endif
                                         </div>
-                                    </div>
-                                    <input type="hidden" id="arrSrcImg" name="arrSrcImg">
-                                </div>
+                                <input type="hidden" id="arrSrcImg" name="arrSrcImg">
                             </div>
                         </div>
                     </div>
