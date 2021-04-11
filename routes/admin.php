@@ -27,3 +27,11 @@ Route::resource('attribute', 'App\Http\Controllers\admin\AttributeController')->
 Route::group(['prefix'=>'attribute'], function(){
     Route::get('{id}/delete', 'App\Http\Controllers\admin\AttributeController@delete')->name('attribute.delete');
 });
+
+//post
+Route::resource('post', 'App\Http\Controllers\admin\PostController')->only([
+    'index', 'create', 'store', 'edit', 'update'
+]);
+Route::group(['prefix'=>'post'], function(){
+    Route::get('{id}/delete', 'App\Http\Controllers\admin\PostController@delete')->name('post.delete');
+});
