@@ -35,3 +35,11 @@ Route::resource('post', 'App\Http\Controllers\admin\PostController')->only([
 Route::group(['prefix'=>'post'], function(){
     Route::get('{id}/delete', 'App\Http\Controllers\admin\PostController@delete')->name('post.delete');
 });
+
+//brand
+Route::resource('brand', 'App\Http\Controllers\admin\BrandController')->only([
+    'index', 'create', 'store', 'edit', 'update'
+]);
+Route::group(['prefix'=>'brand'], function(){
+    Route::get('{id}/delete', 'App\Http\Controllers\admin\BrandController@delete')->name('brand.delete');
+});
