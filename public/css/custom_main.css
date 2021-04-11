@@ -1677,6 +1677,11 @@ ul.agency_list > li a {
     font-weight: normal;
     font-size: 15px;
 }
+.price_old {
+    color: black;
+    font-size: 12px;
+    text-decoration-line: line-through;
+}
 
 .text-red {
     color: red;
@@ -2195,7 +2200,7 @@ ul.agency_list > li a {
 }
 
 .products-list.grid .product-item-container{
-    height: 385px;
+    height: 405px;
 }
 /*title box*/
 

@@ -57,6 +57,20 @@ function cate_parent($cate_data, $parent = 0, $str = "--",$select=0){
     }
 }
 
+function getSalePrice($price, $discount) {
+    $salePrice = $price - ($discount/100) * $price;
+    return currency_format($salePrice);
+}
+
+if (!function_exists('currency_format')) {
+    function currency_format($number, $suffix = ' đ') {
+        if (!empty($number)) {
+            return number_format($number, 0, ',', '.') . "{$suffix}";
+        }
+    }
+}
+
+
 
 ?>
 

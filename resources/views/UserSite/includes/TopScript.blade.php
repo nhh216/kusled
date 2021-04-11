@@ -45,8 +45,7 @@
 <link rel="stylesheet" id="googleapis-css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600,700" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="shortcut icon" type="image/png" href="/upload/images/default/favicon-16x16.png">
+<link rel="stylesheet" id="lib-css" href="{{ asset('css/fontawesome.min.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 {{--<link rel="stylesheet" id="bootstrap-datetimepicker-css" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="carousel-css" href="{{ asset('css/owl.carousel.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 <link rel="stylesheet" id="lib-css" href="{{ asset('css/lib.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
@@ -66,7 +65,7 @@
 <link rel="stylesheet" id="color_scheme" href="{{ asset('css/home5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" id="responsive-css" href="{{ asset('css/responsive.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" id="custom_main-css" href="{{ asset('css/custom_main.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
-<link rel="stylesheet" id="custom_mobile-css" href="{{ asset('css/custom_mobile.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
+{{--<link rel="stylesheet" id="custom_mobile-css" href="{{ asset('css/custom_mobile.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 <link rel="stylesheet" href="{{ asset('css/ion-fonts.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
