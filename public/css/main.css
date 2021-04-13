@@ -392,13 +392,13 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 
 .header-top_area .main-menu_area > nav > ul > li {
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 30px !important;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-top_area .main-menu_area > nav > ul > li {
-        padding-right: 10px;
-    }
+    /*.header-top_area .main-menu_area > nav > ul > li {*/
+    /*    padding-right: 10px;*/
+    /*}*/
 }
 
 .header-top_area .main-menu_area > nav > ul > li:hover > a {

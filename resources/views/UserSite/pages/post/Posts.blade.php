@@ -1,6 +1,6 @@
 @extends('UserSite.layouts.main.MainLayout')
 @section('content')
-    <div class="main-container container">
+    <div class="container">
         <ul class="breadcrumb">
             <li><a href="https://gtrvietnam.com/"><i class="fa fa-home"></i></a></li>
             <li><a href="https://gtrvietnam.com/tin-tuc">Tin tức</a></li>

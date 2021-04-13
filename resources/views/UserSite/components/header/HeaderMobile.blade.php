@@ -11,7 +11,7 @@
         <div class="row">
             <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12">
                 <div class="logo">
-                    <a href="/"><img src="./gtrvn/logo.webp" title="LOGO Auto365" alt="LOGO GTRVIETNAM"></a>
+                    <a href="/"><img src="{{asset("./gtrvn/logo.webp")}}" title="LOGO Auto365" alt="LOGO GTRVIETNAM"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 middle-right">

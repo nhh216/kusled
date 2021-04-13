@@ -1,221 +1,338 @@
-@extends('UserSite.layouts.main.MainLayout')
+@extends('UserSite.layouts.main.MainLayout',['homepage'=>false])
 @section('content')
-    <div class="content-main-w">
-        <link rel="stylesheet"
-              href="https://gtrvietnam.com/templates/default/public/js/lightgallery/lightgallery.min.css">
-        <link rel="stylesheet"
-              href="https://gtrvietnam.com/templates/default/public/js/lightslider/lightslider.min.css">
+    <div id="wrapper" class="wrapper-fluid banners-effect-5">
+        {{--        <div id="product-detail" class="main-container main-container-mobile">--}}
+        <div id="product-detail" class="main-container">
+            <div id="content">
+                <div class="container">
+                </div>
+                <div class="content-main-w">
+                    <link rel="stylesheet"
+                          href="https://gtrvietnam.com/templates/default/public/js/lightgallery/lightgallery.min.css">
+                    <link rel="stylesheet"
+                          href="https://gtrvietnam.com/templates/default/public/js/lightslider/lightslider.min.css">
 
-        <section class="product-page not-home">
-            <div class="main-container container">
-                <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/"
-                                                                                                         itemprop="item"><i
-                                class="fa fa-home"></i> <span itemprop="name" style="display:none;">Trang chủ</span></a>
-                        <meta itemprop="position" content="1">
-                    </li>
-                    <li property="itemListElement" typeof="ListItem" class="">
-                        <a property="item" typeof="WebPage" href="/san-pham"><span property="name">Sản phẩm</span></a>
-                        <meta itemprop="position" content="2">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
-                            href="https://gtrvietnam.com/nang-cap-anh-sang" itemprop="name">NÂNG CẤP ÁNH SÁNG </a>
-                        <meta itemprop="position" content="6">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
-                            href="https://gtrvietnam.com/collections/led-led-bar" itemprop="name">LED - LED BAR</a>
-                        <meta itemprop="position" content="7">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
-                            href="https://gtrvietnam.com/led-x-light-t10" itemprop="name">LED X-Light T10</a>
-                    </li>
-                </ul>
-                <div class="row">
-                    <!--Middle Part Start-->
-                    <div id="content" class="col-md-12">
-                        <div class="product-view row">
-                            <div class="left-content-product">
-                                <div class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
-                                    <div class="box-image">
-                                        <div class="lSSlideOuter ">
-                                            <div class="lSSlideWrapper usingCss">
-                                                <ul style="list-style-type: none; padding: 0px 0px 0%; width: 2350px; transform: translate3d(-470px, 0px, 0px); height: 470px;"
-                                                    id="imageGallery" class="lightSlider lSSlide">
-                                                    @foreach($images as $image)
-                                                        <li data-thumb="{{ asset($image -> link) }}"
-                                                            data-src="{{ asset($image -> link) }}"
-                                                            class="clone left" style="width: 470px; margin-right: 0px;">
-                                                            <a href="javascript:;" class="play_video">
-                                                                <i class="fa fa-play-circle"></i>
-                                                            </a>
-                                                            <img
-                                                                src="{{ asset($image -> link) }}"
-                                                                alt="" class="slide_img_play">
-                                                        </li>
-                                                    @endforeach
-                                                </ul>
-                                                <div class="lSAction"><a class="lSPrev"></a><a class="lSNext"></a></div>
-                                            </div>
-                                            <ul class="lSPager lSGallery"
-                                                style="margin-top: 5px; transition-duration: 400ms; width: 356.75px; transform: translate3d(0px, 0px, 0px);">
-                                                @foreach($images as $key => $image)
-                                                    @if($key > 0)
-                                                        <li style="width:100%;width:113.75px;margin-right:5px" class="active">
-                                                            <a href="#"><img
-                                                                    src="{{ asset($image -> link) }}"></a>
-                                                        </li>
-                                                    @endif
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <section class="product-page not-home">
+                        <div class="main-container container">
+                            <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+                                        href="/" itemprop="item"><i class="fa fa-home"></i> <span itemprop="name"
+                                                                                                  style="display:none;">Trang chủ</span></a>
+                                    <meta itemprop="position" content="1">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="">
+                                    <a property="item" typeof="WebPage" href="/san-pham"><span
+                                            property="name">Sản phẩm</span></a>
+                                    <meta itemprop="position" content="2">
+                                </li>
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+                                        href="https://gtrvietnam.com/nang-cap-anh-sang" itemprop="name">NÂNG CẤP ÁNH
+                                        SÁNG </a>
+                                    <meta itemprop="position" content="6">
+                                </li>
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+                                        href="https://gtrvietnam.com/collections/bi-led-g-led-gtr" itemprop="name">BI
+                                        LED PROJECTOR</a>
+                                    <meta itemprop="position" content="7">
+                                </li>
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+                                        href="https://gtrvietnam.com/bi-led-titan-black-45w" itemprop="name">Bi Led
+                                        TiTan Black</a>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <!--Middle Part Start-->
+                                <div id="content" class="col-md-12">
+                                    <div class="product-view row">
+                                        <div class="left-content-product">
+                                            <div
+                                                class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
+                                                <div class="box-image">
+                                                    <div class="lSSlideOuter ">
+                                                        <div class="lSSlideWrapper usingCss">
+                                                            <ul style="list-style-type: none; padding: 0px 0px 0%; width: 2350px; transform: translate3d(-470px, 0px, 0px); height: 470px;"
+                                                                id="imageGallery" class="lightSlider lSSlide">
+                                                                @foreach($images as $image)
+                                                                    <li data-thumb="{{ asset($image -> link) }}"
+                                                                        data-src="{{ asset($image -> link) }}"
+                                                                        class="clone left"
+                                                                        style="width: 470px; margin-right: 0px;">
+                                                                        <a href="javascript:;" class="play_video">
+                                                                            <i class="fa fa-play-circle"></i>
+                                                                        </a>
+                                                                        <img
+                                                                            src="{{ asset($image -> link) }}"
+                                                                            alt="" class="slide_img_play">
+                                                                    </li>
+                                                                @endforeach
+                                                            </ul>
+                                                            <div class="lSAction"><a class="lSPrev"></a><a
+                                                                    class="lSNext"></a></div>
+                                                        </div>
+                                                        <ul class="lSPager lSGallery"
+                                                            style="margin-top: 5px; transition-duration: 400ms; width: 356.75px; transform: translate3d(0px, 0px, 0px);">
+                                                            @foreach($images as $key => $image)
+                                                                @if($key > 0)
+                                                                    <li style="width:100%;width:113.75px;margin-right:5px"
+                                                                        class="active">
+                                                                        <a href="#"><img
+                                                                                src="{{ asset($image -> link) }}"></a>
+                                                                    </li>
+                                                                @endif
+                                                            @endforeach
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
-                                </div>
+                                            </div>
 
-                                <div class="content-product-right col-md-4 col-sm-12 col-xs-12">
-                                    <div class="title-product">
-                                        <h1>{{ $product -> name }}</h1>
-                                    </div>
-                                    <!-- Review ---->
-                                    <div class="box-review form-group">
-                                        <div id="ratings"
-                                             style="width: 146px; height: 24px; position: relative; cursor: default; user-select: none;">
-                                            <div class="rate-base-layer"
-                                                 style="width: 100%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: block; white-space: nowrap;">
-                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                                            </div>
-                                            <div class="rate-select-layer"
-                                                 style="width: 100%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: block; white-space: nowrap;">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                            </div>
-                                            <div class="rate-hover-layer"
-                                                 style="width: 0%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: none; white-space: nowrap;">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                            </div>
-                                        </div>
-                                        <input type="hidden" id="rate_value" value="5">
-                                        <span class="text-red">Lượt mua: 464</span>
-                                        |
-                                        <span class="text-red">Lượt xem: 4.233</span>
-                                        |
-                                        <span><i class="fa fa-truck"></i> Giao hàng toàn quốc</span>
-                                    </div>
+                                            <div class="content-product-right col-md-4 col-sm-12 col-xs-12">
+                                                <div class="title-product">
+                                                    <h1>{{ $product -> name }}</h1>
+                                                </div>
+                                                <!-- Review ---->
+                                                <div class="box-review form-group">
+                                                    <div id="ratings"
+                                                         style="width: 146px; height: 24px; position: relative; cursor: default; user-select: none;">
+                                                        <div class="rate-base-layer"
+                                                             style="width: 100%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: block; white-space: nowrap;">
+                                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                        </div>
+                                                        <div class="rate-select-layer"
+                                                             style="width: 100%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: block; white-space: nowrap;">
+                                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                        </div>
+                                                        <div class="rate-hover-layer"
+                                                             style="width: 0%; height: 24px; overflow: hidden; position: absolute; top: 0px; display: none; white-space: nowrap;">
+                                                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" id="rate_value" value="5">
+                                                    <span class="text-red">Lượt mua: 464</span>
+                                                    |
+                                                    <span class="text-red">Lượt xem: 4.233</span>
+                                                    |
+                                                    <span><i class="fa fa-truck"></i> Giao hàng toàn quốc</span>
+                                                </div>
 
-                                    <div class="product-label form-group">
-                                        <div class="product_page_price" itemprop="offerDetails" itemscope=""
-                                             itemtype="http://data-vocabulary.org/Offer">
+                                                <div class="product-label form-group">
+                                                    <div class="product_page_price" itemprop="offerDetails" itemscope=""
+                                                         itemtype="http://data-vocabulary.org/Offer">
                                     <span class="price">
-                                        <span class="price-new" itemprop="price">{{ getSalePrice($product->price, $product->discount) }}</span>
+                                        <span class="price-new"
+                                              itemprop="price">{{ getSalePrice($product->price, $product->discount) }}</span>
                                     </span>
-                                            <span class="small price_old" style="padding: 3px;"></span>
-                                        </div>
+                                                        <span class="small price_old" style="padding: 3px;"></span>
+                                                    </div>
 
-                                        <div class="stock"><span>Tình trạng:</span> <span
-                                                class="status-stock">Còn hàng</span>
-                                        </div>
-                                    </div>
+                                                    <div class="stock"><span>Tình trạng:</span> <span
+                                                            class="status-stock">Còn hàng</span>
+                                                    </div>
+                                                </div>
 
-                                    <div class="product-box-desc">
-                                        <div class="inner-box-desc">
-                                            <div class="brand "><span>Thương hiệu:</span><a href="#">X-Light</a></div>
-                                            <div class="model "><span>Mã sản phẩm:</span> x-light-t10</div>
-                                            <div class="model "><span>Bảo hành:</span></div>
+                                                <div class="product-box-desc">
+                                                    <div class="inner-box-desc">
+                                                        <div class="brand "><span>Thương hiệu:</span><a
+                                                                href="#">X-Light</a></div>
+                                                        <div class="model "><span>Mã sản phẩm:</span> x-light-t10</div>
+                                                        <div class="model "><span>Bảo hành:</span></div>
 
-                                            <div class="model"><span>Năm sản xuất:</span> 2021</div>
+                                                        <div class="model"><span>Năm sản xuất:</span> 2021</div>
 
 
-                                        </div>
-                                    </div>
-                                    <div id="product">
-                                        <div id="box_type_list" data-type="">
+                                                    </div>
+                                                </div>
+                                                <div id="product">
+                                                    <div id="box_type_list" data-type="">
 
-                                        </div>
-                                        <div class="form-group box-info-product">
-                                            <div class="option quantity">
-                                                <div class="input-group quantity-control" unselectable="on"
-                                                     style="-webkit-user-select: none;">
-                                                    <label>Số lượng</label>
-                                                    <input class="form-control" type="text" name="quantity" value="1">
-                                                    <input type="hidden" name="product_id" id="product_id" value="4949">
-                                                    <span class="input-group-addon product_quantity_down">−</span>
-                                                    <span class="input-group-addon product_quantity_up">+</span>
+                                                    </div>
+                                                    <div class="form-group box-info-product">
+                                                        <div class="option quantity">
+                                                            <div class="input-group quantity-control" unselectable="on"
+                                                                 style="-webkit-user-select: none;">
+                                                                <label>Số lượng</label>
+                                                                <input class="form-control" type="text" name="quantity"
+                                                                       value="1">
+                                                                <input type="hidden" name="product_id" id="product_id"
+                                                                       value="4949">
+                                                                <span
+                                                                    class="input-group-addon product_quantity_down">−</span>
+                                                                <span
+                                                                    class="input-group-addon product_quantity_up">+</span>
+                                                            </div>
+                                                        </div>
+                                                        {{--                                            <div class="cart">--}}
+                                                        {{--                                                <button class=" btn btn-danger btn-l" data-toggle="tooltip" title=""--}}
+                                                        {{--                                                        onclick="addTocardNologin(4949);"--}}
+                                                        {{--                                                        data-original-title="Đặt hàng không cần đăng nhập"--}}
+                                                        {{--                                                        style="padding: 10px;padding-left: 30px;padding-right: 30px;"><i--}}
+                                                        {{--                                                        class="fa fa-cart-plus"></i>--}}
+                                                        {{--                                                    Đặt Hàng Nhanh--}}
+                                                        {{--                                                </button>--}}
+                                                        {{--                                            </div>--}}
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <a href="tel:0369.87.87.87" class="btn btn-danger btn-lg "
+                                                           style="width: 100%;"><i class="fa fa-phone"></i> HOTLINE ĐẶT
+                                                            HÀNG:
+                                                            0369.87.87.87</a>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                            {{--                                            <div class="cart">--}}
-                                            {{--                                                <button class=" btn btn-danger btn-l" data-toggle="tooltip" title=""--}}
-                                            {{--                                                        onclick="addTocardNologin(4949);"--}}
-                                            {{--                                                        data-original-title="Đặt hàng không cần đăng nhập"--}}
-                                            {{--                                                        style="padding: 10px;padding-left: 30px;padding-right: 30px;"><i--}}
-                                            {{--                                                        class="fa fa-cart-plus"></i>--}}
-                                            {{--                                                    Đặt Hàng Nhanh--}}
-                                            {{--                                                </button>--}}
-                                            {{--                                            </div>--}}
+                                            <div class="col-md-3 col-sm-12 col-xs-12 col-margin1">
+                                                <div class="typefooter-1">
+                                                    <div class="block-services">
+                                                        <div class="icon-service">
+                                                            <div class="icon"><i class="pe-7s-door-lock">&nbsp;</i>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h6>Giá tốt nhất<br></h6>
+                                                                <p class="no-margin">Cam kết giá tốt nhất cho Khách
+                                                                    hàng</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-service">
+                                                            <div class="icon"><i class="pe-7s-users">&nbsp;</i></div>
+                                                            <div class="text">
+                                                                <h6>Bảo hành</h6>
+                                                                <p class="no-margin">Cam kết bảo hành chính hãng</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-service">
+                                                            <div class="icon"><i class="pe-7s-refresh-2">&nbsp;</i>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h6>Chính sách đổi trả</h6>
+                                                                <p class="no-margin">Đổi trả dễ dàng những Sản phẩm bị
+                                                                    lỗi</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon-service">
+                                                            <div class="icon"><i class="pe-7s-car">&nbsp;</i></div>
+                                                            <div class="text">
+                                                                <h6>Giao hàng đảm bảo</h6>
+                                                                <p class="no-margin">Giao hàng tại nhà</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <a href="tel:0369.87.87.87" class="btn btn-danger btn-lg "
-                                               style="width: 100%;"><i class="fa fa-phone"></i> HOTLINE ĐẶT HÀNG:
-                                                0369.87.87.87</a>
-                                        </div>
-                                        <div class="form-group">
+                                        <!-- Product Tabs -->
+                                        <div class="producttab ">
+                                            <div class="tabsslider  vertical-tabs col-xs-12">
+                                                <div class="tab-content col-lg-12 col-sm-12 col-xs-12">
+                                                    <div id="tab-1" class="tab-pane fade active in">
+                                                        <div id="content-detail" style="padding: 20px">
+                                                            {!! $product->full_desc !!}
+                                                        </div>
+                                                    </div>
 
+                                                    // TRUNG TAM BAO HANH
+
+                                                </div>
+                                            </div>
+                                            <!-- // Product Tabs -->
                                         </div>
+                                        <!-- //Product Tabs -->
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-12 col-xs-12 col-margin1">
-                                    <div class="typefooter-1">
-                                        <div class="block-services">
-                                            <div class="icon-service">
-                                                <div class="icon"><i class="pe-7s-door-lock">&nbsp;</i></div>
-                                                <div class="text">
-                                                    <h6>Giá tốt nhất<br></h6>
-                                                    <p class="no-margin">Cam kết giá tốt nhất cho Khách hàng</p>
-                                                </div>
-                                            </div>
-                                            <div class="icon-service">
-                                                <div class="icon"><i class="pe-7s-users">&nbsp;</i></div>
-                                                <div class="text">
-                                                    <h6>Bảo hành</h6>
-                                                    <p class="no-margin">Cam kết bảo hành chính hãng</p>
-                                                </div>
-                                            </div>
-                                            <div class="icon-service">
-                                                <div class="icon"><i class="pe-7s-refresh-2">&nbsp;</i></div>
-                                                <div class="text">
-                                                    <h6>Chính sách đổi trả</h6>
-                                                    <p class="no-margin">Đổi trả dễ dàng những Sản phẩm bị lỗi</p>
-                                                </div>
-                                            </div>
-                                            <div class="icon-service">
-                                                <div class="icon"><i class="pe-7s-car">&nbsp;</i></div>
-                                                <div class="text">
-                                                    <h6>Giao hàng đảm bảo</h6>
-                                                    <p class="no-margin">Giao hàng tại nhà</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Product Tabs -->
-                            <div class="producttab ">
-                                <div class="tabsslider  vertical-tabs col-xs-12">
-                                    <div class="tab-content col-lg-12 col-sm-12 col-xs-12">
-                                        <div id="tab-1" class="tab-pane fade active in">
-                                            <div id="content-detail" style="padding: 20px">
-                                                {!! $product->full_desc !!}
-                                            </div>
-                                        </div>
-
-                                        // TRUNG TAM BAO HANH
-
-                                    </div>
-                                </div>
-                                <!-- // Product Tabs -->
                             </div>
                         </div>
-                    </div>
-                </div>
-        </section>
+                    </section>
 
+                </div>
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        <style>
+            .footer-middle_area .footer-widgets_info .widgets-essential_stuff,
+            .footer-middle_area, .footer-middle_area a {
+                color: #fff;
+            }
+
+            .footer-middle_area .footer-widgets_info .widgets-essential_stuff > ul > li span {
+                color: #ffffff;
+                font-size: 16px;
+            }
+        </style>
     </div>
+    <script async="">
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i = 0; i < imgDefer.length; i++) {
+                if (imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+                }
+            }
+            $(".category-desc img").css("width", "100%");
+            $(".category-desc img").css("height", "auto");
+        }
+
+        window.onload = init;
+    </script>
+    <script>
+
+        /*----------------------------------------*/
+        /*  Category Menu
+    /*----------------------------------------*/
+        $('.rx-parent').on('click', function () {
+            $('.rx-child').slideToggle();
+            $(this).toggleClass('rx-change');
+        });
+        //    category heading
+        $('.category-heading').on('click', function () {
+            $('.category-menu-list').slideToggle(900);
+        });
+
+        /*-- Category Menu Toggles --*/
+        function categorySubMenuToggle() {
+            var screenSize = $(window).width();
+            if (screenSize <= 991) {
+                $('#cate-toggle .right-menu > a').prepend('<i class="expand menu-expand"></i>');
+                $('.category-menu .right-menu ul').slideUp();
+            } else {
+                $('.category-menu .right-menu > a i').remove();
+                $('.category-menu .right-menu ul').slideDown();
+            }
+        }
+
+        categorySubMenuToggle();
+        $(window).resize(categorySubMenuToggle);
+
+        /*-- Category Sub Menu --*/
+        function categoryMenuHide() {
+            var screenSize = $(window).width();
+            if (screenSize <= 991) {
+                $('.category-menu-list').hide();
+            } else {
+                $('.category-menu-list').show();
+            }
+        }
+
+        categoryMenuHide();
+        // $(window).resize(categoryMenuHide);
+        $('.category-menu-hidden').find('.category-menu-list').hide();
+        $('.category-menu-list').on('click', 'li a, li a .menu-expand', function (e) {
+            var $a = $(this).hasClass('menu-expand') ? $(this).parent() : $(this);
+            $(this).toggleClass('active');
+            if ($a.parent().hasClass('right-menu')) {
+                if ($a.attr('href') === '#' || $(this).hasClass('menu-expand')) {
+                    if ($a.siblings('ul:visible').length > 0) $a.siblings('ul').slideUp();
+                    else {
+                        $(this).parents('li').siblings('li').find('ul:visible').slideUp();
+                        $a.siblings('ul').slideDown();
+                    }
+                }
+            }
+            if ($(this).hasClass('menu-expand') || $a.attr('href') === '#') {
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
 @endsection

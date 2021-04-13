@@ -2,7 +2,40 @@
 <html lang="en"
       class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 <head>
-    @include('UserSite.includes.TopScript')
+    @if($homepage)
+        @include('UserSite.includes.TopScript')
+    @else
+        @include('UserSite.includes.TopScriptNotHome')
+    @endif
+        <style>
+            .header-right_area > ul > li.minicart-wrap > a.minicart-btn:before {
+                content: " ";
+            }
+
+            .header-top_area {
+                padding-top: 40px;
+            }
+
+            .header-top_area .main-menu_area > nav > ul > li > a {
+                padding: 12px 0;
+            }
+
+            .header-middle_area {
+                padding-bottom: 0;
+            }
+
+            .header-main_area .header-sticky.sticky.header-top_area {
+                padding-top: 0 !important;
+            }
+
+            .header-top_area.header-sticky .main-menu_area {
+                padding-top: 24px;
+            }
+
+            .header-right_area > ul > li.minicart-wrap {
+                width: 100%;
+            }
+        </style>
 </head>
 <body class="template-color-1">
 <div id="main-wrapper">
@@ -12,8 +45,10 @@
 
 
     <!-- Content user site here -->
-    <div class="content ">
-        @yield('content')
+    <div class="main-container">
+        <div class="content">
+            @yield('content')
+        </div>
     </div>
 
     <!-- Uren's Footer Area End Here -->
@@ -77,7 +112,9 @@
 <script src="{{ asset('js/mobile.js') }}"></script>
 
 
-<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;"><iclass="fa fa-angle-double-up"></i></a>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">
+    <iclass
+    ="fa fa-angle-double-up"></i></a>
 <script>
     window.addEventListener('load', function () {
         var allimages = document.getElementsByTagName('img');

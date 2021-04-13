@@ -8,11 +8,11 @@
                     </div>
                     <div class="header-logo_area" style="padding-top:16px;">
                         <a href="/">
-                            <img src="./gtrvn/logo.webp?v=1" alt="Logo">
+                            <img src="{{asset("./gtrvn/logo.webp")}}?v=1" alt="Logo">
                         </a>
                     </div>
                 </div>
-                <div class="d-none d-lg-block">
+                <div class="col-md-8 d-none d-lg-block">
                     <div class="header-top_area">
                         <div class="container-fluid">
                             <div class="row">
@@ -54,25 +54,6 @@
                             </div>
                         </div>
                     </div>
-                    <style>
-                        .search-header-w{
-                            margin-top:5px;margin-right:12px;float:right;
-                            position: absolute;
-                            top: 35px;
-                            right: 40px;
-                        }
-                        .search-header-w .ico-search{ width:36px;height:36px;text-align:center;line-height:32px;border-radius:100%;border:2px solid #e5e5e5;font-size:14px;color:#282828;
-                            position: absolute;
-                            right: -41px;
-
-                        }
-                        .search-header-w .ico-search .fa{
-                            color: #fff;
-                        }
-                        .search-header-w .ico-search:hover{ cursor:pointer; }
-                        .search-header-w{ float:left;margin:0 0px 12px 20px; }
-
-                    </style>
                 </div>
             </div>
         </div>

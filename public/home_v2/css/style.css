@@ -4969,9 +4969,9 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /*.header-top_area .main-menu_area > nav > ul > li {*/
-    /*    padding-right: 10px;*/
-    /*}*/
+    .header-top_area .main-menu_area > nav > ul > li {
+        padding-right: 10px;
+    }
 }
 
 .header-top_area .main-menu_area > nav > ul > li:hover > a {

@@ -22,16 +22,16 @@
                 </div>
                 <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
                     <div class="row no-gutter">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-slide_item">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 product-slide_item">
                             @include('UserSite.components.product.SingleProduct')
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-slide_item">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 product-slide_item">
                             @include('UserSite.components.product.SingleProduct')
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-slide_item">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 product-slide_item">
                             @include('UserSite.components.product.SingleProduct')
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-slide_item">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 product-slide_item">
                             @include('UserSite.components.product.SingleProduct')
                         </div>
                     </div>

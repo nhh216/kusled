@@ -1,4 +1,4 @@
-@extends('UserSite.layouts.main.MainLayout')
+@extends('UserSite.layouts.main.MainLayout', ['homepage'=>false])
 @section('content')
     <!-- Main Container  -->
         <div id="products-page" class="container ">
@@ -63,7 +63,7 @@
                 }
             }
         </style>
-        <div class="row mt30 mb30">
+        <div class="row mt50 mb30">
             <div class="col-md-12">
                 <div class="article-description">
                     <div class="home-section-head">
