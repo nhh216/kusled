@@ -34,4 +34,15 @@ class UserSiteController extends Controller
     public function postDetail() {
         return view('./UserSite/pages/post/post_detail/PostDetail');
     }
+
+    public function categoryPage($slug) {
+        $categories = Category::where('type', Category::TYPE_PRODUCT)->get();
+        $category = $categories->where('slug',$slug)->first()->with("products")->get();
+        $products = $category[0] -> products;
+        return view('./UserSite/pages/category/Category')->with([
+            'categories' => $categories,
+            'category'   => $category[0],
+            'products'   => $products
+        ]);
+    }
 }

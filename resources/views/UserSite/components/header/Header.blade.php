@@ -8,7 +8,7 @@
                     </div>
                     <div class="header-logo_area" style="padding-top:16px;">
                         <a href="/">
-                            <img src="{{asset("./gtrvn/logo.webp")}}?v=1" alt="Logo">
+                            <img style="height: 60px;width: 300px;" src="{{asset($logo->link)}}" alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                                         <nav class="main-nav">
                                             <ul>
                                                 <li class="with-sub-menu hover">
-                                                    <a href="/nang-cap-anh-sang" class="clearfix">
+                                                    <a href="/danh-sach-san-pham" class="clearfix">
                                                         <strong>SHOP SẢN PHẨM</strong>
                                                     </a>
                                                 </li>
@@ -30,23 +30,23 @@
                                                         <strong>PHỤ KIỆN ĐỘ ĐÈN</strong>
                                                     </a>
                                                 </li>
-                                                <li class="">
-                                                    <a href="/bao-hanh-gtrvietnam" class="clearfix">
-                                                        <strong>BẢO HÀNH</strong>
-                                                    </a>
+{{--                                                <li class="">--}}
+{{--                                                    <a href="/bao-hanh-gtrvietnam" class="clearfix">--}}
+{{--                                                        <strong>BẢO HÀNH</strong>--}}
+{{--                                                    </a>--}}
 
-                                                </li>
+{{--                                                </li>--}}
                                                 <li class="">
                                                     <a href="/tin-tuc" class="clearfix">
                                                         <strong>TIN TỨC</strong>
                                                     </a>
                                                 </li>
 
-                                                <li class="">
-                                                    <a href="/lien-he-gtrvietnam" class="clearfix">
-                                                        <strong>HỆ THỐNG CHI NHÁNH</strong>
-                                                    </a>
-                                                </li>
+{{--                                                <li class="">--}}
+{{--                                                    <a href="/lien-he-gtrvietnam" class="clearfix">--}}
+{{--                                                        <strong>HỆ THỐNG CHI NHÁNH</strong>--}}
+{{--                                                    </a>--}}
+{{--                                                </li>--}}
                                             </ul>
                                         </nav>
                                     </div>

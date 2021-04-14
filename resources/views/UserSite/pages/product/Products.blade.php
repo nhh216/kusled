@@ -75,27 +75,9 @@
             </div>
         </div>
         <div class="row box_menu_and_product">
+
             <aside class="col-sm-4 col-md-3 content-aside" id="column-left">
-                <div class="row">
-                    <section id="my-menu" class="" style="display: block;">
-                        <div class="bot-menu">
-                            <div class="nav-menu" style="min-width: 230px;">
-                        <span class="title long" style="font-size: 1.6rem;text-transform: uppercase;color: #fff;background-color: #d92b32;padding: 4px;text-align: center;width: 100%;display: block;">
-                            Danh mục sản phẩm</span>
-                                <ul class="my-ul ul-main">
-                                    @foreach($categories as $category)
-                                        <li class="li-main">
-                                            <a href="{{ $category->slug }}" class="a-main makeup">
-                                                <span>{{ $category->name }}</span>
-                                            </a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                                <div class="layout"></div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+                @include('UserSite.includes.SideBar')
             </aside>
 
 

@@ -3060,7 +3060,6 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 /*----------------------------------------*/
 /* ---Product Slide Item--- */
 .product-slide_item .inner-slide {
-    border-right: 1px solid #e5e5e5;
     height: auto !important;
 }
 

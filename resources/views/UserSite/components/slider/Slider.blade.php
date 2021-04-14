@@ -8,31 +8,25 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-
-        <div class="item active">
-            <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style="width:100%;">
-            <div class="carousel-caption">
-                <h3>Los Angeles</h3>
-                <p>LA is always so much fun!</p>
+        @foreach($sliders as $key => $slide)
+            @if( $loop->first )
+            <div class="item active">
+                <img src="{{ asset($slide->link) }}" alt="{{ $slide->name }}" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>{{ $slide->name }}</h3>
+                    <p>{{ $slide->desc }}</p>
+                </div>
             </div>
-        </div>
-
-        <div class="item">
-            <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style="width:100%;">
-            <div class="carousel-caption">
-                <h3>Chicago</h3>
-                <p>Thank you, Chicago!</p>
+            @else
+            <div class="item">
+                <img src="{{ asset($slide->link) }}" alt="{{ $slide->name }}" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>{{ $slide->name }}</h3>
+                    <p>{{ $slide->desc }}</p>
+                </div>
             </div>
-        </div>
-
-        <div class="item">
-            <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York" style="width:100%;">
-            <div class="carousel-caption">
-                <h3>New York</h3>
-                <p>We love the Big Apple!</p>
-            </div>
-        </div>
-
+            @endif
+        @endforeach
     </div>
 
     <!-- Left and right controls -->

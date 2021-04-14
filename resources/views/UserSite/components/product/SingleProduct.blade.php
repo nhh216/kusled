@@ -1,12 +1,12 @@
 <div class="inner-slide">
         <div class="single-product">
             <div class="product-img">
-                <a href="https://gtrvietnam.com/bi-led-titan-black-45w"
+                <a href="{{ $product->slug }}"
                    tabindex="0">
                     <img class="primary-img"
-                         src="./gtrvn/25-08-2020-3-1598365706-bi led titan black (4).jpg"
-                         data-src="https://gtrvietnam.com/upload/images/320x320/2020/08/25/25-08-2020-3-1598365706-bi led titan black (4).jpg"
-                         alt="Bi Led TiTan Black">
+                         src="{{ asset($product->images[0] -> link) }}"
+                         data-src="{{ asset($product->images[0] -> link) }}"
+                         alt="{{ $product->name }}">
                 </a>
             </div>
             <div class="product-content">
@@ -25,10 +25,9 @@
                     </div>
                     <h6 class="title_name"><a class="product-name"
                                               href="https://gtrvietnam.com/bi-led-titan-black-45w"
-                                              tabindex="0">Bi Led TiTan
-                            Black</a></h6>
+                                              tabindex="0">{{ $product->name }}</a></h6>
                     <div class="price-box">
-                        <span class="new-price new-price-2">6.000.000 đ</span>
+                        <span class="new-price new-price-2">{{ getSalePrice($product->price, $product->discount) }}</span>
 
                     </div>
                 </div>
