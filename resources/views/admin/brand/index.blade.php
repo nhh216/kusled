@@ -7,6 +7,7 @@
             <div class="col-sm-6">
                 <h1 class="m-0">Thương hiệu</h1>
             </div><!-- /.col -->
+            <a class="btn-card-header btn btn-primary" href="{{  route('admin.brand.create')  }}">Thêm mới</a>
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>

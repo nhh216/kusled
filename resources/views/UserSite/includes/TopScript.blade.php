@@ -22,7 +22,12 @@
 <link rel="stylesheet" id="color_scheme" href="{{ asset('css/home5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" id="responsive-css" href="{{ asset('css/responsive.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" id="custom_main-css" href="{{ asset('css/custom_main.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
-{{--<link rel="stylesheet" id="custom_mobile-css" href="{{ asset('css/custom_mobile.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
+<script>
+    var wd_width = window.innerWidth;
+    if (wd_width <= 1024) {
+        document.write('<link rel="stylesheet" id="custom_mobile-css" href="{{ asset('css/custom_mobile.css') }}" as="style">');
+    }
+</script>
 <link rel="stylesheet" href="{{ asset('css/ion-fonts.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">

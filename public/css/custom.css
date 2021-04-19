@@ -7,10 +7,24 @@
     #slider {
         display: none;
     }
-}@media (min-width: 1024px) {
+    #left-banner {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
     #slider {
         display: none;
     }
+    .megamenu-style-dev {
+        display: block;
+    }
+    #header-pc {
+        display: none;
+    }
+    #left-banner {
+        display: none;
+    }
+
 }
 /*@media (min-width: 1024px) {*/
 /*    #header-pc {*/
@@ -40,6 +54,12 @@
     .carousel-inner img{
         width: 100%;
         height: 600px !important;
+    }
+    #header-pc {
+        display: block;
+    }
+    #left-banner {
+        display: block;
     }
 }
 .banner-left {

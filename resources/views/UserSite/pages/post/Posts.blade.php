@@ -1,4 +1,4 @@
-@extends('UserSite.layouts.main.MainLayout')
+@extends('UserSite.layouts.main.MainLayout', ['homepage' =>  false])
 @section('content')
     <div class="container">
         <ul class="breadcrumb">

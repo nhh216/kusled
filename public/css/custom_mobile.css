@@ -200,6 +200,7 @@ header.typeheader-5 #sosearchpro {
 }
 
 header.typeheader-5 .header-middle {
+    margin-top: -25px !important;
     z-index: 99999;
 }
 

@@ -20,7 +20,7 @@
                     @include('UserSite.components.banner.LeftBanner')
 
                 </div>
-                <div id="left-banner" class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
+                <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
                 <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
                     <div class="row no-gutter">
                         @foreach($products as $product)
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=1">
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=2">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=5">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=22">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=3">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-2 mb-3">
+                <div class="col-4 col-md-2 col-sm-6 col-xs-6 mb-3">
                     <div class="inner-slide">
                         <div class="single-product">
                             <a href="https://gtrvietnam.com/san-pham/?brand=21">
@@ -108,7 +108,7 @@
     <div class="uren-blog_area bg--white_smoke" style="padding-top: 0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 col-12">
+                <div class="col-lg-12 col-12 col-sm-6 col-xs-6">
                     <div class="section-title_area">
                         <span>Tin tức</span>
                         <h3>TIN TỨC ĐỘ ĐÈN</h3>

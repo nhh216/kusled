@@ -7,10 +7,8 @@
                 <div class="container">
                 </div>
                 <div class="content-main-w">
-                    <link rel="stylesheet"
-                          href="https://gtrvietnam.com/templates/default/public/js/lightgallery/lightgallery.min.css">
-                    <link rel="stylesheet"
-                          href="https://gtrvietnam.com/templates/default/public/js/lightslider/lightslider.min.css">
+
+                    <link type="text/css" rel="stylesheet" href="{{ asset("css/lightgallery.css") }}" />
 
                     <section class="product-page not-home">
                         <div class="main-container container">
@@ -48,42 +46,14 @@
                                             <div
                                                 class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
                                                 <div class="box-image">
-                                                    <div class="lSSlideOuter ">
-                                                        <div class="lSSlideWrapper usingCss">
-                                                            <ul style="list-style-type: none; padding: 0px 0px 0%; width: 2350px; transform: translate3d(-470px, 0px, 0px); height: 470px;"
-                                                                id="imageGallery" class="lightSlider lSSlide">
-                                                                @foreach($images as $image)
-                                                                    <li data-thumb="{{ asset($image -> link) }}"
-                                                                        data-src="{{ asset($image -> link) }}"
-                                                                        class="clone left"
-                                                                        style="width: 470px; margin-right: 0px;">
-                                                                        <a href="javascript:;" class="play_video">
-                                                                            <i class="fa fa-play-circle"></i>
-                                                                        </a>
-                                                                        <img
-                                                                            src="{{ asset($image -> link) }}"
-                                                                            alt="" class="slide_img_play">
-                                                                    </li>
-                                                                @endforeach
-                                                            </ul>
-                                                            <div class="lSAction"><a class="lSPrev"></a><a
-                                                                    class="lSNext"></a></div>
-                                                        </div>
-                                                        <ul class="lSPager lSGallery"
-                                                            style="margin-top: 5px; transition-duration: 400ms; width: 356.75px; transform: translate3d(0px, 0px, 0px);">
-                                                            @foreach($images as $key => $image)
-                                                                @if($key > 0)
-                                                                    <li style="width:100%;width:113.75px;margin-right:5px"
-                                                                        class="active">
-                                                                        <a href="#"><img
-                                                                                src="{{ asset($image -> link) }}"></a>
-                                                                    </li>
-                                                                @endif
-                                                            @endforeach
-                                                        </ul>
-                                                    </div>
+                                                    <ul id="imageGallery">
+                                                        @foreach($images as $image)
+                                                            <li data-thumb="{{ asset($image -> link) }}" data-src="{{ asset($image -> link) }}">
+                                                                <img src="{{ asset($image -> link) }}" />
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
                                                 </div>
-
                                             </div>
 
                                             <div class="content-product-right col-md-4 col-sm-12 col-xs-12">

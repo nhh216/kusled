@@ -110,7 +110,25 @@
 {{--<script src="{{ asset('js/custom_mobile.js') }}"></script>--}}
 
 <script src="{{ asset('js/mobile.js') }}"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#imageGallery').lightSlider({
+            gallery:true,
+            item:1,
+            loop:true,
+            thumbItem:9,
+            slideMargin:0,
+            enableDrag: false,
+            currentPagerPosition:'left',
+            onSliderLoad: function(el) {
+                el.lightGallery({
+                    selector: '#imageGallery .lslide'
+                });
+            }
+        });
+    });
+</script>
 
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">
     <iclass

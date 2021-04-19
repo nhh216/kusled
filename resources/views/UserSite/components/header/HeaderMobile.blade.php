@@ -1,17 +1,16 @@
-<div class="header-middle ">
-    <div class="container">
+<div class="header-middle">
         <div class="row sec_head_hotline" style="height: 40px;background-color: #272727;">
             <div class="col-sm-6 col-xs-6">
-                <a href="tel:0369.87.87.87" style="color: #fff;"> Hotline: 0369.87.87.87</a>
+                <a href="tel:0369.87.87.87" style="color: #fff; margin-left: 30px"> Hotline: 0369.87.87.87</a>
             </div>
             <div class="col-sm-6 col-xs-6">
-                <a href="/lien-he-gtrvietnam" class="contact" style="color: #fff;">Liên hệ</a>
+                <a href="" class="contact" style="color: #fff; margin-right: 20px">Liên hệ</a>
             </div>
         </div>
         <div class="row">
-            <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12" style=" background-color: #000; height: 50px; width: 100%">
                 <div class="logo">
-                    <a href="/"><img src="{{asset($logo->link)}}" title="LOGO Auto365" alt="LOGO GTRVIETNAM"></a>
+                    <a href="/"><img src="{{asset($logo->link)}}" style=" height: 100%; position: absolute; margin-left: 30px" title="{{asset($logo-> name)}}" alt="{asset($logo-> name)}}"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 middle-right">
@@ -62,5 +61,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>

@@ -37,8 +37,10 @@ $(document).ready(function () {
 
     var wd_width = $(window).width();
     if (wd_width <= 1024) {
+        $(".section-title_area").css("margin-top","75px")
+        $(".section-title_area h3").css("padding-bottom","0px")
         $("#header-pc").css("display","none")
-        $("#column-left").css("display","none")
+        $("#left-banner").css("display","none")
         $("#header").addClass("typeheader-5")
         $("#main-wrapper").addClass("main-wrapper")
         $("#products-page").addClass("main-container")
@@ -64,6 +66,8 @@ $(document).ready(function () {
             // $("#header-pc").css("display","none")
             // $("#header-mobile").css("display","block")
             $("#column-left").css("display","none")
+            $(".section-title_area").css("margin-top","75px")
+            $("#left-banner").css("display","none")
             $("#header").removeClass("header-main_area")
             $("#header").removeClass("header-main_area-2")
             $("#header").removeClass("bg--black")
@@ -78,6 +82,7 @@ $(document).ready(function () {
         else {
             // $("#header-pc").css("display","block")
             // $("#header-mobile").css("display","none")
+            $("#left-banner").css("display","block")
             $("#column-left").css("display","block")
             $("#header").removeClass("typeheader-5")
             $("#header").addClass("header-main_area")
