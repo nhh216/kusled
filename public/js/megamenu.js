@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
     var wd_width = $(window).width();
-    if (wd_width <= 1024) {
+    if (wd_width < 1024) {
         $(".section-title_area").css("margin-top","75px")
         $(".section-title_area h3").css("padding-bottom","0px")
         $("#header-pc").css("display","none")
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         var sp_width = $(window).width();
-        if (sp_width <= 1024) {
+        if (sp_width < 1024) {
             // $("#header-pc").css("display","none")
             // $("#header-mobile").css("display","block")
             $("#column-left").css("display","none")

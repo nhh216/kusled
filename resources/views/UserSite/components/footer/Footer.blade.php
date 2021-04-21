@@ -87,22 +87,4 @@
             </div>
         </div>
     </div>
-    <div class="footer-bottom_area">
-        <div class="container-fluid">
-            <div class="footer-bottom_nav">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="copyright">
-                                <span>Copyright © 2020 gtrvietnam.com All rights reserved. <a target="_blank"
-                                                                                              href="http://stackgoo.com/thiet-ke-website-chuyen-nghiep">Thiết kế web STACKGOO.COM</a></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="payment">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

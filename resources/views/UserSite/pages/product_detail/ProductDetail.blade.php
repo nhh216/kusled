@@ -43,19 +43,11 @@
                                 <div id="content" class="col-md-12">
                                     <div class="product-view row">
                                         <div class="left-content-product">
-                                            <div
-                                                class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
-                                                <div class="box-image">
-                                                    <ul id="imageGallery">
-                                                        @foreach($images as $image)
-                                                            <li data-thumb="{{ asset($image -> link) }}" data-src="{{ asset($image -> link) }}">
-                                                                <img src="{{ asset($image -> link) }}" />
-                                                            </li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <div class=" col-md-5 col-sm-12 col-xs-12" style="padding: 30px; height: 415px; margin-top: 10px">
 
+                                               @include('UserSite.pages.product_detail.ProductImageSlider')
+
+                                            </div>
                                             <div class="content-product-right col-md-4 col-sm-12 col-xs-12">
                                                 <div class="title-product">
                                                     <h1>{{ $product -> name }}</h1>
@@ -250,10 +242,10 @@
         /*----------------------------------------*/
         /*  Category Menu
     /*----------------------------------------*/
-        $('.rx-parent').on('click', function () {
-            $('.rx-child').slideToggle();
-            $(this).toggleClass('rx-change');
-        });
+        // $('.rx-parent').on('click', function () {
+        //     $('.rx-child').slideToggle();
+        //     $(this).toggleClass('rx-change');
+        // });
         //    category heading
         $('.category-heading').on('click', function () {
             $('.category-menu-list').slideToggle(900);

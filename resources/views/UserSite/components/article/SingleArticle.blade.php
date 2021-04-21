@@ -1,4 +1,4 @@
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
@@ -15,7 +15,7 @@
                 tabindex="0">AUTO365 SÀI GÒN – ĐẠI LÝ GTR VIỆT NAM… </a></h3>
     </div>
 </div>
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
@@ -32,7 +32,7 @@
                 tabindex="0">AUTO365 SÀI GÒN – ĐẠI LÝ GTR VIỆT NAM… </a></h3>
     </div>
 </div>
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
@@ -49,7 +49,7 @@
                 tabindex="0">AUTO365 SÀI GÒN – ĐẠI LÝ GTR VIỆT NAM… </a></h3>
     </div>
 </div>
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
@@ -66,7 +66,7 @@
                 tabindex="0">AUTO365 SÀI GÒN – ĐẠI LÝ GTR VIỆT NAM… </a></h3>
     </div>
 </div>
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
@@ -83,7 +83,7 @@
                 tabindex="0">AUTO365 SÀI GÒN – ĐẠI LÝ GTR VIỆT NAM… </a></h3>
     </div>
 </div>
-<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6">
     <div class="blog-img img-hover_effect">
         <a href="https://gtrvietnam.com/auto365-sai-gontru-so-chinh-he-thong-auto365-vn"
            tabindex="0">
