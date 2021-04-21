@@ -124,7 +124,7 @@ ul.breadcrumb {
 /*//top*/
 .fixed_topmenu {
     position: fixed;
-    top: 110px;
+    top: 105px;
     background-color: #dedede;
     display: block;
     width: 100%;
