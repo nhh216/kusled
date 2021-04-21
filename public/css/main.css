@@ -310,9 +310,9 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     border-left: 1px solid #e5e5e5;
 }
 
-.best-selling-product_area {
-    padding-top: 75px;
-}
+/*.best-selling-product_area {*/
+/*    padding-top: 75px;*/
+/*}*/
 
 .best-selling-product_area .best-selling_banner {
     background-repeat: no-repeat;

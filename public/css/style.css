@@ -3515,9 +3515,9 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 /* ---Best Selling Product--- */
-.best-selling-product_area {
-    padding-top: 75px;
-}
+/*.best-selling-product_area {*/
+/*    padding-top: 75px;*/
+/*}*/
 
 .best-selling-product_area .best-selling_banner {
     background-image: url("../images/banner/2-6.jpg");

@@ -1,7 +1,7 @@
 @extends('UserSite.layouts.main.MainLayout',['homepage'=>true])
 @section('content')
     <!-- Begin Uren's Banner Area -->
-    <div class="slider-banner" style="margin-top: 15px">
+    <div class="slider-banner">
 
         @include('UserSite.components.slider.Slider')
 

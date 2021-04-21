@@ -30,7 +30,6 @@
 <link rel="stylesheet" href="{{ asset("home_v2/css/ion-fonts.css") }}">
 <link rel="stylesheet" href="{{ asset("home_v2/css/style.css") }}">
 <link rel="stylesheet" href="{{ asset("home_v2/custom.css") }}">
-{{--<link rel="stylesheet" id="custom_mobile-css" href="{{ asset('css/custom_mobile.css') }}" as="style">--}}
 <script>
     var wd_width = window.innerWidth;
     if (wd_width <= 1024) {
