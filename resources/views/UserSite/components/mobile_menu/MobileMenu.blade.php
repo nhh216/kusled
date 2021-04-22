@@ -15,7 +15,7 @@
             </a>
         </li>
         <li>
-            <a href="/san-pham" style="color: #000;"> <i class="fa fa-list" aria-hidden="true"></i>
+            <a href="/danh-sach-san-pham" style="color: #000;"> <i class="fa fa-list" aria-hidden="true"></i>
                 Sản phẩm
             </a>
 

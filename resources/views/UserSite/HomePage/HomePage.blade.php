@@ -105,7 +105,7 @@
 {{--    </div>--}}
     <!-- Uren's Brand Area End Here -->
     <!-- Begin Uren's Blog Area -->
-    <div class="uren-blog_area bg--white_smoke" style="padding-top: 0">
+    <div class="uren-blog_area bg--white_smoke" style="padding-top: 0; margin-top: 50px">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-12 col-sm-6 col-xs-6 mb30">

@@ -34,11 +34,15 @@
 {{--                                                    <a href="/bao-hanh-gtrvietnam" class="clearfix">--}}
 {{--                                                        <strong>BẢO HÀNH</strong>--}}
 {{--                                                    </a>--}}
-
 {{--                                                </li>--}}
                                                 <li class="">
                                                     <a href="/tin-tuc" class="clearfix">
                                                         <strong>TIN TỨC</strong>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="/tin-tuc" class="clearfix">
+                                                        <strong>LIÊN HỆ</strong>
                                                     </a>
                                                 </li>
 
@@ -59,7 +63,7 @@
         </div>
     </div>
 </div>
-<div id="header-mobile">
+<div id="header-mobile" style="top: 0px">
     @include('UserSite.components.header.HeaderMobile')
     @include('UserSite.components.mobile_menu.MobileMenu')
 </div>

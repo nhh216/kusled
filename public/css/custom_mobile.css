@@ -200,6 +200,7 @@ header.typeheader-5 #sosearchpro {
 }
 
 header.typeheader-5 .header-middle {
+    top: 0px;
     z-index: 99999;
 }
 
@@ -524,7 +525,6 @@ legend {
 .main-container {
     background: #fff;
     max-width: 1000px;
-    margin: 25px auto 25px auto;
     position: relative;
 }
 
@@ -1040,8 +1040,6 @@ footer .bottom {
 }
 
 @media screen and (max-width: 678px) {
-    .main-container {
-    }
 
     .animation-element,
     .animation-element:nth-of-type(4n-3),

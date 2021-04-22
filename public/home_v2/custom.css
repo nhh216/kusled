@@ -69,6 +69,18 @@
         display: none !important;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .slider-banner {
+        margin-top: 160px !important;
+    }
+    .main-wrapper {
+        margin-top: 160px !important;
+    }
+    #banner {
+        margin-top: 160px !important;
+    }
+
+}
 
 @media (max-width: 1599px) {
     .common-not-home .header-main_area-2 .custom-category_col {

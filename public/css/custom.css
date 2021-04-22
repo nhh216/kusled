@@ -2,12 +2,31 @@
     .slider-banner {
         margin-top: 160px !important;
     }
+    #banner {
+        margin-top: 160px !important;
+    }
     #left-banner {
         display: none;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .slider-banner {
+        margin-top: 160px !important;
+    }
+    .main-wrapper {
+        margin-top: 160px !important;
+    }
+    #banner {
+        margin-top: 160px !important;
+    }
+
+}
+
 @media (min-width: 1024px) {
     .slider-banner {
+        margin-top: 160px !important;
+    }
+    #banner {
         margin-top: 160px !important;
     }
     .megamenu-style-dev {
@@ -44,6 +63,9 @@
         display: none
     }
     .slider-banner {
+        margin-top: 15px !important;
+    }
+    #banner {
         margin-top: 15px !important;
     }
     .carousel-inner img{

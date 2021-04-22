@@ -1,11 +1,6 @@
 <div class="header-middle">
         <div class="row sec_head_hotline" style="height: 40px;background-color: #272727;">
-            <div class="col-sm-6 col-xs-6">
-                <a href="tel:0369.87.87.87" style="color: #fff; margin-left: 30px"> Hotline: 0369.87.87.87</a>
-            </div>
-            <div class="col-sm-6 col-xs-6">
-                <a href="" class="contact" style="color: #fff; margin-right: 20px">Liên hệ</a>
-            </div>
+            <a href="tel:0369.87.87.87" style="color: #fff; margin-left: 30px"> Hotline: 0369.87.87.87</a>
         </div>
         <div class="row">
             <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12" style=" background-color: #000; height: 50px; width: 100%">
@@ -24,7 +19,7 @@
                                         <div class="container-mega">
                                             <ul class="megamenu" data-transition="slide" data-animationtime="250">
                                                 <li>
-                                                    <a href="/nang-cap-anh-sang" class="clearfix">
+                                                    <a href="/danh-sach-san-pham" class="clearfix">
                                                         <strong>SHOP SẢN PHẨM</strong>
                                                     </a>
                                                 </li>
