@@ -43,3 +43,6 @@ Route::resource('brand', 'App\Http\Controllers\admin\BrandController')->only([
 Route::group(['prefix'=>'brand'], function(){
     Route::get('{id}/delete', 'App\Http\Controllers\admin\BrandController@delete')->name('brand.delete');
 });
+
+Route::get('/footer-config', 'App\Http\Controllers\admin\FooterConfigController@create')->name('footer_config.create');
+Route::post('/footer-config', 'App\Http\Controllers\admin\FooterConfigController@store')->name('footer_config.store');
