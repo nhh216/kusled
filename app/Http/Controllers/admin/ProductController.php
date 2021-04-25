@@ -79,22 +79,19 @@ class ProductController extends Controller
                     }
                 }
                 $info = json_encode($info);
-
                 $product = new Product();
                 $product->user_id = Auth::user()->id;
                 $product->name = trim($request->name);
                 $product->slug = changeTitle(trim($request->name));
-                $product->category_id = $request->category_id;
+                $product->category_id = (int)$request->category_id;
                 $product->status = isset($request->status) ? 1 : 0;
-                $product->price = $request->price;
-                $product->discount = $request->discount;
+                $product->price = (double)$request->price;
+                $product->discount = (int)$request->discount;
                 $product->short_desc = isset($request->short_desc) ? $request->short_desc : '';
                 $product->full_desc = isset($request->full_desc) ? $request->full_desc : '';
                 $product->code = trim($request->code);
                 $product->info = $info;
-
                 $product->save();
-
                 if (isset($request->images)) {
                     $data = [];
                     foreach ($request->images as $key => $value) {
@@ -211,10 +208,10 @@ class ProductController extends Controller
                     'user_id' => Auth::user()->id,
                     'name' => trim($request->name),
                     'slug' => changeTitle(trim($request->name)),
-                    'category_id' => $request->category_id,
+                    'category_id' => (int)$request->category_id,
                     'status' => isset($request->status) ? 1 : 0,
-                    'price' => $request->price,
-                    'discount' => $request->discount,
+                    'price' =>(double) $request->price,
+                    'discount' => (int)$request->discount,
                     'short_desc' => isset($request->short_desc) ? $request->short_desc : '',
                     'full_desc' => isset($request->full_desc) ? $request->full_desc : '',
                     'code' => trim($request->code),

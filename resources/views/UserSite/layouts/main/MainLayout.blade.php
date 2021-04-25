@@ -12,10 +12,6 @@
                 content: " ";
             }
 
-            .header-top_area {
-                padding-top: 40px;
-            }
-
             .header-top_area .main-menu_area > nav > ul > li > a {
                 padding: 12px 0;
             }
@@ -39,7 +35,7 @@
 </head>
 <body class="template-color-1">
 <div id="main-wrapper">
-    <header id="header">
+    <header id="header" class="typeheader-5">
         @include('UserSite.components.header.Header')
     </header>
 

@@ -39,9 +39,7 @@ $(document).ready(function () {
     if (wd_width < 1024) {
         $(".section-title_area").css("margin-top","75px")
         $(".section-title_area h3").css("padding-bottom","0px")
-        $("#header-pc").css("display","none")
         $("#left-banner").css("display","none")
-        $("#header").addClass("typeheader-5")
         $("#main-wrapper").addClass("main-wrapper")
         $("#products-page").addClass("main-container")
         $(".header-middle ").css("background-color","#212529")
@@ -49,10 +47,9 @@ $(document).ready(function () {
         removeWidthSubmenu();
         clickMegaMenu();
     } else {
-        $("#header-mobile").css("display","none")
-        $("#header").addClass("header-main_area")
-        $("#header").addClass("header-main_area-2")
-        $("#header").addClass("bg--black")
+        // $("#header-mobile").css("display","none")
+        // $("#header").addClass("header-main_area")
+        // $("#header").addClass("header-main_area-2")
         $("#main-wrapper").removeClass("main-wrapper")
         $("#products-page").removeClass("main-container")
         $("ul.megamenu > li.hover").unbind("click");
@@ -68,10 +65,9 @@ $(document).ready(function () {
             $("#column-left").css("display","none")
             $(".section-title_area").css("margin-top","75px")
             $("#left-banner").css("display","none")
-            $("#header").removeClass("header-main_area")
-            $("#header").removeClass("header-main_area-2")
-            $("#header").removeClass("bg--black")
-            $("#header").addClass("typeheader-5")
+            // $("#header").removeClass("header-main_area")
+            // $("#header").removeClass("header-main_area-2")
+            // $("#header").removeClass("bg--black")
             $("#main-wrapper").addClass("main-wrapper")
             $("#products-page").addClass("main-container")
             $(".header-middle ").css("background-color","#212529")
@@ -84,10 +80,9 @@ $(document).ready(function () {
             // $("#header-mobile").css("display","none")
             $("#left-banner").css("display","block")
             $("#column-left").css("display","block")
-            $("#header").removeClass("typeheader-5")
-            $("#header").addClass("header-main_area")
-            $("#header").addClass("header-main_area-2")
-            $("#header").addClass("bg--black")
+            // $("#header").addClass("header-main_area")
+            // $("#header").addClass("header-main_area-2")
+            // $("#header").addClass("bg--black")
             $("#products-page").removeClass("main-container")
             $("#main-wrapper").removeClass("main-wrapper")
             $("ul.megamenu > li.hover").unbind("click");

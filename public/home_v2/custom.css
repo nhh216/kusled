@@ -58,28 +58,53 @@
 .product-desc_info:hover{
     z-index: 999;
 }
-@media (min-width: 768px) {
-    .d-md-block {
-        display: block !important;
+@media (min-width: 576px) {
+    #left-banner {
+        display: none;
     }
-}
-
-@media (min-width: 992px) {
-    .d-lg-none {
-        display: none !important;
+    #header-pc {
+        display: none;
     }
 }
 @media only screen and (max-width: 1024px) {
-    .slider-banner {
-        margin-top: 160px !important;
-    }
-    .main-wrapper {
-        margin-top: 160px !important;
-    }
-    #banner {
-        margin-top: 160px !important;
+    #header-pc {
+        display: block;
     }
 
+    #left-banner {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #header {
+        background-color: #000;
+    }
+    .megamenu-style-dev {
+        display: block;
+    }
+    #header-pc {
+        display: none;
+    }
+    #left-banner {
+        display: none;
+    }
+
+    #header-pc {
+        display: block;
+    }
+
+    #left-banner {
+        display: block;
+    }
+
+    #header-mobile {
+        display: none;
+    }
+    .article-description {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1599px) {

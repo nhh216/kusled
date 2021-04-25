@@ -63,7 +63,7 @@
                 }
             }
         </style>
-        <div class="row mt50 mb30">
+        <div class="row">
             <div class="col-md-12">
                 <div class="article-description">
                     <div class="home-section-head">

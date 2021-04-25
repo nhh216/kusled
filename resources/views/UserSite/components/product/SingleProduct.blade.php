@@ -1,7 +1,7 @@
 <div class="inner-slide">
         <div class="single-product">
             <div class="product-img">
-                <a href="{{ $product->slug }}"
+                <a href="danh-sach-san-pham/{{ $product->slug }}"
                    tabindex="0">
                     <img class="primary-img"
                          src="{{ asset($product->images[0] -> link) }}"
@@ -24,7 +24,7 @@
                         <span class="text-red big-small">Đã bán 174</span>
                     </div>
                     <h6 class="title_name"><a class="product-name"
-                                              href="https://gtrvietnam.com/bi-led-titan-black-45w"
+                                              href="danh-sach-san-pham/{{ $product->slug }}"
                                               tabindex="0">{{ $product->name }}</a></h6>
                     <div class="price-box">
                         <span class="new-price new-price-2">{{ getSalePrice($product->price, $product->discount) }}</span>

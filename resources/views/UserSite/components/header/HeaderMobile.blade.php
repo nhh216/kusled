@@ -1,5 +1,5 @@
 <div class="header-middle">
-        <div class="row sec_head_hotline" style="height: 40px;background-color: #272727;">
+        <div class="row sec_head_hotline">
             <a href="tel:0369.87.87.87" style="color: #fff; margin-left: 30px"> Hotline: 0369.87.87.87</a>
         </div>
         <div class="row">

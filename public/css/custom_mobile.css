@@ -1553,3 +1553,31 @@ iframe {
 .product-page #imageGallery.has-video li iframe, .product-page #imageGallery.has-video li video{
     height: 357px;
 }
+
+@media (min-width: 576px) {
+    #left-banner {
+        display: none;
+    }
+    #header-pc {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #header-pc {
+        display: none;
+    }
+
+    #left-banner {
+        display: block;
+    }
+    .article-description {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .slider-banner {
+        margin-top: 160px;
+    }
+    .breadcrumb {
+        margin-top: 160px;
+    }
+}

@@ -92,97 +92,6 @@
                 <div class="">
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
-                            <div data-href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-special-edition-se" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="product-item-container item--static">
-                                    <div class="left-block">
-                                        <div class="product-image-container ">
-                                            <a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-special-edition-se" target="_self">
-                                                <img src="https://gtrvietnam.com/upload/images/320x320/2020/03/12/12-03-2020-1584000252-553a290d27a8c2f69bb9_7e60fbf7ac6146debf721fde366881aa_2048x2048 (1).jpg" class="img-2 img-responsive" alt="COMBO ĐỘ BI-XENON GTR SPECIAL EDITION (SE)" onerror="if (this.src != '520x520-logo.png') this.src = 'upload/images/defaults/520x520-logo.png';">
-                                            </a>
-                                        </div>
-
-                                        <!--quickview-->
-                                        <div class="so-quickview">
-                                            <a class="btn-button quickview quickview_handler visible-lg" href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-special-edition-se" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Xem chi tiết</span></a>
-                                        </div>
-                                        <!--end quickview-->
-                                    </div>
-                                    <div class="right-block">
-                                        <h4 class="ellipsis_title" style="overflow-wrap: break-word;"><a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-special-edition-se" target="_self">COMBO ĐỘ BI-XENON GTR SPECIAL EDITION (SE)</a>
-                                        </h4>
-                                        <p class="text-red big-small">(Lượt xem: 8.954)</p>
-                                        <div class="price_on_list_product">
-                                            <div class="price">
-                                                <span class="price-new">3.990.000 đ</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="list_rate_ship_on_list_product">
-                                            <div class="text-left">
-                                                <div class="ratings">
-                                                    <div class="rating-box">
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <span class="text-red big-small">Đã bán 151</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <span class="big-small"><i class="fa fa-truck"></i> Giao hàng <br>toàn quốc</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-150" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="product-item-container item--static">
-                                    <div class="left-block">
-                                        <div class="product-image-container ">
-                                            <a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-150" target="_self">
-                                                <img src="https://gtrvietnam.com/upload/images/320x320/2020/03/18/18-03-2020-0-1584516658-honda-crv_1a458d5692e946848823ec838d8c57ef_2048x2048.jpg" class="img-2 img-responsive" alt="COMBO GTR G2 (BI CẦU GTR LIMITED EDITION + XENON GTR 38W + BALLAST GTR 38W )  Mã SP: Combo GTR G1-2" onerror="if (this.src != '520x520-logo.png') this.src = 'upload/images/defaults/520x520-logo.png';">
-                                            </a>
-                                        </div>
-
-                                        <!--quickview-->
-                                        <div class="so-quickview">
-                                            <a class="btn-button quickview quickview_handler visible-lg" href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-150" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Xem chi tiết</span></a>
-                                        </div>
-                                        <!--end quickview-->
-                                    </div>
-                                    <div class="right-block">
-                                        <h4 class="ellipsis_title" style="overflow-wrap: break-word;"><a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-150" target="_self" style="display: inline;">COMBO GTR G2 (BI CẦU GTR LIMITED EDITION + XENON GTR 38W + BALLAST GTR... </a></h4>
-                                        <p class="text-red big-small">(Lượt xem: 8.669)</p>
-                                        <div class="price_on_list_product">
-                                            <div class="price">
-                                                <span class="price-new">5.500.000 đ</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="list_rate_ship_on_list_product">
-                                            <div class="text-left">
-                                                <div class="ratings">
-                                                    <div class="rating-box">
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <span class="text-red big-small">Đã bán 404</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <span class="big-small"><i class="fa fa-truck"></i> Giao hàng <br>toàn quốc</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div data-href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-151" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="product-item-container item--static">
                                     <div class="left-block">
@@ -229,7 +138,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!--// End Changed listings-->
 

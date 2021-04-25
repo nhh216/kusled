@@ -434,9 +434,6 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     }
 }
 
-.header-middle_area .header-logo_area {
-    padding: 20px 0;
-}
 
 @media (max-width: 991px) {
     .header-middle_area .header-logo_area {

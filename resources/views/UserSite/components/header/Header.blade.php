@@ -2,11 +2,13 @@
     <div class="header-middle_area">
         <div class="container-fluid">
             <div class="row">
+                <div class="telephone " style="color: #fff;">
+                    <i class="fa fa-phone" style="color: red;"></i> Hotline: <a href="tel:0369.87.87.87" style="color: #fff;">0369.87.87.87</a>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-2">
-                    <div class="telephone " style="color: #fff;">
-                        <i class="fa fa-phone" style="color: red;"></i> Hotline: <a href="tel:0369.87.87.87" style="color: #fff;">0369.87.87.87</a>
-                    </div>
-                    <div class="header-logo_area" style="padding-top:16px;">
+                    <div class="header-logo_area" >
                         <a href="/">
                             <img style="height: 60px;width: 300px;" src="{{asset($logo->link)}}" alt="Logo">
                         </a>
