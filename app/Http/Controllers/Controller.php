@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FooterConfig;
 use App\Models\ImageConfig;
 use App\Models\Product;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+use Illuminate\Support\Facades\Hash;
 use View;
 
 class Controller extends BaseController
@@ -21,9 +23,11 @@ class Controller extends BaseController
         $banner = $imageConfig->where('type', ImageConfig::TYPE_BANNER)->first();
         $sliders = $imageConfig->where('type', ImageConfig::TYPE_SLIDER);
         $products = Product::with('images')->get();
+        $footer = FooterConfig::all()->first();
         View::share ( 'logo', $logo );
         View::share ( 'banner', $banner );
         View::share ( 'sliders', $sliders );
         View::share ( 'products', $products );
+        View::share ( 'footer', $footer );
     }
 }

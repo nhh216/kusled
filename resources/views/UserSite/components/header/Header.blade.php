@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="telephone " style="color: #fff;">
-                    <i class="fa fa-phone" style="color: red;"></i> Hotline: <a href="tel:0369.87.87.87" style="color: #fff;">0369.87.87.87</a>
+                    <i class="fa fa-phone" style="color: red;"></i> Hotline: <a href=tel:{{ $footer->phone }} style="color: #fff;">{{ $footer->phone }}</a>
                 </div>
             </div>
             <div class="row">

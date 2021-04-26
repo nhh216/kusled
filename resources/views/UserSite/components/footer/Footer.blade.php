@@ -6,18 +6,15 @@
                     <div class="footer-widgets_info">
                         <div class="widget-short_desc">
                             <div class="footer-widgets_title">
-                                <h3>LIÊN HỆ GTRVIETNAM</h3>
+                                <h3>LIÊN HỆ KUS VIỆT NAM</h3>
                             </div>
                         </div>
                         <div class="widgets-essential_stuff">
                             <ul>
-                                <li><span class="ion-android-map"></span><a
-                                        href="https://gtrvietnam.com/lien-he-gtrvietnam"> Tìm địa
-                                        chỉ 333 trung tâm trên toàn quốc</a></li>
-                                <li><span class="ion-android-call"></span> <a href="tel:0369.87.87.87">
-                                        0369.87.87.87</a></li>
-                                <li><span class="ion-email"></span><a href="mailto:gtrvietnam.com@gmail.com">
-                                        gtrvietnam.com@gmail.com</a></li>
+                                <li><span class="ion-android-call"></span> <a href="tel:{{ $footer->phone }}">
+                                        {{ $footer->phone }}</a></li>
+                                <li><span class="ion-email"></span><a href="mailto:{{ $footer->email }}">
+                                        {{ $footer->email }}</a></li>
                                 <li><span class="ion-ios-alarm"></span> Làm việc từ thứ 2 - thứ 7(8h-17h)</li>
                             </ul>
                         </div>
