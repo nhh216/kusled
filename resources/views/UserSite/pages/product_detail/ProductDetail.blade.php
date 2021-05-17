@@ -125,10 +125,9 @@
                                                             {{--                                            </div>--}}
                                                         </div>
                                                         <div class="form-group">
-                                                            <a href="tel:0369.87.87.87" class="btn btn-danger btn-lg "
+                                                            <a href="tel:{{ $footer->phone }}" class="btn btn-danger btn-lg "
                                                                style="width: 100%;"><i class="fa fa-phone"></i> HOTLINE ĐẶT
-                                                                HÀNG:
-                                                                0369.87.87.87</a>
+                                                                HÀNG: {{ $footer->phone }}</a>
                                                         </div>
                                                         <div class="form-group">
 

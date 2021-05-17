@@ -17,8 +17,9 @@ Route::get('/', 'App\Http\Controllers\HomePageController@index')->name('homePage
 Route::get('/danh-sach-san-pham', 'App\Http\Controllers\UserSiteController@productsPage');
 Route::get('/danh-sach-san-pham/{slug}', 'App\Http\Controllers\UserSiteController@productDetail');
 Route::get('/tin-tuc', 'App\Http\Controllers\UserSiteController@postsPage');
-Route::get('/tin-tuc/{postId}', 'App\Http\Controllers\UserSiteController@postDetail');
+Route::get('/tin-tuc/{slug}', 'App\Http\Controllers\UserSiteController@postDetail');
 Route::get('/danh-muc-san-pham/{slug}', 'App\Http\Controllers\UserSiteController@categoryPage');
+Route::get('/danh-muc-tin-tuc/{slug}', 'App\Http\Controllers\UserSiteController@categoryPostPage');
 
 
 Route::group(['prefix'=>'admin'], function(){

@@ -29,7 +29,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="/bao-hanh-gtrvietnam" class="clearfix">
+                                                    <a href="" class="clearfix">
                                                         <strong>BẢO HÀNH</strong>
                                                     </a>
 
@@ -39,14 +39,7 @@
                                                         <strong>TIN TỨC</strong>
                                                     </a>
                                                 </li>
-
-                                                <li class="">
-                                                    <a href="/lien-he-gtrvietnam" class="clearfix">
-                                                        <strong>HỆ THỐNG CHI NHÁNH</strong>
-                                                    </a>
-                                                </li>
                                             </ul>
-
                                         </div>
                                     </div>
                                 </div>

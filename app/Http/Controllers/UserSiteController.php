@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\Product;
 
 class UserSiteController extends Controller
@@ -31,8 +32,14 @@ class UserSiteController extends Controller
         return view('./UserSite/pages/post/Posts');
     }
 
-    public function postDetail() {
-        return view('./UserSite/pages/post/post_detail/PostDetail');
+    public function postDetail($slug) {
+        $post = Post::where('slug',$slug)->get();
+        $categories = Category::where('type', Category::TYPE_POST)->get();
+        return view('./UserSite/pages/post/post_detail/PostDetail')->with([
+            'post' => $post[0],
+            'categories' => $categories,
+            ]
+        );
     }
 
     public function categoryPage($slug) {
@@ -43,6 +50,17 @@ class UserSiteController extends Controller
             'categories' => $categories,
             'category'   => $category[0],
             'products'   => $products
+        ]);
+    }
+
+    public function categoryPostPage($slug) {
+        $category = Category::where('slug',$slug)->first()->with("posts")->get();
+        dd(Category::where('slug',$slug)->first()->with("posts")->get());
+        $posts = $category[0] -> posts;
+        return view('./UserSite/pages/category/Category')->with([
+            'categories' => $categories,
+            'category'   => $category[0],
+            'posts'      => $posts
         ]);
     }
 }
