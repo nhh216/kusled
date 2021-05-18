@@ -48,6 +48,6 @@
 {{--<meta name="yandex-verification" content="dbe27cd0ae5785a3">--}}
 {{--<meta name="msvalidate.01" content="436D57EA2E2EAB7B688BAE0D9AEF6730">--}}
 {{--<meta name="msvalidate.01" content="34BE4CFABCCD2A158AB4BE65A12AE8C2">--}}
-{{--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">--}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 {{--<link rel="shortcut icon" type="image/png" href="http://kusvietnam.com/upload/images/default/favicon-16x16.png">--}}
 <link rel="stylesheet" id="googleapis-css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600,700" as="style" type="text/css" media="all">
