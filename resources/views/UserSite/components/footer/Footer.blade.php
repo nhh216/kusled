@@ -26,7 +26,7 @@
                                         {{ $footer->phone }}</a></li>
                                 <li><span class="ion-email"></span><a href="mailto:{{ $footer->email }}">
                                         {{ $footer->email }}</a></li>
-                                <li><span class="ion-ios-alarm"></span> Làm việc từ thứ 2 - thứ 7(8h-17h)</li>
+                                <li><span class="ion-ios-alarm"></span> Làm việc từ thứ 2 - chủ nhật (24/24)</li>
                             </ul>
                         </div>
                     </div>
@@ -41,14 +41,14 @@
                                 <div class="footer-widgets">
                                     <ul>
 
-                                        <li><a href="https://gtrvietnam.com/ve-chung-toi">Giới thiệu doanh
+                                        <li><a href="">Giới thiệu doanh
                                                 nghiệp</a></li>
-                                        <li><a href="https://www.youtube.com/channel/UC_w2Lv-lcyMt0uKhqyuUFjw"
+                                        <li><a href=""
                                                target="_blank">Youtube Official GTRVietnam</a></li>
                                         <li>
-                                            <a href="https://www.google.com/maps/place/Auto365.vn/@10.8402808,106.7114748,17z/data=!3m1!4b1!4m5!3m4!1s0x31752903646fc6f9:0x2fc27ee6cb25153d!8m2!3d10.8402755!4d106.7136635"
+                                            <a href=""
                                                target="_blank">Địa chỉ GTRVietnam</a></li>
-                                        <li><a href="https://gtrvietnam.com/lien-he-gtrvietnam">Liên hệ - Góp ý</a>
+                                        <li><a href="/lien-he-gtrvietnam">Liên hệ - Góp ý</a>
                                         </li>
 
                                     </ul>
@@ -60,13 +60,13 @@
                                 </div>
                                 <div class="footer-widgets">
                                     <ul>
-                                        <li><a href="https://gtrvietnam.com/search">Tìm kiếm</a></li>
-                                        <li><a href="https://gtrvietnam.com/pages/about-us">Giới thiệu</a></li>
-                                        <li><a href="https://gtrvietnam.com/pages/chinh-sach-doi-tra">Chính sách đổi
+                                        <li><a href="/search">Tìm kiếm</a></li>
+                                        <li><a href="/pages/about-us">Giới thiệu</a></li>
+                                        <li><a href="/pages/chinh-sach-doi-tra">Chính sách đổi
                                                 trả</a></li>
-                                        <li><a href="https://gtrvietnam.com/pages/chinh-sach-bao-mat">Chính sách Bảo
+                                        <li><a href="/pages/chinh-sach-bao-mat">Chính sách Bảo
                                                 mật</a></li>
-                                        <li><a href="https://gtrvietnam.com/pages/dieu-khoan-dich-vu">Điều khoản
+                                        <li><a href="/pages/dieu-khoan-dich-vu">Điều khoản
                                                 dịch vụ</a></li>
                                     </ul>
                                 </div>
@@ -77,14 +77,12 @@
                                 </div>
                                 <div class="footer-widgets">
                                     <ul>
-                                        <li><a href="https://gtrvietnam.com/nang-cap-anh-sang">NÂNG CẤP ÁNH
-                                                SÁNG </a></li>
-                                        <li><a href="https://gtrvietnam.com/phu-kien-do-den">PHỤ KIỆN ĐỘ ĐÈN</a>
+                                        <li>
+                                            <a href="/nang-cap-anh-sang">NÂNG CẤP ÁNH SÁNG </a>
                                         </li>
-                                        <li><a href="https://gtrvietnam.com/san-pham"> <i
-                                                    class="fa fa-angle-double-right"></i>
-                                                Xem nhiều hơn</a></li>
-
+                                        <li>
+                                            <a href="/phu-kien-do-den">PHỤ KIỆN ĐỘ ĐÈN</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
