@@ -3,7 +3,7 @@
 <link rel="shortcut icon" type="image/png" href="/upload/images/default/favicon-16x16.png"/>
 <link rel="stylesheet" id="googleapis-css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,600,700&display=swap" as="style">
 <link rel="stylesheet" id="lib-css" href="{{ asset('css/fontawesome.min.css') }}"  type="text/css" media="all">
-<link rel="stylesheet" href="{{ asset("admin/plugins/fontawesome-free/css/solid.css") }}">
+{{--<link rel="stylesheet" href="{{ asset("admin/plugins/fontawesome-free/css/solid.css") }}">--}}
 <!-- Libs CSS============================================ -->
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <link rel="stylesheet" id="carousel-css"
