@@ -1,6 +1,6 @@
 <div class="header-middle">
         <div class="row sec_head_hotline">
-            <a href="tel:0369.87.87.87" style="color: #fff; margin-left: 30px"> Hotline: 0369.87.87.87</a>
+            <a href="tel:{{ $footer->phone }}" style="color: #fff; margin-left: 30px"> Hotline: {{ $footer->phone }}</a>
         </div>
         <div class="row">
             <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12" style=" background-color: #000; height: 50px; width: 100%">
