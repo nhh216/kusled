@@ -13,7 +13,7 @@ services:
       - ./:/var/www
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
     networks:
-      - app-network
+      - gimo
 
   nginx:
     image: nginx:alpine
@@ -24,8 +24,7 @@ services:
       - ./:/var/www
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
-      - app-network
-
+      - gimo
 networks:
-  app-network:
+  gimo:
     driver: bridge
