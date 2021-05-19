@@ -1,4 +1,15 @@
 <div class="uren-footer_area">
+    <style>
+        .footer-middle_area .footer-widgets_info .widgets-essential_stuff,
+        .footer-middle_area, .footer-middle_area a {
+            color: #fff;
+        }
+
+        .footer-middle_area .footer-widgets_info .widgets-essential_stuff > ul > li span {
+            color: #ffffff;
+            font-size: 16px;
+        }
+    </style>
     <div class="footer-middle_area">
         <div class="container-fluid">
             <div class="row">
