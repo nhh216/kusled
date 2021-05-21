@@ -9,6 +9,17 @@
         height: 260px !important;
     }
 }
+@media only screen and (max-width: 768px) {
+    #left-banner {
+        display: none;
+    }
+    #header-pc {
+        display: none;
+    }
+    #product-slide .inner-slide {
+        height: 375px !important;
+    }
+}
 @media only screen and (max-width: 1024px) {
     #header-pc {
         display: block;
@@ -20,7 +31,7 @@
         display: none;
     }
     #product-slide .inner-slide {
-        height: 375px !important;
+        height: 330px !important;
     }
 }
 
