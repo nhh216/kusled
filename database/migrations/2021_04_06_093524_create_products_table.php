@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             $table->text('short_desc')->nullable();
             $table->text('full_desc')->nullable();
             $table->string('info')->nullable();
-            $table->decimal('price', $precision = 8, $scale = 2);
+            $table->decimal('price', $precision = 13, $scale = 3);
             $table->integer('discount')->default(0);
             $table->integer('rate')->default(0);
             $table->boolean('status')->default(true);
