@@ -5,6 +5,9 @@
     #header-pc {
         display: none;
     }
+    .inner-slide {
+        height: 260px !important;
+    }
 }
 @media only screen and (max-width: 1024px) {
     #header-pc {
@@ -14,7 +17,9 @@
     #left-banner {
         display: block;
     }
-
+    .inner-slide {
+        height: 260px !important;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -41,6 +46,10 @@
 
     #header-mobile {
         display: none;
+    }
+
+    .inner-slide {
+        height: 330px !important;
     }
 }
 /*@media (min-width: 1024px) {*/
