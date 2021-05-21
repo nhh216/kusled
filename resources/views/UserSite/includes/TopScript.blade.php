@@ -10,7 +10,7 @@
 {{--<link rel="stylesheet" id="pe-icon-7-stroke-css" href="{{ asset('css/pe-icon-7-stroke.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="helper-css" href="{{ asset('css/helper.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="so_searchpro-css" href="{{ asset('css/so_searchpro.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
-{{--<link rel="stylesheet" id="so_megamenu-css" href="{{ asset('css/so_megamenu.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
+<link rel="stylesheet" id="so_megamenu-css" href="{{ asset('css/so_megamenu.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 {{--<link rel="stylesheet" id="so_advanced_search-css" href="{{ asset('css/so_advanced_search.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="so-listing-tabs-css" href="{{ asset('css/so-listing-tabs.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="so-categories-css" href="{{ asset('css/so-categories.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
