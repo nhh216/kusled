@@ -42,12 +42,12 @@
     .megamenu-style-dev {
         display: block;
     }
-    #header-pc {
-        display: none;
-    }
-    #left-banner {
-        display: none;
-    }
+    /*#header-pc {*/
+    /*    display: none;*/
+    /*}*/
+    /*#left-banner {*/
+    /*    display: none;*/
+    /*}*/
 
     #header-pc {
         display: block;

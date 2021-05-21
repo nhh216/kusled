@@ -1562,21 +1562,21 @@ iframe {
         display: none;
     }
 }
-@media only screen and (max-width: 1024px) {
-    #header-pc {
-        display: none;
-    }
+/*@media only screen and (max-width: 1024px) {*/
+/*    #header-pc {*/
+/*        display: none;*/
+/*    }*/
 
-    #left-banner {
-        display: block;
-    }
-    .article-description {
-        margin-bottom: 30px;
-    }
-    .slider-banner {
-        margin-top: 160px;
-    }
-    .breadcrumb {
-        margin-top: 160px;
-    }
-}
+/*    #left-banner {*/
+/*        display: block;*/
+/*    }*/
+/*    .article-description {*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+/*    .slider-banner {*/
+/*        margin-top: 160px;*/
+/*    }*/
+/*    .breadcrumb {*/
+/*        margin-top: 160px;*/
+/*    }*/
+/*}*/
