@@ -450,19 +450,19 @@
 	/*----------------------------------------*/
 	/*  Star Rating Js
 /*----------------------------------------*/
-	$(function () {
-		$('.star-rating').barrating({
-			theme: 'fontawesome-stars'
-		});
-	});
+	// $(function () {
+	// 	$('.star-rating').barrating({
+	// 		theme: 'fontawesome-stars'
+	// 	});
+	// });
 
 	/*-------------------------------------------------*/
 	/* Uren's Sticky Sidebar
 /*-------------------------------------------------*/
-	$('#sticky-sidebar').theiaStickySidebar({
-		// Settings
-		additionalMarginTop: 80
-	});
+	// $('#sticky-sidebar').theiaStickySidebar({
+	// 	// Settings
+	// 	additionalMarginTop: 80
+	// });
 
 	/*-------------------------------------------------*/
 	/* Uren's Bootstraps 4 Tooltip
