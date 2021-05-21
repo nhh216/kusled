@@ -6,7 +6,6 @@
         display: none;
     }
     #product-slide .inner-slide {
-        position: absolute;
         height: 260px !important;
     }
 }
@@ -21,8 +20,7 @@
         display: block;
     }
     #product-slide .inner-slide {
-        position: absolute;
-        height: 260px !important;
+        height: 330px !important;
     }
 }
 
@@ -53,7 +51,6 @@
     }
 
     #product-slide .inner-slide {
-        position: absolute;
         height: 330px !important;
     }
 }
