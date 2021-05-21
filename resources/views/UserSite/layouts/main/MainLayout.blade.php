@@ -79,7 +79,7 @@
 <!-- Lightgallery JS -->
 {{--<script src="{{ asset('gtrvn/lightgallery.min.js') }}"></script>--}}
 <!-- Scroll Top JS -->
-{{--<script src="{{ asset('gtrvn/scroll-top.js') }}"></script>--}}
+<script src="{{ asset('gtrvn/scroll-top.js') }}"></script>
 <!-- Theia Sticky Sidebar JS -->
 {{--<script src="{{ asset('gtrvn/theia-sticky-sidebar.min.js') }}"></script>--}}
 <!-- Waypoints JS -->
