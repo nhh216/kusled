@@ -267,7 +267,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 }
 
 .primary-img:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .product-slide_item .inner-slide .single-product .product-content {
@@ -819,7 +819,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 }
 
 .primary-img:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .uren-blog_area .blog-img {
