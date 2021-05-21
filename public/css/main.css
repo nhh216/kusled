@@ -159,10 +159,10 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     height: auto !important;
 }
 
-.img-hover-effect_area .single-product:hover {
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+/*.img-hover-effect_area .single-product:hover {*/
+/*    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
 
 .bg--white_smoke {
     background-color: #f4f4f4;
