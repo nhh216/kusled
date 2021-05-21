@@ -266,9 +266,9 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     width: 100%;
 }
 
-.product-slide_item .inner-slide .single-product:hover > .product-content {
-    opacity: 0;
-}
+/*.product-slide_item .inner-slide .single-product:hover > .product-content {*/
+/*    opacity: 0;*/
+/*}*/
 
 .product-slide_item .inner-slide .single-product .product-content {
     text-align: center;
@@ -818,9 +818,9 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     height: 120px;
 }
 
-.best-selling-product_area .img-hover-effect_area .single-product:hover .product-content {
-    opacity: 1 !important;
-}
+/*.best-selling-product_area .img-hover-effect_area .single-product:hover .product-content {*/
+/*    opacity: 1 !important;*/
+/*}*/
 
 .uren-blog_area .blog-img {
     height: 180px;
