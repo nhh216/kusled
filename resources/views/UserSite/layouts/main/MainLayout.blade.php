@@ -138,13 +138,6 @@
         }
     }, false);
 </script>
-<a id="scrollUp" href="https://gtrvietnam.com/#top" style="position: fixed; z-index: 2147483647; display: none;"><i
-        class="fa fa-angle-double-up"></i></a>
-
-{{--<script src="/code.php"></script>--}}
-{{--<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","549047665545939");fbq("track","PageView");</script>--}}
-{{--<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=549047665545939&amp;ev=PageView&amp;noscript=1"></noscript>--}}
-{{--<style>#uhchatboz {width: 320px;height: 305px;display: block;background: url("https://uhchat.net/themes/chat-11.png") no-repeat;text-align: center;padding-top: 45px;position: fixed;bottom:-320px;right: 20px;z-index: 99999999999999; box-sizing: content-box;} #uhchatboz iframe{border:none;width:304px !important;height:305px !important;margin:0px !important;position:relative !important;display: inline !important;} #uhchatboz:hover {cursor: pointer;} @media screen and (max-width: 320px){#uhchatboz{right: 0px !important;}} #panel_chat_vatgia{display:none !important;} .zopim{display:none !important;} .zchat{display:none !important;} .copyrightin{display:none !important;} #tawkchat-minified-box{display:none !important;} .embed-responsive{padding-bottom:100% !important;} .sbzoff{display:none !important;} .sbzon{display:none !important;} </style><div id="uhchatboz" onclick="uhchatClick()"><iframe id="uhchatframe" src="/saved_resource.html" width="304px" height="305px" frameborder="0px" style="padding:0px;" allow="autoplay"></iframe></div>--}}
 
 </body>
 </html>
