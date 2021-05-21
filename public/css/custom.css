@@ -5,7 +5,7 @@
     #header-pc {
         display: none;
     }
-    .inner-slide {
+    #product-slide .inner-slide {
         height: 260px !important;
     }
 }
@@ -17,7 +17,7 @@
     #left-banner {
         display: block;
     }
-    .inner-slide {
+    #product-slide .inner-slide {
         height: 260px !important;
     }
 }
@@ -48,7 +48,7 @@
         display: none;
     }
 
-    .inner-slide {
+    #product-slide .inner-slide {
         height: 330px !important;
     }
 }
