@@ -3149,6 +3149,9 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
     margin-bottom: 0;
     display: block;
     font-size: 15px;
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .product-slide_item .inner-slide .single-product .product-content .product-desc_info .rating-box {

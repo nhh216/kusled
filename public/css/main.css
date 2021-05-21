@@ -275,11 +275,14 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 }
 
 .product-slide_item .inner-slide .single-product .product-content .product-desc_info h6 {
-    font-weight: 400;
+    font-weight: 500;
     padding-bottom: 5px;
     margin-bottom: 0;
     display: block;
     font-size: 15px;
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .product-slide_item .inner-slide .single-product .product-content .product-desc_info .rating-box {
