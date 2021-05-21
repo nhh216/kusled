@@ -1,4 +1,4 @@
-<div class="inner-slide">
+<div class="inner-slide" style="height: 330px">
         <div class="single-product">
             <div class="product-img">
                 <a href="danh-sach-san-pham/{{ $product->slug }}"
