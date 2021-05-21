@@ -87,7 +87,7 @@
 <!-- jQuery Zoom JS -->
 {{--<script src="{{ asset('gtrvn/jquery.zoom.min.js') }}"></script>--}}
 
-{{--<script src="{{ asset('gtrvn/dotdotdot.js') }}"></script>--}}
+<script src="{{ asset('gtrvn/dotdotdot.js') }}"></script>
 
 <script src="{{ asset('js/megamenu.js') }}"></script>
 

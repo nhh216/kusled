@@ -36,21 +36,21 @@
 	/*----------------------------------------*/
 	/*  Uren's Main Slider
 /*----------------------------------------*/
-	$('.main-slider').slick({
-		infinite: true,
-		arrows: true,
-		autoplay: true,
-		fade: true,
-		dots: true,
-		autoplaySpeed: 7000,
-		speed: 1000,
-		adaptiveHeight: true,
-		easing: 'ease-in-out',
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<button class="slick-prev"><i class="ion-ios-arrow-back"></i></button>',
-		nextArrow: '<button class="slick-next"><i class="ion-ios-arrow-forward"></i></button>'
-	});
+	// $('.main-slider').slick({
+	// 	infinite: true,
+	// 	arrows: true,
+	// 	autoplay: true,
+	// 	fade: true,
+	// 	dots: true,
+	// 	autoplaySpeed: 7000,
+	// 	speed: 1000,
+	// 	adaptiveHeight: true,
+	// 	easing: 'ease-in-out',
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	prevArrow: '<button class="slick-prev"><i class="ion-ios-arrow-back"></i></button>',
+	// 	nextArrow: '<button class="slick-next"><i class="ion-ios-arrow-forward"></i></button>'
+	// });
 
 	/*----------------------------------------*/
 	/*  Toolbar Button
