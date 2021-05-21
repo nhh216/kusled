@@ -286,7 +286,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 }
 
 .product-slide_item .inner-slide .single-product .product-content .product-desc_info .rating-box {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .product-slide_item .inner-slide .single-product .product-content .product-desc_info .rating-box > ul > li {
