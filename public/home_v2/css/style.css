@@ -3131,8 +3131,8 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
     color: #333333 !important;
 }
 
-.product-slide_item .inner-slide .single-product:hover > .product-content {
-    opacity: 0;
+.primary-img:hover {
+    transform: scale(1.3);
 }
 
 .product-slide_item .inner-slide .single-product:hover > .product-img .add-actions {

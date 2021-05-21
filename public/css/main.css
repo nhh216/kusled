@@ -266,7 +266,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     width: 100%;
 }
 
-.product-slide_item .inner-slide .single-product:hover > .primary-img {
+.primary-img:hover {
     transform: scale(1.3);
 }
 
@@ -818,7 +818,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
     height: 120px;
 }
 
-.product-slide_item .inner-slide .single-product:hover > .primary-img {
+.primary-img:hover {
     transform: scale(1.3);
 }
 

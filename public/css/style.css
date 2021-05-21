@@ -3125,7 +3125,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
     color: #333333 !important;
 }
 
-.product-slide_item .inner-slide .single-product:hover > .primary-img {
+.primary-img:hover {
     transform: scale(1.3);
 }
 
