@@ -182,12 +182,10 @@
                                                                 {!! $product->full_desc !!}
                                                             </div>
                                                         </div>
-
-                                                        // TRUNG TAM BAO HANH
-
+                                                          <!-- // TRUNG TAM BAO HANH -->
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <!-- // Product Tabs -->
+                                                    <!-- // Product Tabs -->
                                             </div>
                                             <!-- //Product Tabs -->
                                         </div>
@@ -237,9 +235,9 @@
         //     $(this).toggleClass('rx-change');
         // });
         //    category heading
-        $('.category-heading').on('click', function () {
-            $('.category-menu-list').slideToggle(900);
-        });
+        // $('.category-heading').on('click', function () {
+        //     $('.category-menu-list').slideToggle(900);
+        // });
 
         /*-- Category Menu Toggles --*/
         function categorySubMenuToggle() {
