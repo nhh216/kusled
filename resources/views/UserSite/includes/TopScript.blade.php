@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
 <link rel="stylesheet" id="lib-css" href="{{ asset('css/fontawesome.min.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
-<link rel="stylesheet" id="carousel-css" href="{{ asset('css/owl.carousel.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
+{{--<link rel="stylesheet" id="carousel-css" href="{{ asset('css/owl.carousel.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 <link rel="stylesheet" id="lib-css" href="{{ asset('css/lib.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 <link rel="stylesheet" id="jquery-ui-css" href="{{ asset('css/jquery-ui.min.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 {{--<link rel="stylesheet" id="miniColors-css" href="{{ asset('css/miniColors.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
