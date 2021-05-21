@@ -1,4 +1,3 @@
-<div class="inner-slide" >
         <div class="single-product">
             <div class="product-img">
                 <a href="danh-sach-san-pham/{{ $product->slug }}"
@@ -33,4 +32,3 @@
                 </div>
             </div>
         </div>
-</div>
