@@ -1554,14 +1554,14 @@ iframe {
     height: 357px;
 }
 
-@media (min-width: 576px) {
-    #left-banner {
-        display: none;
-    }
-    #header-pc {
-        display: none;
-    }
-}
+/*@media (min-width: 576px) {*/
+/*    #left-banner {*/
+/*        display: none;*/
+/*    }*/
+/*    #header-pc {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 /*@media only screen and (max-width: 1024px) {*/
 /*    #header-pc {*/
 /*        display: none;*/
