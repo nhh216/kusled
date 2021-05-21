@@ -55,39 +55,39 @@
 ============================================ -->
 
 <!-- jQuery JS -->
-<script src="{{ asset('gtrvn/jquery-1.12.4.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery-1.12.4.min.js') }}"></script>--}}
 <!-- Bootstrap JS -->
-<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>--}}
 <!-- Modernizer JS -->
-<script src="{{ asset('gtrvn/modernizr-2.8.3.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/modernizr-2.8.3.min.js') }}"></script>--}}
 <!-- Popper JS -->
-<script src="{{ asset('gtrvn/popper.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/popper.min.js') }}"></script>--}}
 <!-- Slick Slider JS -->
-<script src="{{ asset('gtrvn/slick.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/slick.min.js') }}"></script>--}}
 <!-- Barrating JS -->
-<script src="{{ asset('gtrvn/jquery.barrating.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.barrating.min.js') }}"></script>--}}
 <!-- Counterup JS -->
-<script src="{{ asset('gtrvn/jquery.counterup.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.counterup.js') }}"></script>--}}
 <!-- Nice Select JS -->
-<script src="{{ asset('gtrvn/jquery.nice-select.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.nice-select.js') }}"></script>--}}
 <!-- Sticky Sidebar JS -->
-<script src="{{ asset('gtrvn/jquery.sticky-sidebar.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.sticky-sidebar.min.js') }}"></script>--}}
 <!-- Jquery-ui JS -->
-<script src="{{ asset('gtrvn/jquery-ui.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery-ui.min.js') }}"></script>--}}
 
-<script src="{{ asset('gtrvn/jquery.ui.touch-punch.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.ui.touch-punch.min.js') }}"></script>--}}
 <!-- Lightgallery JS -->
-<script src="{{ asset('gtrvn/lightgallery.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/lightgallery.min.js') }}"></script>--}}
 <!-- Scroll Top JS -->
-<script src="{{ asset('gtrvn/scroll-top.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/scroll-top.js') }}"></script>--}}
 <!-- Theia Sticky Sidebar JS -->
-<script src="{{ asset('gtrvn/theia-sticky-sidebar.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/theia-sticky-sidebar.min.js') }}"></script>--}}
 <!-- Waypoints JS -->
-<script src="{{ asset('gtrvn/waypoints.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/waypoints.min.js') }}"></script>--}}
 <!-- jQuery Zoom JS -->
-<script src="{{ asset('gtrvn/jquery.zoom.min.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/jquery.zoom.min.js') }}"></script>--}}
 
-<script src="{{ asset('gtrvn/dotdotdot.js') }}"></script>
+{{--<script src="{{ asset('gtrvn/dotdotdot.js') }}"></script>--}}
 
 <script src="{{ asset('js/megamenu.js') }}"></script>
 
@@ -97,7 +97,7 @@
 
 {{--<script src="{{ asset('js/rate.min.js') }}"></script>--}}
 
-<script src="{{ asset('js/libraryjs.js') }}"></script>
+{{--<script src="{{ asset('js/libraryjs.js') }}"></script>--}}
 
 {{--<script src="{{ asset('js/application.js') }}"></script>--}}
 
@@ -127,8 +127,7 @@
 {{--</script>--}}
 
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">
-    <iclass
-    ="fa fa-angle-double-up"></i></a>
+    <i class="fa fa-angle-double-up"></i></a>
 <script>
     window.addEventListener('load', function () {
         var allimages = document.getElementsByTagName('img');
