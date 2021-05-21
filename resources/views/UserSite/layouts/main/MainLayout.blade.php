@@ -55,9 +55,9 @@
 ============================================ -->
 
 <!-- jQuery JS -->
-{{--<script src="{{ asset('gtrvn/jquery-1.12.4.min.js') }}"></script>--}}
+<script src="{{ asset('gtrvn/jquery-1.12.4.min.js') }}"></script>
 <!-- Bootstrap JS -->
-{{--<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>--}}
+<script src="{{ asset('gtrvn/bootstrap.min.js') }}"></script>
 <!-- Modernizer JS -->
 {{--<script src="{{ asset('gtrvn/modernizr-2.8.3.min.js') }}"></script>--}}
 <!-- Popper JS -->
