@@ -15,7 +15,7 @@ INDEX:
     13 - Components - Navigation
     14 - Components - Banner
     15 - Components - Product
-    16 - Components - Shipping - DONE
+    16 - Components - Shipping
     17 - Components - Product Tab
     18 - Components - Form
     19 - Components - Social Link
@@ -2782,6 +2782,186 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 .countdown-wrap .countdown.item-4 .countdown__item span.countdown__text {
     display: block;
 }
+
+/*----------------------------------------*/
+/*  16 - Components - Shipping
+/*----------------------------------------*/
+.uren-shipping_area {
+    padding-top: 80px;
+}
+
+.uren-shipping_area .shipping-nav {
+    border: 1px solid #ffc400;
+    padding: 30px 0 25px;
+}
+
+@media (max-width: 991px) {
+    .uren-shipping_area .shipping-nav {
+        padding: 30px 30px 25px;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-grid {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav .shipping-grid {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .uren-shipping_area .shipping-nav .shipping-grid {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav [class*="shipping-grid"]:last-child {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .uren-shipping_area .shipping-nav [class*="shipping-grid"]:last-child .shipping-item {
+        width: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav .shipping-item {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .uren-shipping_area .shipping-nav .shipping-item {
+        display: block;
+        text-align: center;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-item .shipping-icon {
+    color: #ffc400;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-icon .shipping-icon {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-icon {
+        width: auto;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-item .shipping-content {
+    border-right: 1px solid #e5e5e5;
+    width: calc(100% - 100px);
+    padding-left: 15px;
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-content {
+        border-right: 0;
+        width: auto;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-content {
+        text-align: center;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-item .shipping-content > h6 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.uren-shipping_area .shipping-nav .shipping-item .shipping-content > p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-content > p {
+        font-size: 13px;
+    }
+}
+
+.uren-shipping_area .shipping-nav .shipping-item .shipping-content.last-child {
+    border-right: 0;
+}
+
+@media (max-width: 1599px) {
+    .uren-shipping_area .shipping-nav .shipping-item .shipping-content.last-child {
+        padding-bottom: 0;
+    }
+}
+
 /*----------------------------------------*/
 /*  25 - Section - Header
 /*----------------------------------------*/
