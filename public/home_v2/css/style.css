@@ -923,10 +923,10 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
     height: auto !important;
 }
 
-.img-hover-effect_area .single-product:hover {
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+/*.img-hover-effect_area .single-product:hover {*/
+/*    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
 
 .img-hover-effect_area-2:hover {
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
