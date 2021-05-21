@@ -63,7 +63,7 @@
 <!-- Popper JS -->
 {{--<script src="{{ asset('kusvn/popper.min.js') }}"></script>--}}
 <!-- Slick Slider JS -->
-{{--<script src="{{ asset('kusvn/slick.min.js') }}"></script>--}}
+<script src="{{ asset('kusvn/slick.min.js') }}"></script>
 <!-- Barrating JS -->
 {{--<script src="{{ asset('kusvn/jquery.barrating.min.js') }}"></script>--}}
 <!-- Counterup JS -->
