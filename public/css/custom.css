@@ -8,6 +8,9 @@
     #product-slide .inner-slide {
         height: 260px !important;
     }
+    .slider-banner {
+        margin-top: 155px;
+    }
 }
 @media (min-width: 768px) {
     #left-banner {
