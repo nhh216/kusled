@@ -17,10 +17,10 @@
         display: block;
     }
     #left-banner {
-        display: block;
+        display: none;
     }
     #product-slide .inner-slide {
-        height: 330px !important;
+        height: 375px !important;
     }
 }
 
