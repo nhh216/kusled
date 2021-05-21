@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (max-width: 767px) {
     #left-banner {
         display: none;
     }
@@ -9,7 +9,7 @@
         height: 260px !important;
     }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     #left-banner {
         display: none;
     }
