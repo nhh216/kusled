@@ -25,6 +25,9 @@
     #header-pc {
         display: none;
     }
+    .slider-banner {
+        margin-top: 185px !important;
+    }
     .producttab {
     margin: 120px 0 !important;
     }
@@ -32,6 +35,33 @@
         height: 375px !important;
     }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-view .content-product-right {
+        margin-top: 120px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #header-pc {
+        display: block;
+    }
+
+    #left-banner {
+        display: block;
+    }
+
+    #header-mobile {
+        display: none;
+    }
+    #product-detail {
+        margin-top: 70px;
+    }
+    .producttab {
+        margin: 0 !important;
+    }
+}
+
+
 /*@media only screen and (max-width: 1024px) {*/
 /*    #header-pc {*/
 /*        display: block;*/

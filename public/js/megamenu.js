@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     var wd_width = $(window).width();
     if (wd_width < 1024) {
-        $(".section-title_area").css("margin-top","75px")
+        $(".section-title_area").css("margin-bottom","30px")
         $(".section-title_area h3").css("padding-bottom","0px")
         $("#left-banner").css("display","none")
         $("#main-wrapper").addClass("main-wrapper")
