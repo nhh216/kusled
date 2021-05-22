@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 {{--<link rel="stylesheet" id="carousel-css" href="{{ asset('css/owl.carousel.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="miniColors-css" href="{{ asset('css/miniColors.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
-{{--<link rel="stylesheet" id="pe-icon-7-stroke-css" href="{{ asset('css/pe-icon-7-stroke.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
+<link rel="stylesheet" id="pe-icon-7-stroke-css" href="{{ asset('css/pe-icon-7-stroke.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
 {{--<link rel="stylesheet" id="helper-css" href="{{ asset('css/helper.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="so_searchpro-css" href="{{ asset('css/so_searchpro.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 <link rel="stylesheet" id="so_megamenu-css" href="{{ asset('css/so_megamenu.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
