@@ -54,10 +54,7 @@
 <!-- JS
 ============================================ -->
 
-<!-- jQuery JS -->
-<script src="{{ asset('kusvn/jquery-1.12.4.min.js') }}"></script>
-<!-- Bootstrap JS -->
-<script src="{{ asset('kusvn/bootstrap.min.js') }}"></script>
+
 <!-- Modernizer JS -->
 {{--<script src="{{ asset('kusvn/modernizr-2.8.3.min.js') }}"></script>--}}
 <!-- Popper JS -->

@@ -23,6 +23,10 @@
 <link rel="stylesheet" href="{{ asset('css/ion-fonts.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+<!-- jQuery JS -->
+<script src="{{ asset('kusvn/jquery-1.12.4.min.js') }}"></script>
+<!-- Bootstrap JS -->
+<script src="{{ asset('kusvn/bootstrap.min.js') }}"></script>
 <script>
     var wd_width = window.innerWidth;
     if (wd_width <= 1024) {

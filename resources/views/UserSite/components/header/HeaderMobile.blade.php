@@ -21,7 +21,7 @@
                                             <ul class="megamenu" data-transition="slide" data-animationtime="250">
                                                 <li>
                                                     <a href="/danh-sach-san-pham" class="clearfix">
-                                       m                 <strong>SHOP SẢN PHẨM</strong>
+                                                        <strong>SHOP SẢN PHẨM</strong>
                                                     </a>
                                                 </li>
                                                 <li>

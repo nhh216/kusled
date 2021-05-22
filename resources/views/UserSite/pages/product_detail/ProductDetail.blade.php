@@ -10,7 +10,6 @@
                     </div>
                     <div class="content-main-w">
 
-                        <link type="text/css" rel="stylesheet" href="{{ asset("css/lightgallery.css") }}" />
 
                         <section class="product-page not-home">
                             <div class="main-container container">
@@ -36,7 +35,9 @@
                                             <div>
                                                 <div class=" left-content-product">
                                                     <div class=" col-md-5 col-sm-12 col-xs-12">
-                                                        @include('UserSite.pages.product_detail.ProductImageSlider')
+
+                                                        @include('UserSite.pages.product_detail.ProductSLide2')
+
                                                     </div>
                                                     <div class="content-product-right col-md-4 col-sm-12 col-xs-12">
                                                         <div class="title-product">
