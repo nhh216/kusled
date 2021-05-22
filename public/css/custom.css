@@ -11,6 +11,12 @@
     .slider-banner {
         margin-top: 155px;
     }
+    #main-content, #content {
+        margin-top: 45px;
+    }
+    .producttab {
+        margin: 0 !important;
+    }
 }
 @media (min-width: 768px) {
     #left-banner {
@@ -18,6 +24,9 @@
     }
     #header-pc {
         display: none;
+    }
+    .producttab {
+    margin: 120px 0 !important;
     }
     #product-slide .inner-slide {
         height: 375px !important;
@@ -38,7 +47,7 @@
 /*    }*/
 /*}*/
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     #header {
         background-color: #000;
     }

@@ -214,7 +214,7 @@
 
         /*#region responsive code begin*/
 
-        var MAX_WIDTH = 980;
+        var MAX_WIDTH = 450;
 
         function ScaleSlider() {
             var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -297,6 +297,9 @@
     }
 
     /*jssor slider thumbnail skin 101 css*/
+    .jssort101  {
+        top: 230px !important;
+    }
     .jssort101 .p {
         position: absolute;
         top: 0;
@@ -371,15 +374,15 @@
         opacity: 1;
     }
 </style>
-<div id="jssor_1" style="margin:0 auto;top:0px;left:0px;width:980px;height:980px;overflow:hidden;visibility:hidden;">
+<div id="jssor_1" style="margin:0 auto;top:0px;left:0px;width:450px;height:450px;overflow:hidden;visibility:hidden;">
     <!-- Loading Screen -->
     <div data-u="loading" class="jssorl-009-spin"
-         style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+         style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7); top: 220.3px !important;">
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
              src="{{ asset('images/spin.svg') }}"/>
     </div>
     <div data-u="slides"
-         style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:700px;overflow:hidden;">
+         style="cursor:default;position:relative;top:0px;left:0px;width:450px;height:450px;overflow:hidden;">
         @foreach($images as $image)
             <div>
                 <img data-u="image" src="{{ asset($image -> link) }}"/>
@@ -391,10 +394,10 @@
     <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
     <!-- Thumbnail Navigator -->
     <div data-u="thumbnavigator" class="jssort101"
-         style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;"
+         style="position:absolute;left:0px;bottom:0px;width:450px;height:100px;background-color:#000;"
          data-autocenter="1" data-scale-bottom="0.75">
         <div data-u="slides">
-            <div data-u="prototype" class="p" style="width:190px;height:90px;">
+            <div data-u="prototype" class="p" style="width:100px;height:100px;">
                 <div data-u="thumbnailtemplate" class="t"></div>
                 <svg viewbox="0 0 16000 16000" class="cv">
                     <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
@@ -405,21 +408,22 @@
         </div>
     </div>
     <!-- Arrow Navigator -->
-    <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;" data-scale="0.75">
-        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
-            <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
-            <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
-        </svg>
-    </div>
-    <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;" data-scale="0.75">
-        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
-            <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
-            <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
-        </svg>
-    </div>
+{{--    <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:10px;" data-scale="0.75">--}}
+{{--        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">--}}
+{{--            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>--}}
+{{--            <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>--}}
+{{--            <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>--}}
+{{--        </svg>--}}
+{{--    </div>--}}
+{{--    <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:70px;" data-scale="0.75">--}}
+{{--        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">--}}
+{{--            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>--}}
+{{--            <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>--}}
+{{--            <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>--}}
+{{--        </svg>--}}
+{{--    </div>--}}
 </div>
-<script type="text/javascript">jssor_1_slider_init();
+<script type="text/javascript">
+    jssor_1_slider_init();
 </script>
 <!-- #endregion Jssor Slider End -->

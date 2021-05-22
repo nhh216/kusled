@@ -1471,7 +1471,9 @@
     .products-category .product-compare {
         margin: 10px 0 0 0 !important; }
     .product-view .content-product-right {
-        margin-top: 30px; }
+        margin-top: 165px;
+        padding: 25px;
+    }
     .product-simple .so-extraslider .extraslider-inner .item .item-inner {
         width: 100%; }
     .content-aside .product-simple .so-extraslider .extraslider-inner .owl2-item .item {
