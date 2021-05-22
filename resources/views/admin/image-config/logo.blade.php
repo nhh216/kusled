@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <div class="card card-success">
                         <div class="card-header">
-                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh Logo </h3>
+                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh Logo - Kích thước 200 * 40</h3>
                             <button type="submit" class="btn btn-light btn-card-header">Cập nhật</button>
                         </div>
                         <div class="card-body">

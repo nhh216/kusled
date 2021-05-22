@@ -10,7 +10,7 @@
                 <div class="col-md-12">
                     <div class="card card-success">
                         <div class="card-header">
-                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh Slider</h3>
+                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh Slider - Kích thước 1400 * 600</h3>
                             <button type="submit" class="btn btn-light btn-card-header">Cập nhật</button>
                         </div>
                         <div class="card-body">
