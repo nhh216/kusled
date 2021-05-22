@@ -24,6 +24,7 @@ class FooterConfigController extends Controller
         $footer->phone = isset($request->phone) ? $request->phone : '';
         $footer->email = isset($request->email) ? $request->email : '';
         $footer->time_working = isset($request->time_working) ? $request->time_working : '';
+        $footer->youtube = isset($request->youtube) ? $request->youtube : '';
         $footer->contact = isset($request->contact) ? $request->contact : '';
         $footer->introduce = isset($request->introduce) ? $request->introduce : '';
         $footer->return_policy = isset($request->return_policy) ? $request->return_policy : '';

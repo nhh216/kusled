@@ -13,6 +13,7 @@ class FooterConfig extends Model
         'address',
         'phone',
         'email',
+        'youtube',
         'time_working',
         'contact',
         'introduce',

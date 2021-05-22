@@ -18,6 +18,7 @@ class CreateFooterConfigsTable extends Migration
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
+            $table->string('youtube')->nullable();
             $table->string('time_working')->nullable();
             $table->text('contact')->nullable();
             $table->text('introduce')->nullable();

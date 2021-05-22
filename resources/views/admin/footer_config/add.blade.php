@@ -48,8 +48,17 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Phone <code>*</code></label>
-                                            <input name="phone" type="number" class="form-control rounded-0"
+                                            <input name="phone" type="text" class="form-control rounded-0"
                                                    value="{{ isset($footer) && isset($footer->phone) ? $footer->phone : '' }}"required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Kênh Youtube <code>*</code></label>
+                                            <input name="youtube" type="text" class="form-control rounded-0"
+                                                   value="{{ isset($footer) && isset($footer->youtube) ? $footer->youtube : '' }}"required>
                                         </div>
                                     </div>
                                 </div>
