@@ -10,13 +10,11 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-use Illuminate\Support\Facades\Hash;
 use View;
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
     public function __construct() {
         $imageConfig = ImageConfig::all();
         $logo = $imageConfig->where('type', ImageConfig::TYPE_LOGO)->first();

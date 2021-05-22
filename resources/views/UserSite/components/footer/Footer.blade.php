@@ -44,11 +44,11 @@
                                         <li><a href="">Giới thiệu doanh
                                                 nghiệp</a></li>
                                         <li><a href=""
-                                               target="_blank">Youtube Official GTRVietnam</a></li>
+                                               target="_blank">Youtube KUS - Việt Nam</a></li>
                                         <li>
                                             <a href=""
                                                target="_blank">Địa chỉ GTRVietnam</a></li>
-                                        <li><a href="/lien-he-gtrvietnam">Liên hệ - Góp ý</a>
+                                        <li><a href="">Liên hệ - Góp ý</a>
                                         </li>
 
                                     </ul>
