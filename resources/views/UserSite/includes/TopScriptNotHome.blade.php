@@ -27,8 +27,10 @@
 {{--<link rel="stylesheet" id="so-latest-blog-css" href="{{ asset('css/so-latest-blog.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="footer5-css" href="{{ asset('css/footer5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
 {{--<link rel="stylesheet" id="header5-css" href="{{ asset('css/header5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
-{{--<link rel="stylesheet" id="color_scheme" href="{{ asset('css/home5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
-{{--<link rel="stylesheet" id="responsive-css" href="{{ asset('css/responsive.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">--}}
+<link rel="stylesheet" id="color_scheme" href="{{ asset('css/home5.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="{{ asset('css/responsive.css') }}" as="style" onload="this.onload=null;" type="text/css" media="all">
+<link rel="stylesheet" id="custom_main-css" href="{{ asset('css/custom_main.css') }}" as="style" >
+<link rel="stylesheet" id="custom-css" href="{{ asset("home_v2/css/ion-fonts.css") }}" as="style">
 <link rel="stylesheet" href="{{ asset("home_v2/css/ion-fonts.css") }}">
 <link rel="stylesheet" href="{{ asset("home_v2/css/style.css") }}">
 <link rel="stylesheet" href="{{ asset("home_v2/custom.css") }}">
