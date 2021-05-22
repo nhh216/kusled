@@ -47,7 +47,7 @@
                                                target="_blank">Youtube KUS - Việt Nam</a></li>
                                         <li>
                                             <a href=""
-                                               target="_blank">Địa chỉ GTRVietnam</a></li>
+                                               target="_blank">Địa chỉ KusVietNam</a></li>
                                         <li><a href="">Liên hệ - Góp ý</a>
                                         </li>
 
