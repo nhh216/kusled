@@ -72,9 +72,6 @@
 /*}*/
 
 @media (min-width: 1025px) {
-    .producttab {
-        margin: 120px 0 !important;
-    }
     #header {
         background-color: #000;
     }
