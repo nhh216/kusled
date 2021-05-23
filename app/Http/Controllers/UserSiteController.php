@@ -42,9 +42,11 @@ class UserSiteController extends Controller
         );
     }
 
-    public function categoryPage($slug) {
+    public function categoryPage($slug, $id) {
         $categories = Category::where('type', Category::TYPE_PRODUCT)->get();
-        $category = $categories->where('slug',$slug)->first()->with("products")->get();
+        $category = Category::where('id', (int) $id)->with("products", function ($products) {
+            $products->with('images');
+        })->get();;
         $products = $category[0] -> products;
         return view('./UserSite/pages/category/Category')->with([
             'categories' => $categories,

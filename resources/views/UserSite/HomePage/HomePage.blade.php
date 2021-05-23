@@ -41,7 +41,6 @@
             <div class="row">
                 <div class="col-lg-12 col-12 col-sm-6 col-xs-6 mb30">
                     <div class="section-title_area">
-                        <span>Tin tức</span>
                         <h3>TIN TỨC ĐỘ ĐÈN</h3>
                     </div>
                 </div>

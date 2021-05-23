@@ -5,8 +5,8 @@
                tabindex="0">
                 <img class="primary-img"
                      style="max-width: 500px"
-                     src="{{ asset($product->images[0] -> link) }}"
-                     data-src="{{ asset($product->images[0] -> link) }}"
+                     src="{{ isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
+                     data-src="{{ isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
                      alt="{{ $product->name }}">
             </a>
         </div>

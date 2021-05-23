@@ -528,7 +528,7 @@ legend {
 }
 
 .container:last-of-type {
-    padding-top: 0px;
+    padding-top: 75px;
 }
 
 /*animation element*/
@@ -1264,7 +1264,7 @@ iframe {
 
 .list_rate_ship_on_list_product > div {
     display: inline-block;
-    width: 48%;
+    width: 47%;
     line-height: 16px;
 }
 

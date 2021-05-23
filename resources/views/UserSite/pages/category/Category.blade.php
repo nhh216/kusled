@@ -20,22 +20,20 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="box_category_brand">
-            </div>
-            <div class="col-md-12">
-                <div class="">
-                    <h3 class="modtitle">
-                        <span style="color: #000;font-weight: bold;font-size: 2.4rem;">{{ $category->name }}</span></h3>
-                    <div>
-                        <div class="category-desc"><div class="collapse_link">
-                                <h3 dir="ltr">&nbsp;</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="row">--}}
+{{--            <div class="col-md-12">--}}
+{{--                <div class="">--}}
+{{--                    <h3 class="modtitle">--}}
+{{--                        <span style="color: #000;font-weight: bold;font-size: 2.4rem;">{{ $category->name }}</span></h3>--}}
+{{--                    <div>--}}
+{{--                        <div class="category-desc"><div class="collapse_link">--}}
+{{--                                <h3 dir="ltr">&nbsp;</h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class="clearfix"></div>
         <div class="row">
             <div class="col-md-12">
@@ -85,35 +83,42 @@
                 @include('UserSite.includes.SideBar')
             </aside>
 
-
             <!--Right Part End -->
             <!--Middle Part Start-->
             <div id="content" class="col-md-9 col-sm-8">
                 <div class="">
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
-                            <div data-href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-151" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            @foreach($products as $product)
+                                <div data-href="{{ $product -> slug }}_{{ $product -> id }}"
+                                     class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="product-item-container item--static">
                                     <div class="left-block">
                                         <div class="product-image-container ">
-                                            <a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-151" target="_self">
-                                                <img src="https://gtrvietnam.com/upload/images/320x320/2020/03/18/18-03-2020-0-1584516512-180_c737762e455847949c6c83a577ea0fc1_2048x2048.jpg" class="img-2 img-responsive" alt="GÓI GTR G3 ( BI CẦU GTR PREMIUM + XENON GTR 45W + BALLAST GTR 45W)" onerror="if (this.src != '520x520-logo.png') this.src = 'upload/images/defaults/520x520-logo.png';">
+                                            <a href="{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                <img src="{{ isset($product -> images[0]) ? asset($product -> images[0] -> link) : ""}}"
+                                                     class="img-2 img-responsive"
+                                                     alt="{{ $product->name }}">
                                             </a>
                                         </div>
 
                                         <!--quickview-->
                                         <div class="so-quickview">
-                                            <a class="btn-button quickview quickview_handler visible-lg" href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-151" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Xem chi tiết</span></a>
+                                            <a class="btn-button quickview quickview_handler visible-lg"
+                                               href="{{ $product -> slug }}_{{ $product -> id }}"
+                                               title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Xem chi tiết</span></a>
                                         </div>
                                         <!--end quickview-->
                                     </div>
                                     <div class="right-block">
-                                        <h4 class="ellipsis_title" style="overflow-wrap: break-word;"><a href="https://gtrvietnam.com/products/combo-do-bi-xenon-gtr-tang-sang-151" target="_self">GÓI GTR G3 ( BI CẦU GTR PREMIUM + XENON GTR 45W + BALLAST GTR 45W)</a>
+                                        <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
+                                            <a href="{{ $product -> slug }}_{{ $product -> id }}"
+                                               target="_self">{{ $product -> name }}</a>
                                         </h4>
                                         <p class="text-red big-small">(Lượt xem: 6.790)</p>
                                         <div class="price_on_list_product">
                                             <div class="price">
-                                                <span class="price-new">7.500.000 đ</span>
+                                                <span class="price-new">{{ getSalePrice($product->price, $product->discount) }}</span>
 
                                             </div>
                                         </div>
@@ -138,6 +143,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                         <!--// End Changed listings-->
 

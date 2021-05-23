@@ -1,7 +1,7 @@
 @extends('UserSite.layouts.main.MainLayout', ['homepage'=>false])
 @section('content')
     <!-- Main Container  -->
-        <div id="products-page" class="container ">
+    <div id="products-page" class="container ">
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
@@ -14,31 +14,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="box_category_brand">
-                <div class="col col-xs-2 col-sm-2">
-                    <div class="content-box">
-                        <div class="image-cat">
-                            <span class=""></span>
-                            <a href="https://gtrvietnam.com/san-pham/?brand=1"> <img src="./Sản phẩm_files/x-light-vuong(1).png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="wap-listing-tabs categories-list grid categories_list_custom">
-                    <div class="ltabs-items-container">
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
         </div>
         <style>
             #my-menu .bot-menu .nav-menu ul.ul-main li.li-main:first-child .a-main.active {
@@ -88,13 +63,13 @@
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
                             @foreach($products as $product)
-                                 <div data-href="{{ $product->slug }}"
-                                 class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                 <div data-href="{{ $product->slug }}" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="product-item-container item--static">
                                     <div class="left-block">
                                         <div class="product-image-container ">
                                             <a href="danh-sach-san-pham/{{ $product -> slug }}" target="_self">
-                                                <img src="{{ $product -> images[0] -> link }}" class="img-2 img-responsive" alt="{{ $product -> name }}">
+                                                <img src="{{isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
+                                                     class="img-2 img-responsive" alt="{{ $product -> name }}">
                                             </a>
                                         </div>
 

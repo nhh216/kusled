@@ -34,75 +34,34 @@
         </style>
 </head>
 <body class="template-color-1">
-<div id="main-wrapper">
-    <header id="header" class="typeheader-5">
-        @include('UserSite.components.header.Header')
-    </header>
+    <div id="main-wrapper">
+        <header id="header" class="typeheader-5 header-main_area header-main_area-2 bg--black">
+            @include('UserSite.components.header.Header')
+        </header>
 
 
-    <!-- Content user site here -->
-    <div class="main-container">
-        <div class="content">
-            @yield('content')
+        <!-- Content user site here -->
+        <div class="main-container">
+            <div class="content">
+                @yield('content')
+            </div>
         </div>
+
+        <!-- Uren's Footer Area End Here -->
+        @include('UserSite.components.footer.Footer')
     </div>
 
-    <!-- Uren's Footer Area End Here -->
-    @include('UserSite.components.footer.Footer')
-</div>
-
-<!-- JS
-============================================ -->
-
-
-<!-- Modernizer JS -->
-{{--<script src="{{ asset('kusvn/modernizr-2.8.3.min.js') }}"></script>--}}
-<!-- Popper JS -->
-{{--<script src="{{ asset('kusvn/popper.min.js') }}"></script>--}}
-<!-- Slick Slider JS -->
 <script src="{{ asset('kusvn/slick.min.js') }}"></script>
-<!-- Barrating JS -->
-{{--<script src="{{ asset('kusvn/jquery.barrating.min.js') }}"></script>--}}
-<!-- Counterup JS -->
 <script src="{{ asset('kusvn/jquery.counterup.js') }}"></script>
-<!-- Nice Select JS -->
-{{--<script src="{{ asset('kusvn/jquery.nice-select.js') }}"></script>--}}
-<!-- Sticky Sidebar JS -->
-{{--<script src="{{ asset('kusvn/jquery.sticky-sidebar.min.js') }}"></script>--}}
-<!-- Jquery-ui JS -->
-{{--<script src="{{ asset('kusvn/jquery-ui.min.js') }}"></script>--}}
-
-{{--<script src="{{ asset('kusvn/jquery.ui.touch-punch.min.js') }}"></script>--}}
-<!-- Lightgallery JS -->
-{{--<script src="{{ asset('kusvn/lightgallery.min.js') }}"></script>--}}
-<!-- Scroll Top JS -->
 <script src="{{ asset('kusvn/scroll-top.js') }}"></script>
-<!-- Theia Sticky Sidebar JS -->
-{{--<script src="{{ asset('kusvn/theia-sticky-sidebar.min.js') }}"></script>--}}
-<!-- Waypoints JS -->
-{{--<script src="{{ asset('kusvn/waypoints.min.js') }}"></script>--}}
-<!-- jQuery Zoom JS -->
-{{--<script src="{{ asset('kusvn/jquery.zoom.min.js') }}"></script>--}}
-
 <script src="{{ asset('kusvn/dotdotdot.js') }}"></script>
-
 <script src="{{ asset('js/megamenu.js') }}"></script>
-
 <script src="{{ asset('kusvn/main.js') }}"></script>
-
 <script src="{{ asset('kusvn/custom.js') }}"></script>
 
-{{--<script src="{{ asset('js/rate.min.js') }}"></script>--}}
+<script src="{{ asset('js/custom_mobile.js') }}"></script>
 
-{{--<script src="{{ asset('js/libraryjs.js') }}"></script>--}}
-
-{{--<script src="{{ asset('js/application.js') }}"></script>--}}
-
-{{--<script src="{{ asset('js/homepage_mobile.js') }}"></script>--}}
-
-{{--<script src="{{ asset('js/custom_mobile.js') }}"></script>--}}
-
-{{--<script src="{{ asset('js/mobile.js') }}"></script>--}}
+<script src="{{ asset('js/mobile.js') }}"></script>
 
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;">
     <i class="fa fa-angle-double-up"></i></a>
