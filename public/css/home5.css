@@ -5626,7 +5626,9 @@ span.fa-stack .fa-star.fa-stack-2x:before {
     text-align: center; }
 .products-list .product-layout {
     transition: all 0.5s ease 0s;
-    display: block; }
+    display: block;
+    height: 480px;
+}
 .products-list .product-layout .product-item-container {
     position: relative; }
 .products-list .product-layout .product-item-container .product-card__gallery {
