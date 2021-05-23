@@ -4,6 +4,7 @@
             <a href="danh-sach-san-pham/{{ $product->slug }}"
                tabindex="0">
                 <img class="primary-img"
+                     style="max-width: 500px"
                      src="{{ asset($product->images[0] -> link) }}"
                      data-src="{{ asset($product->images[0] -> link) }}"
                      alt="{{ $product->name }}">
@@ -28,7 +29,6 @@
                                           tabindex="0">{{ $product->name }}</a></h6>
                 <div class="price-box">
                     <span class="new-price new-price-2">{{ getSalePrice($product->price, $product->discount) }}</span>
-
                 </div>
             </div>
         </div>
