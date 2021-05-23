@@ -33,9 +33,7 @@
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .product-view .content-product-right {
-        margin-top: 120px !important;
-    }
+
     #product-detail {
         margin-top: 115px;
     }
