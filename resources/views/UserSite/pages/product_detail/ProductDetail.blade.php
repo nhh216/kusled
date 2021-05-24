@@ -86,6 +86,7 @@
                                                         <div class="product-box-desc">
                                                             <div class="inner-box-desc">
                                                                 @foreach(json_decode($product->info) as $key => $info)
+                                                                    @dd($info)
                                                                     <div class="model"><span>{{ $key }}:</span> {{ $info }}</div>
                                                                 @endforeach
                                                             </div>
