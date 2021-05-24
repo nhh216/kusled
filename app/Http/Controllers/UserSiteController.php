@@ -19,7 +19,7 @@ class UserSiteController extends Controller
         ]);
     }
 
-    public function productDetail($slug) {
+    public function productDetail($slug, $id) {
         $product = Product::where('slug', $slug)->with('images')->get();
         $images = $product[0]->images;
         return view('./UserSite/pages/product_detail/ProductDetail')->with([
