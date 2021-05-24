@@ -40,5 +40,5 @@ CKEDITOR.editorConfig = function( config ) {
 
     config.youtube_responsive = true;
 
-    config.youtube_autoplay = false;
+    config.youtube_autoplay = true;
 };
