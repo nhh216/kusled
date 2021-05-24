@@ -5874,7 +5874,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 
 @media (max-width: 1599px) {
     .header-main_area-2 .header-middle_area .header-logo_area {
-        padding: 35px 0 0;
+        /*padding: 35px 0 0;*/
     }
 }
 
