@@ -613,7 +613,7 @@ a, button, .img-hover_effect, .img-hover-effect_area .single-product, .product-s
 
 @media (max-width: 1599px) {
     .header-main_area-2 .header-middle_area .header-logo_area {
-        padding: 35px 0 0;
+        /*padding: 35px 0 0;*/
     }
 }
 
