@@ -85,14 +85,9 @@
 
                                                         <div class="product-box-desc">
                                                             <div class="inner-box-desc">
-                                                                <div class="brand "><span>Thương hiệu:</span><a
-                                                                        href="#">X-Light</a></div>
-                                                                <div class="model "><span>Mã sản phẩm:</span> x-light-t10</div>
-                                                                <div class="model "><span>Bảo hành:</span></div>
-
-                                                                <div class="model"><span>Năm sản xuất:</span> 2021</div>
-
-
+                                                                @foreach(json_decode($product->info) as $key => $info)
+                                                                    <div class="model"><span>{{  $key }}:</span> { $info }}</div>
+                                                                @endforeach
                                                             </div>
                                                         </div>
                                                         <div id="product">
