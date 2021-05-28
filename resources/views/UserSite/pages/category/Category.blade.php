@@ -8,7 +8,7 @@
                         <meta itemprop="position" content="1">
                     </li>
                     <li property="itemListElement" typeof="ListItem" class="">
-                        <a property="item" typeof="WebPage" href="{{ asset("/danh-muc-san-pham/") }}"><span property="name">Sản phẩm</span></a>
+                        <a property="item" typeof="WebPage" href="{{ asset("/danh-sach-san-pham/") }}"><span property="name">Sản phẩm</span></a>
                         <meta itemprop="position" content="2">
                     </li>
                 </ul>
