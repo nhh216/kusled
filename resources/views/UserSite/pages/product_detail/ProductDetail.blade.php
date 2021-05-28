@@ -15,12 +15,12 @@
                             <div class="main-container container">
                                 <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
                                     <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                                        <a href="/" itemprop="item">
+                                        <a href="{{ asset("/") }}" itemprop="item">
                                             <i class="fa fa-home"></i> <span itemprop="name" style="display:none;">Trang chủ</span></a>
                                         <meta itemprop="position" content="1">
                                     </li>
                                     <li property="itemListElement" typeof="ListItem" class="">
-                                        <a property="item" typeof="WebPage" href="danh-sach-san-pham/"><span property="name">Danh sách sản phẩm</span></a>
+                                        <a property="item" typeof="WebPage" href="{{ asset("/danh-sach-san-pham/") }}"><span property="name">Danh sách sản phẩm</span></a>
                                         <meta itemprop="position" content="2">
                                     </li>
                                     <li property="itemListElement" typeof="ListItem" class="">

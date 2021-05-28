@@ -12,7 +12,7 @@ class UserSiteController extends Controller
 {
     public function productsPage() {
         $categories = Category::where('type', Category::TYPE_PRODUCT)->get();
-        $products = Product::with('images')->get();
+        $products = Product::with('images')->paginate(12);
         return view('./UserSite/pages/product/Products')->with([
             'categories' => $categories,
             'products'  => $products
@@ -20,7 +20,7 @@ class UserSiteController extends Controller
     }
 
     public function productDetail($slug, $id) {
-        $product = Product::where('slug', $slug)->with('images')->get();
+        $product = Product::where('id', $id)->with('images')->get();
         $images = $product[0]->images;
         return view('./UserSite/pages/product_detail/ProductDetail')->with([
             'product' => $product[0],
@@ -44,10 +44,8 @@ class UserSiteController extends Controller
 
     public function categoryPage($slug, $id) {
         $categories = Category::where('type', Category::TYPE_PRODUCT)->get();
-        $category = Category::where('id', (int) $id)->with("products", function ($products) {
-            $products->with('images');
-        })->get();;
-        $products = $category[0] -> products;
+        $category = Category::where('id', (int) $id)->get();
+        $products = Product::where('category_id', $id)->with('images')->paginate(12);
         return view('./UserSite/pages/category/Category')->with([
             'categories' => $categories,
             'category'   => $category[0],

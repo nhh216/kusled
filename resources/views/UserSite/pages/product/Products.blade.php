@@ -128,7 +128,7 @@
                                 <div class="col-sm-6 text-left"></div>
                                 <div class="col-sm-6 text-right">
                                     <ul class="pagination justify-content-center"> <li class="page-item active">
-{{--                                            <a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham">1</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2">2</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=3">3</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=4">4</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2"> Trang cuối </a></li></ul>--}}
+                                            <a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham">1</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2">2</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=3">3</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=4">4</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2"> Trang cuối </a></li></ul>
                                 </div>
                             </div>
                         </div>
