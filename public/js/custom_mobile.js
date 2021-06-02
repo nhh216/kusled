@@ -305,7 +305,7 @@ $(document).ready(function () {
         step_size: 1,
         initial_value: valuerate,
     };
-    $(".rate2").rate(options);
+    // $(".rate2").rate(options);
     $(".rate2").on("change", function (ev, data) {
         data.product_id = $("#product_id").val();
         console.log(data.from, data.to);

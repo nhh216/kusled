@@ -6,10 +6,15 @@
         display: none;
     }
     #product-slide .inner-slide {
-        height: 260px !important;
+        height: 300px !important;
+    }
+    .title_name {
+        height: 30px;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .slider-banner {
-        margin-top: 155px;
+        margin-top: 140px;
     }
     #main-content, #content {
         margin-top: 45px;

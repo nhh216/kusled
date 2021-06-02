@@ -5,11 +5,12 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://gtrvietnam.com/" itemprop="item"><i class="fa fa-home"></i> <span itemprop="name" style="display:none;">Trang chủ</span></a>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a href="{{ asset("/") }}" itemprop="item"><i class="fa fa-home"></i> <span itemprop="name" style="display:none;">Trang chủ</span></a>
                         <meta itemprop="position" content="1">
                     </li>
                     <li property="itemListElement" typeof="ListItem" class="">
-                        <a property="item" typeof="WebPage" href="https://gtrvietnam.com/san-pham"><span property="name">Sản phẩm</span></a>
+                        <a property="item" typeof="WebPage" href="{{ asset("danh-sach-san-pham/") }}"><span property="name">Sản phẩm</span></a>
                         <meta itemprop="position" content="2">
                     </li>
                 </ul>
@@ -63,61 +64,61 @@
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
                             @foreach($products as $product)
-                                 <div data-href="{{ $product->slug }}" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                <div class="product-item-container item--static">
-                                    <div class="left-block">
-                                        <div class="product-image-container ">
-                                            <a href="danh-sach-san-pham/{{ $product -> slug }}" target="_self">
-                                                <img src="{{isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
-                                                     class="img-2 img-responsive" alt="{{ $product -> name }}">
-                                            </a>
-                                        </div>
+                                <div data-href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <div class="product-item-container item--static">
+                                        <div class="left-block">
+                                            <div class="product-image-container ">
+                                                <a href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                    <img src="{{isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
+                                                         class="img-2 img-responsive" alt="{{ $product -> name }}">
+                                                </a>
+                                            </div>
 
-                                        <!--quickview-->
-                                        <div class="so-quickview">
-                                            <a class="btn-button quickview quickview_handler visible-lg"
-                                               href="danh-sach-san-pham/{{ $product -> slug }}"
-                                               title="Quick view" data-fancybox-type="iframe">
-                                                <i class="fa fa-search"></i><span>Xem chi tiết</span>
-                                            </a>
-                                        </div>
-                                        <!--end quickview-->
-                                    </div>
-                                    <div class="right-block">
-                                        <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
-                                            <a href="danh-sach-san-pham/{{ $product -> slug }}" target="_self">
-                                                {{ $product -> name }}
-                                            </a>
-                                        </h4>
-                                        <p class="text-red big-small">(Lượt xem: 5.508)</p>
-                                        <div class="price_on_list_product">
-                                            <div class="price">
-                                                <span class="price-new">{{ getSalePrice($product -> price, $product -> discount) }}</span>
-                                                <br>
-                                                <span class="price_old">{{ currency_format($product -> price) }}</span>
+                                            <!--quickview-->
+                                            <div class="so-quickview">
+                                                <a class="btn-button quickview quickview_handler visible-lg"
+                                                   href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}"
+                                                   title="Quick view" data-fancybox-type="iframe">
+                                                    <i class="fa fa-search"></i><span>Xem chi tiết</span>
+                                                </a>
                                             </div>
+                                            <!--end quickview-->
                                         </div>
-                                        <div class="list_rate_ship_on_list_product">
-                                            <div class="text-left">
-                                                <div class="ratings">
-                                                    <div class="rating-box">
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                                                    </div>
+                                        <div class="right-block">
+                                            <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
+                                                <a href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                    {{ $product -> name }}
+                                                </a>
+                                            </h4>
+                                            <p class="text-red big-small">(Lượt xem: 5.508)</p>
+                                            <div class="price_on_list_product">
+                                                <div class="price">
+                                                    <span class="price-new">{{ getSalePrice($product -> price, $product -> discount) }}</span>
+                                                    <br>
+                                                    <span class="price_old">{{ currency_format($product -> price) }}</span>
                                                 </div>
-                                                <br>
-                                                <span class="text-red big-small">Đã bán 113</span>
                                             </div>
-                                            <div class="text-right">
-                                                <span class="big-small"><i class="fa fa-truck"></i> Giao hàng <br>toàn quốc</span>
+                                            <div class="list_rate_ship_on_list_product">
+                                                <div class="text-left">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <span class="text-red big-small">Đã bán 113</span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="big-small"><i class="fa fa-truck"></i> Giao hàng <br>toàn quốc</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             @endforeach
                         </div>
                         <!--// End Changed listings-->
@@ -127,8 +128,7 @@
                             <div class="row">
                                 <div class="col-sm-6 text-left"></div>
                                 <div class="col-sm-6 text-right">
-                                    <ul class="pagination justify-content-center"> <li class="page-item active">
-                                            <a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham">1</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2">2</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=3">3</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=4">4</a></li><li class="page-item"><a class="custom-page-link page-link" href="https://gtrvietnam.com/san-pham?page=2"> Trang cuối </a></li></ul>
+                                    {{ $products->links() }}
                                 </div>
                             </div>
                         </div>
