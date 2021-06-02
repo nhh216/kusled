@@ -29,41 +29,41 @@
         <div id="content" class="col-md-9 col-sm-8">
             <div class="blog-category clearfix">
                 <div class="blog-listitem row" style="padding-bottom: 30px;border-bottom: 2px solid red;margin-bottom: 30px;">
-{{--                    @foreach($posts as $post)--}}
-{{--                        <div class="blog-item col-lg-3 col-md-3 col-sm-4 col-xs-6">--}}
-{{--                            <div class="blog-item-inner clearfix">--}}
-{{--                                <div class="itemBlogImg clearfix">--}}
-{{--                                    <div class="article-image">--}}
-{{--                                        <div>--}}
-{{--                                            <a href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}">--}}
-{{--                                                <img--}}
-{{--                                                    src="{{ asset($post->image) }}"--}}
-{{--                                                    alt="{{ asset($post->title) }}">--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="article-date">--}}
-{{--                                            <div class="date"><span class="article-date"></span></div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="itemBlogContent clearfix ">--}}
-{{--                                    <div class="blog-content">--}}
-{{--                                        <div class="article-title font-title">--}}
-{{--                                            <h4>--}}
-{{--                                                <a href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}">--}}
-{{--                                                    {{ $post->title }}--}}
-{{--                                                </a>--}}
-{{--                                            </h4>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="readmore"><a class="btn-readmore font-title"--}}
-{{--                                                                 href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}"><i--}}
-{{--                                                    class="fa fa-caret-right"></i>Xem thêm</a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    @endforeach--}}
+                    @foreach($posts as $post)
+                        <div class="blog-item col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                            <div class="blog-item-inner clearfix">
+                                <div class="itemBlogImg clearfix">
+                                    <div class="article-image">
+                                        <div>
+                                            <a href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}">
+                                                <img
+                                                    src="{{ asset($post->image) }}"
+                                                    alt="{{ asset($post->title) }}">
+                                            </a>
+                                        </div>
+                                        <div class="article-date">
+                                            <div class="date"><span class="article-date"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itemBlogContent clearfix ">
+                                    <div class="blog-content">
+                                        <div class="article-title font-title">
+                                            <h4>
+                                                <a href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}">
+                                                    {{ $post->title }}
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="readmore"><a class="btn-readmore font-title"
+                                                                 href="{{ asset("/tin-tuc") }}/{{ $post -> slug }}_{{ $post->id }}"><i
+                                                    class="fa fa-caret-right"></i>Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
 
             </div>

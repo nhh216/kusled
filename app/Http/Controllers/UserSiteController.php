@@ -53,8 +53,10 @@ class UserSiteController extends Controller
 
     public function postsPage() {
         $categories = Category::where('type', Category::TYPE_POST)->get();
+        $posts = Post::paginate(12);
         return view('./UserSite/pages/post/AllPost')->with([
             'categories' => $categories,
+            'posts'      => $posts
         ]);
     }
     public function categoryPostPage($slug,  $id) {
