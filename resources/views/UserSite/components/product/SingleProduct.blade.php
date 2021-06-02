@@ -1,7 +1,7 @@
 <div class="inner-slide">
     <div class="single-product">
         <div class="product-img">
-            <a href="danh-sach-san-pham/{{ $product->slug }}_{{ $product->id }}"
+            <a href="{{ asset("san-pham/") }}/{{ $product->slug }}_{{ $product->id }}"
                tabindex="0">
                 <img class="primary-img"
                      style="max-width: 500px"
@@ -25,7 +25,7 @@
                     <span class="text-red big-small">Đã bán 174</span>
                 </div>
                 <h6 class="title_name"><a class="product-name"
-                                          href="danh-sach-san-pham/{{ $product->slug }}_{{ $product->id }}"
+                                          href="{{ asset("san-pham/") }}/{{ $product->slug }}_{{ $product->id }}"
                                           tabindex="0">{{ $product->name }}</a></h6>
                 <div class="price-box">
                     <span class="new-price new-price-2">{{ getSalePrice($product->price, $product->discount) }}</span>

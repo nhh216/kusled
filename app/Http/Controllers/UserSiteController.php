@@ -53,11 +53,11 @@ class UserSiteController extends Controller
         ]);
     }
 
-    public function categoryPostPage($slug) {
-        $category = Category::where('slug',$slug)->first()->with("posts")->get();
-        dd(Category::where('slug',$slug)->first()->with("posts")->get());
-        $posts = $category[0] -> posts;
-        return view('./UserSite/pages/category/Category')->with([
+    public function categoryPostPage($slug,  $id) {
+        $categories = Category::where('type', Category::TYPE_POST)->get();
+        $category = Category::where('id',(int) $id)->get();
+        $posts = Post::where('category_id', $id)->paginate(12);
+        return view('./UserSite/pages/post/Posts')->with([
             'categories' => $categories,
             'category'   => $category[0],
             'posts'      => $posts

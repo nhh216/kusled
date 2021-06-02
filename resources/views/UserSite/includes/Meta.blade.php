@@ -21,9 +21,9 @@
 <meta property="og:locale" content="vi_VN">
 <meta property="og:url" content="https://nothing.com">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
 <meta property="og:description" content="Kus Việt Nam - nhà cung cấp các sản phẩm led siêu sáng - bi led - bi xenon -led bar phá sương đi mưa chất lượng">
 @if($homepage)
+    <meta property="og:title" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
     <meta property="og:image" content="{{ asset("upload/defaults/favicon.jpg") }}">
 @else
     @stack("og_image")

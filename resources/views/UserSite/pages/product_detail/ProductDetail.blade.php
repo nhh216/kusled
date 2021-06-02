@@ -1,6 +1,7 @@
 @extends('UserSite.layouts.main.MainLayout',['homepage'=>false])
 @push('og_image')
     <meta property="og:image" content="{{ asset($images[0] -> link) }}">
+    <meta property="og:title" content="KUS Việt Nam - {{ $product -> name }}"/>
 @endpush
 @section('content')
 
