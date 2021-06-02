@@ -14,6 +14,8 @@ class ImageConfig extends Model
     const TYPE_SLIDER = 'SLIDER';
     const TYPE_BANNER = 'BANNER';
     const TYPE_LOGO = 'LOGO';
+    const TYPE_FAVICON = 'FAVICON';
+    const TYPE_META = 'META';
 
     protected $fillable = [
         'name',

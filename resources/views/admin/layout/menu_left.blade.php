@@ -56,12 +56,12 @@
                     </a>
                 </li>
                 <li class="nav-header">Cấu hình hệ thống</li>
-                <li class="nav-item">
-                    <a href="{{ route('image-config.create') }}" class="nav-link">
-                        <i class="nav-icon fas fa-image"></i>
-                        <p>Cấu hình META</p>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ route('image-config.create') }}" class="nav-link">--}}
+{{--                        <i class="nav-icon fas fa-image"></i>--}}
+{{--                        <p>Cấu hình META</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                     <a href="{{ route('image-config.create') }}" class="nav-link">
                         <i class="nav-icon fas fa-image"></i>

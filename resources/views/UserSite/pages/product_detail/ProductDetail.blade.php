@@ -1,4 +1,7 @@
 @extends('UserSite.layouts.main.MainLayout',['homepage'=>false])
+@push('og_image')
+    <meta property="og:image" content="{{ asset($images[0] -> link) }}">
+@endpush
 @section('content')
 
         <div id="wrapper" class="wrapper-fluid banners-effect-5">
