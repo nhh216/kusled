@@ -38,12 +38,12 @@
 {{--                                                    </a>--}}
 {{--                                                </li>--}}
                                                 <li class="">
-                                                    <a href="/tin-tuc" class="clearfix">
+                                                    <a href="{{ asset("/danh-muc-tin-tuc") }}" class="clearfix">
                                                         <strong>TIN TỨC</strong>
                                                     </a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="/tin-tuc" class="clearfix">
+                                                    <a href="#" class="clearfix">
                                                         <strong>LIÊN HỆ</strong>
                                                     </a>
                                                 </li>
