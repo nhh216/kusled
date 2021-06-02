@@ -25,8 +25,8 @@
 <meta property="og:url" content="https://nothing.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
-<meta property="og:description" content="Kus Việt Nam - nhà cung cấp các sản phẩm led siêu sáng/ bi led/ bi xenon/ g-led/ ballast/ led bar phá sương - đi mưa chất lượng">
-<meta property="og:image" content="https://lorempixel.com/400/200/">
+<meta property="og:description" content="Kus Việt Nam - nhà cung cấp các sản phẩm led siêu sáng - bi led - bi xenon -led bar phá sương đi mưa chất lượng">
+<meta property="og:image" content="{{ asset("upload/defaults/favicon.jpg") }}">
 
 {{--<meta property="fb:app_id" content="1048369755256897">--}}
 {{--<meta property="fb:admins" content="1576426252579748">--}}
