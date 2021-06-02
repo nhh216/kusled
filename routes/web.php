@@ -17,6 +17,7 @@ Route::get('/', 'App\Http\Controllers\HomePageController@index')->name('homePage
 Route::get('/danh-sach-san-pham', 'App\Http\Controllers\UserSiteController@productsPage');
 Route::get('/san-pham/{slug}_{id}', 'App\Http\Controllers\UserSiteController@productDetail');
 Route::get('/danh-muc-san-pham/{slug}_{id}', 'App\Http\Controllers\UserSiteController@categoryPage');
+Route::get('/danh-muc-tin-tuc', 'App\Http\Controllers\UserSiteController@postsPage');
 Route::get('/danh-muc-tin-tuc/{slug}_{id}', 'App\Http\Controllers\UserSiteController@categoryPostPage');
 Route::get('/tin-tuc/{slug}_{id}', 'App\Http\Controllers\UserSiteController@postDetail');
 

@@ -28,10 +28,6 @@ class UserSiteController extends Controller
         ]);
     }
 
-    public function postsPage() {
-        return view('./UserSite/pages/post/Posts');
-    }
-
     public function postDetail($slug) {
         $post = Post::where('slug',$slug)->get();
         $categories = Category::where('type', Category::TYPE_POST)->get();
@@ -41,6 +37,7 @@ class UserSiteController extends Controller
             ]
         );
     }
+
 
     public function categoryPage($slug, $id) {
         $categories = Category::where('type', Category::TYPE_PRODUCT)->get();
@@ -53,6 +50,13 @@ class UserSiteController extends Controller
         ]);
     }
 
+
+    public function postsPage() {
+        $categories = Category::where('type', Category::TYPE_POST)->get();
+        return view('./UserSite/pages/post/AllPost')->with([
+            'categories' => $categories,
+        ]);
+    }
     public function categoryPostPage($slug,  $id) {
         $categories = Category::where('type', Category::TYPE_POST)->get();
         $category = Category::where('id',(int) $id)->get();
