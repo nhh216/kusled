@@ -70,7 +70,7 @@
                                             <div class="product-image-container ">
                                                 <a href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
                                                     <img src="{{isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
-                                                         class="img-2 img-responsive" alt="{{ $product -> name }}">
+                                                         class="img-2 img-responsive " alt="{{ $product -> name }}">
                                                 </a>
                                             </div>
 
@@ -86,7 +86,7 @@
                                         </div>
                                         <div class="right-block">
                                             <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
-                                                <a href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                <a class="product-name" href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
                                                     {{ $product -> name }}
                                                 </a>
                                             </h4>

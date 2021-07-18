@@ -106,7 +106,7 @@
                                     </div>
                                     <div class="right-block">
                                         <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
-                                            <a href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}"
+                                            <a class="product-name" href="{{ asset("/danh-sach-san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}"
                                                target="_self">{{ $product -> name }}</a>
                                         </h4>
                                         <p class="text-red big-small">(Lượt xem: 6.790)</p>
