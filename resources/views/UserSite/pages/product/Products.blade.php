@@ -64,11 +64,11 @@
                     <div class="products-category" id="contentload_api">
                         <div class="products-list row nopadding-xs so-filter-gird grid">
                             @foreach($products as $product)
-                                <div data-href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <div data-href="{{ asset("/")}}{{ $product -> slug }}_{{ $product -> id }}" class="click_item_product product-layout col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                     <div class="product-item-container item--static">
                                         <div class="left-block">
                                             <div class="product-image-container ">
-                                                <a href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                <a href="{{ asset("/")}}{{ $product -> slug }}_{{ $product -> id }}" target="_self">
                                                     <img src="{{isset($product->images[0]) ? asset($product->images[0] -> link) : "" }}"
                                                          class="img-2 img-responsive " alt="{{ $product -> name }}">
                                                 </a>
@@ -77,7 +77,7 @@
                                             <!--quickview-->
                                             <div class="so-quickview">
                                                 <a class="btn-button quickview quickview_handler visible-lg"
-                                                   href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}"
+                                                   href="{{ asset("/")}}{{ $product -> slug }}_{{ $product -> id }}"
                                                    title="Quick view" data-fancybox-type="iframe">
                                                     <i class="fa fa-search"></i><span>Xem chi tiết</span>
                                                 </a>
@@ -86,7 +86,7 @@
                                         </div>
                                         <div class="right-block">
                                             <h4 class="ellipsis_title" style="overflow-wrap: break-word;">
-                                                <a class="product-name" href="{{ asset("/san-pham/") }}/{{ $product -> slug }}_{{ $product -> id }}" target="_self">
+                                                <a class="product-name" href="{{ asset("/")}}{{ $product -> slug }}_{{ $product -> id }}" target="_self">
                                                     {{ $product -> name }}
                                                 </a>
                                             </h4>
