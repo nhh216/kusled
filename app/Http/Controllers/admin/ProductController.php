@@ -82,7 +82,7 @@ class ProductController extends Controller
                 $product = new Product();
                 $product->user_id = Auth::user()->id;
                 $product->name = trim($request->name);
-                $product->slug = changeTitle(trim($request->name));
+                $product->slug = "san-pham/" .changeTitle(trim($request->name));
                 $product->category_id = (int)$request->category_id;
                 $product->status = isset($request->status) ? 1 : 0;
                 $product->price = (double)$request->price;
@@ -208,7 +208,7 @@ class ProductController extends Controller
                 $product->update([
                     'user_id' => Auth::user()->id,
                     'name' => trim($request->name),
-                    'slug' => changeTitle(trim($request->name)),
+                    'slug' => "san-pham/" . changeTitle(trim($request->name)),
                     'category_id' => (int)$request->category_id,
                     'status' => isset($request->status) ? 1 : 0,
                     'price' =>(double) $request->price,

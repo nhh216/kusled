@@ -78,10 +78,7 @@
                                 <div class="footer-widgets">
                                     <ul>
                                         <li>
-                                            <a href="/nang-cap-anh-sang">NÂNG CẤP ÁNH SÁNG </a>
-                                        </li>
-                                        <li>
-                                            <a href="/phu-kien-do-den">PHỤ KIỆN ĐỘ ĐÈN</a>
+                                            <a href="/danh-muc-san-pham/phu-kien_4">PHỤ KIỆN ĐỘ ĐÈN</a>
                                         </li>
                                     </ul>
                                 </div>

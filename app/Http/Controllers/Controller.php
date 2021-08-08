@@ -21,8 +21,6 @@ class Controller extends BaseController
         $logo = $imageConfig->where('type', ImageConfig::TYPE_LOGO)->first();
         $banner = $imageConfig->where('type', ImageConfig::TYPE_BANNER)->first();
         $sliders = $imageConfig->where('type', ImageConfig::TYPE_SLIDER);
-        $categories = Category::with("products")->get();
-//dd($categories);
         $products = Product::with('images')->limit(8)->get();
         $footer = FooterConfig::all()->first();
         View::share ( 'logo', $logo );
