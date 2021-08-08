@@ -16,29 +16,6 @@
                 </ul>
             </div>
         </div>
-        <style>
-            #my-menu .bot-menu .nav-menu ul.ul-main li.li-main:first-child .a-main.active {
-                border-top-left-radius: 0px;
-            }
-
-            #my-menu .bot-menu .nav-menu ul.ul-main li.li-main a.a-main:after {
-                width: 0;
-            }
-
-            @media (min-width: 992px) {
-                .box_menu_and_product #column-left .sub-box {
-                    min-height: 300px;
-                }
-
-                .box_menu_and_product #column-left.col-md-3 {
-                    width: 22%;
-                }
-
-                .box_menu_and_product #content.col-md-9 {
-                    width: 78%;
-                }
-            }
-        </style>
         <div class="row">
             <div class="col-md-12">
                 <div class="article-description">

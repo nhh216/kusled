@@ -25,7 +25,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/phu-kien-do-den" class="clearfix">
+                                                    <a href="/danh-muc-san-pham/phu-kien_4" class="clearfix">
                                                         <strong>PHỤ KIỆN ĐỘ ĐÈN</strong>
                                                     </a>
                                                 </li>

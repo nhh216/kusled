@@ -11,23 +11,13 @@
                         <a property="item" typeof="WebPage" href="{{ asset("/danh-sach-san-pham/") }}"><span property="name">Sản phẩm</span></a>
                         <meta itemprop="position" content="2">
                     </li>
+                    <li property="itemListElement">
+                        <a property="item" typeof="WebPage" href="{{ asset($category -> slug ."_".$category -> id) }}"><span property="name">{{ $category -> name }}</span></a>
+                        <meta itemprop="position" content="3">
+                    </li>
                 </ul>
             </div>
         </div>
-{{--        <div class="row">--}}
-{{--            <div class="col-md-12">--}}
-{{--                <div class="">--}}
-{{--                    <h3 class="modtitle">--}}
-{{--                        <span style="color: #000;font-weight: bold;font-size: 2.4rem;">{{ $category->name }}</span></h3>--}}
-{{--                    <div>--}}
-{{--                        <div class="category-desc"><div class="collapse_link">--}}
-{{--                                <h3 dir="ltr">&nbsp;</h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
         <div class="clearfix"></div>
         <div class="row">
             <div class="col-md-12">

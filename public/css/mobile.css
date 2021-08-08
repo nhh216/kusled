@@ -151,10 +151,6 @@ ul.breadcrumb {
     border-right: 1px solid transparent;
 }
 
-.fixed_topmenu ul li i {
-    display: block;
-}
-
 header.typeheader-5 .header-middle {
     position: fixed;
     z-index: 3;

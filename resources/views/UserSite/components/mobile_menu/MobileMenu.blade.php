@@ -21,13 +21,13 @@
 
         </li>
         <li>
-            <a href="/phu-kien-do-den" style="color: #000;">
+            <a href="/danh-muc-san-pham/phu-kien_4" style="color: #000;">
                 <i class="fa fa-diamond fas fa-gem" aria-hidden="true"></i> Phụ kiện
             </a>
 
         </li>
         <li>
-            <a href="/dat-hang-nhanh" style="color: #000;">
+            <a href="" style="color: #000;">
                 <i class="fa fa-cart-plus"></i>
                 <span>0</span> giỏ hàng
             </a>

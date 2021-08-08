@@ -66,7 +66,7 @@ class UserSiteController extends Controller
         return view('./UserSite/pages/post/Posts')->with([
             'categories' => $categories,
             'category'   => $category[0],
-            'posts'      => $posts
+            'posts'      => $posts,
         ]);
     }
 }
