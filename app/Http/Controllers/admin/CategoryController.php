@@ -50,7 +50,7 @@ class CategoryController extends Controller
                 $category = new Category();
                 $category->name = trim($request->name);
                 $category->type = $request->type;
-                $category->slug = changeTitle(trim($request->name));
+                $category->slug = "danh-muc-san-pham/" .changeTitle(trim($request->name));
                 $category->save();
 
                 return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
@@ -105,7 +105,7 @@ class CategoryController extends Controller
                 $category->update([
                     'name' => trim($request->name),
                     'type' => $request->type,
-                    'slug' => changeTitle(trim($request->name)),
+                    'slug' => "danh-muc-san-pham/" .changeTitle(trim($request->name)),
                 ]);
 
                 return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
