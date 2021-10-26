@@ -43,7 +43,7 @@
 
                                         <li><a href="">Giới thiệu doanh
                                                 nghiệp</a></li>
-                                        <li><a href=""
+                                        <li><a href="https://www.youtube.com/channel/UCsTqXHFTKOdspsrcmzscKNg"
                                                target="https://www.youtube.com/channel/UCsTqXHFTKOdspsrcmzscKNg">Youtube KUS - Việt Nam</a></li>
                                         <li>
                                             <a href=""
