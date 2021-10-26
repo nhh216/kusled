@@ -13,7 +13,6 @@
             <div class="item active">
                 <img src="{{ asset($slide->link) }}" alt="{{ $slide->name }}" style="width:100%;">
                 <div class="carousel-caption">
-                    <h3>{{ $slide->name }}</h3>
                     <p>{{ $slide->desc }}</p>
                 </div>
             </div>
@@ -21,7 +20,6 @@
             <div class="item">
                 <img src="{{ asset($slide->link) }}" alt="{{ $slide->name }}" style="width:100%;">
                 <div class="carousel-caption">
-                    <h3>{{ $slide->name }}</h3>
                     <p>{{ $slide->desc }}</p>
                 </div>
             </div>

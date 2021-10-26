@@ -21,7 +21,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::orderBy('id', 'desc')->get();
+        $products = Product::orderBy('type', 'desc')->orderBy('show_to_home', 'desc')->get();
 
         return view('admin.product.index', compact('products'));
     }
@@ -85,6 +85,7 @@ class ProductController extends Controller
                 $product->slug = "san-pham/" .changeTitle(trim($request->name));
                 $product->category_id = (int)$request->category_id;
                 $product->status = isset($request->status) ? 1 : 0;
+                $product->show_to_home = isset($request->show_to_home) ? 1 : 0;
                 $product->price = (double)$request->price;
                 $product->discount = (int)$request->discount;
                 $product->short_desc = isset($request->short_desc) ? $request->short_desc : '';
@@ -211,12 +212,13 @@ class ProductController extends Controller
                     'slug' => "san-pham/" . changeTitle(trim($request->name)),
                     'category_id' => (int)$request->category_id,
                     'status' => isset($request->status) ? 1 : 0,
+                    'show_to_home' => isset($request->show_to_home) ? 1 : 0,
                     'price' =>(double) $request->price,
                     'discount' => (int)$request->discount,
                     'short_desc' => isset($request->short_desc) ? $request->short_desc : '',
                     'full_desc' => isset($request->full_desc) ? $request->full_desc : '',
                     'code' => trim($request->code),
-                    'info' => $info
+                    'info' => $info,
                 ]);
 
                 $arrSrcImg = $request->arrSrcImg ? explode(',', $request->arrSrcImg) : [];
@@ -242,9 +244,9 @@ class ProductController extends Controller
                     Image::insert($data);
                 }
 
-                return redirect()->route('admin.product.index')->with('flash_message', 'Success!');
+                return redirect()->route('admin.product.index')->with('flash_message', 'Cập nhật sản phẩm thành công!');
             } catch (\Exception $e) {
-                return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
+                return redirect()->back()->withInput($request->input())->with('error_message', 'Có lỗi xảy ra vui lòng kiểm tra lại thông tin');
             }
         } else {
             return redirect()->back()->withInput($request->input())->withErrors($validation->errors());
@@ -262,7 +264,7 @@ class ProductController extends Controller
             Image::where('product_id', $id)->delete();
             Product::destroy($id);
 
-            return redirect()->route('admin.product.index')->with('flash_message', 'Success!');
+            return redirect()->route('admin.product.index')->with('flash_message', 'Xóa thành công!');
         } catch (\Exception $e) {
             return redirect()->route('admin.product.index')->withErrors('Error');
         }

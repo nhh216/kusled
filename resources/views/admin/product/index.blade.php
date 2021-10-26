@@ -4,10 +4,12 @@
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h1 class="m-0">Sản Phẩm</h1>
             </div><!-- /.col -->
-            <a class="btn-card-header btn btn-primary" href="{{  route('admin.product.create')  }}">Thêm mới</a>
+            <div class="col-md-6">
+                <a class="btn-card-header btn btn-success" href="{{  route('admin.product.create')  }}">Thêm mới</a>
+            </div>
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
@@ -30,6 +32,7 @@
                             <th>Danh mục</th>
                             <th>Giá</th>
                             <th>Khuyến mại (%)</th>
+                            <th>Hiện thị trang chủ</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -37,17 +40,30 @@
                         @foreach($products as $key => $product)
                         <tr>
                             <td>{{ $key + 1 }}</td>
-                            <td>{{ $product->status ? 'Đang hoạt động' : '' }}</td>
+                            <td>
+                                @if($product->status)
+                                    <span style="color: green;">Đang hoạt động</span>
+                                @else
+                                    <span style="color: grey;">Không hoạt động</span>
+                                @endif
+                            </td>
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->code }}</td>
                             <td>{{ $product->category->name }}</td>
-                            <td>{{ $product->price }}</td>
+                            <td>{{ currency_format($product->price) }}</td>
                             <td>{{ $product->discount }}</td>
+                            <td>
+                                @if($product->show_to_home)
+                                     <span style="color: green;">Hiện thị</span>
+                                @else
+                                     <span style="color: grey;">Không hiện thị</span>
+                                @endif
+                            </td>
                             <td>
                                 <a class="icon-action" href="{{ route('admin.product.edit', $product->id) }}">
                                     <i class="fas fa-tools" title="Sửa"></i>
                                 </a>
-                                <a class="icon-action" href="{{ route('admin.product.delete', $product->id) }}" onclick="return confirmDelete()">
+                                <a class="icon-action red--text" href="{{ route('admin.product.delete', $product->id) }}" onclick="return confirmDelete()">
                                     <i class="fas fa-trash" title="Xóa"></i>
                                 </a>
                             </td>

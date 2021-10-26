@@ -28,13 +28,24 @@
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Trạng thái sản phẩm <code>*</code></label>
                                                 <div class="form-group clearfix">
                                                     <div class="icheck-primary d-inline">
                                                         <input name="status" type="checkbox" id="checkboxPrimary1" checked>
                                                         <label class="font-weight-400 mg-b-15" for="checkboxPrimary1">Hoạt động</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Hiện thị trên trang chủ <code>*</code></label>
+                                                <div class="form-group clearfix">
+                                                    <div class="icheck-primary d-inline">
+                                                        <input name="show_to_home" type="checkbox" id="show_to_home" checked>
+                                                        <label class="font-weight-400 mg-b-15" for="show_to_home">Hiện thị</label>
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,6 +1,11 @@
 .red--text {
     color: red;
 }
+
+.green--text {
+    color: green;
+}
+
 .hungbeo-alert  {;
     position: fixed !important;
     top: 0;

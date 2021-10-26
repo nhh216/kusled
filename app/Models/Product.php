@@ -23,7 +23,8 @@ class Product extends Model
         'price',
         'discount',
         'rate',
-        'status'
+        'status',
+        'show_to_home',
     ];
 
     public function category()

@@ -21,7 +21,7 @@ class Controller extends BaseController
         $logo = $imageConfig->where('type', ImageConfig::TYPE_LOGO)->first();
         $banner = $imageConfig->where('type', ImageConfig::TYPE_BANNER)->first();
         $sliders = $imageConfig->where('type', ImageConfig::TYPE_SLIDER);
-        $products = Product::with('images')->limit(8)->get();
+        $products = Product::with('images')->where('show_to_home', true)->limit(8)->get();
         $footer = FooterConfig::all()->first();
         View::share ( 'logo', $logo );
         View::share ( 'banner', $banner );
