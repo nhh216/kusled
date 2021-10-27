@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <div class="card card-success">
                         <div class="card-header">
-                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh chia sẻ - Kích thước  1200 * 628</h3>
+                            <h3 class="card-title label-card-title">Chỉnh sửa ảnh chia sẻ - Kích thước  192 * 192</h3>
                             <button type="submit" class="btn btn-light btn-card-header">Cập nhật</button>
                         </div>
                         <div class="card-body">
@@ -37,8 +37,8 @@
                                                  class="mt-2"
                                                  src="{{asset($meta->link)}}"
                                                  alt="your image"
-                                                 width="600"
-                                                 height=314/>
+                                                 width="192"
+                                                 height=192/>
                                         </div>
                                     </div>
                                 </div>
