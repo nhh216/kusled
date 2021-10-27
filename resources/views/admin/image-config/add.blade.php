@@ -14,5 +14,9 @@
     @include('admin.image-config.banner')
     <!-- End config banner -->
 
+    <!-- Config meta -->
+    @include('admin.image-config.meta')
+    <!-- End config meta -->
+
 <!-- /.content -->
 @endsection

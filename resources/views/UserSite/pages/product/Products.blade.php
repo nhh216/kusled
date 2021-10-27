@@ -71,8 +71,8 @@
                                             <div class="price_on_list_product">
                                                 <div class="price">
                                                     <span class="price-new">{{ getSalePrice($product -> price, $product -> discount) }}</span>
-                                                    <br>
-                                                    <span class="price_old">{{ currency_format($product -> price) }}</span>
+{{--                                                    <br>--}}
+{{--                                                    <span class="price_old">{{ currency_format($product -> price) }}</span>--}}
                                                 </div>
                                             </div>
                                             <div class="list_rate_ship_on_list_product">

@@ -1,8 +1,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>@yield('title')</title>
-<link rel="shortcut icon" href="{{ asset("upload/defaults/favicon.jpg") }}" type="image/x-icon">
-<link href="{{ asset("upload/defaults/favicon.jpg") }}" type="image/x-icon" rel="shortcut icon">
+<link rel="shortcut icon" href="{{ asset($meta->link) }}" type="image/x-icon">
+<link href="{{ asset($meta->link) }}" type="image/x-icon" rel="shortcut icon">
 <link rel="alternate" hreflang="vi" href="http://kusvietnam.com/">
 <link rel="canonical" href="http://kusvietnam.com/">
 <meta name="theme-color" content="#000000">

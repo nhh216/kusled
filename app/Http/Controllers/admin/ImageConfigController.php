@@ -37,10 +37,12 @@ class ImageConfigController extends Controller
         $logo = $images->where('type', 'LOGO')->first();
         $banner = $images->where('type', 'BANNER')->first();
         $sliders = $images->where('type', 'SLIDER');
+        $meta = $images->where('type', 'META')->first();
         return view('admin.image-config.add')->with([
             'logo' => $logo,
             'banner' => $banner,
-            'sliders' => $sliders
+            'sliders' => $sliders,
+            'meta' => $meta
         ]);
     }
 
@@ -54,7 +56,9 @@ class ImageConfigController extends Controller
     {
         $type = $request->request->get("type");
         $patch = 'upload/image_configs/';
-        if ($type == ImageConfig::TYPE_LOGO || $type == ImageConfig::TYPE_BANNER) {
+        if ($type == ImageConfig::TYPE_LOGO
+            || $type == ImageConfig::TYPE_BANNER
+            || $type == ImageConfig::TYPE_META) {
             $uploadedFile = $request->file('file');
             $id = $request->request->get('id');
             $fileName = now()->timestamp .'-'.  $id . '-'.$uploadedFile->getClientOriginalName();
