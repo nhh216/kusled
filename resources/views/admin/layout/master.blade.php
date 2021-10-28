@@ -67,7 +67,7 @@
         @endif
         @if (Session::has('error_message'))
             <div class="container">
-                <div class="alert alert-danger">
+                <div class="alert alert-danger hungbeo-alert">
                     <button type="button" class="close" id="btn-close-noti" data-dismiss="alert" aria-hidden="true">&times;</button>
                     {{ Session::get('error_message') }}
                 </div>

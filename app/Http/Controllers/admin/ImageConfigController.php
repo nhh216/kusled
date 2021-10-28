@@ -12,6 +12,7 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use function PHPUnit\Framework\at;
+use function PHPUnit\Framework\isNull;
 
 class ImageConfigController extends Controller
 {
@@ -38,11 +39,13 @@ class ImageConfigController extends Controller
         $banner = $images->where('type', 'BANNER')->first();
         $sliders = $images->where('type', 'SLIDER');
         $meta = $images->where('type', 'META')->first();
+        $favicon = $images->where('type', 'FAVICON')->first();
         return view('admin.image-config.add')->with([
             'logo' => $logo,
             'banner' => $banner,
             'sliders' => $sliders,
-            'meta' => $meta
+            'meta' => $meta,
+            'favicon' => $favicon
         ]);
     }
 
@@ -54,11 +57,15 @@ class ImageConfigController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->file('file') == null) {
+            return redirect()->route('image-config.create')->with('error_message', 'Vui lòng chọn ảnh !');
+        }
         $type = $request->request->get("type");
         $patch = 'upload/image_configs/';
         if ($type == ImageConfig::TYPE_LOGO
             || $type == ImageConfig::TYPE_BANNER
-            || $type == ImageConfig::TYPE_META) {
+            || $type == ImageConfig::TYPE_META
+            || $type == ImageConfig::TYPE_FAVICON) {
             $uploadedFile = $request->file('file');
             $id = $request->request->get('id');
             $fileName = now()->timestamp .'-'.  $id . '-'.$uploadedFile->getClientOriginalName();

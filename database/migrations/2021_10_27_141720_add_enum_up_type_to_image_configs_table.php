@@ -13,8 +13,9 @@ class AddEnumUpTypeToImageConfigsTable extends Migration
      */
     public function up()
     {
+        $this->down();
         Schema::table('image_configs', function (Blueprint $table) {
-            $table->enum('type', ['SLIDER', 'BANNER', 'LOGO', 'META']);
+            $table->enum('type', ['SLIDER', 'BANNER', 'LOGO', 'META', 'FAVICON']);
         });
     }
 
@@ -25,6 +26,10 @@ class AddEnumUpTypeToImageConfigsTable extends Migration
      */
     public function down()
     {
-
+        if (Schema::hasColumn('image_configs', 'type')) {
+            Schema::table('image_configs', function (Blueprint $table) {
+                $table->dropColumn('type');
+            });
+        }
     }
 }

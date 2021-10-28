@@ -18,5 +18,9 @@
     @include('admin.image-config.meta')
     <!-- End config meta -->
 
+    <!-- Config favicon -->
+    @include('admin.image-config.favicon')
+    <!-- End config favicon -->
+
 <!-- /.content -->
 @endsection
