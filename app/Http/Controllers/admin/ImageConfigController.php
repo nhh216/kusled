@@ -57,7 +57,8 @@ class ImageConfigController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->file('file') == null) {
+        $_files = $request->files;
+        if (sizeof($_files) == 0) {
             return redirect()->route('image-config.create')->with('error_message', 'Vui lòng chọn ảnh !');
         }
         $type = $request->request->get("type");
