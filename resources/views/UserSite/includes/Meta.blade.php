@@ -24,7 +24,7 @@
 <meta property="og:description"
       content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
 @if($homepage)
-    <meta property="og:title" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
+    <meta property="og:title" content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
     <meta property="og:image" content="{{ asset($favicon -> link) }}">
 @else
     @stack("og_image")
