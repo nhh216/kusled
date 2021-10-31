@@ -6,7 +6,7 @@
 <link rel="alternate" hreflang="vi" href="http://kusvietnam.com/">
 <link rel="canonical" href="http://kusvietnam.com/">
 <meta name="theme-color" content="#000000">
-<meta name="title" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
+<meta name="title" content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
 <meta name="description"
       content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
 <meta name="keywords" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
