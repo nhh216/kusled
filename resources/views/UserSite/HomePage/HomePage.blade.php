@@ -1,5 +1,5 @@
 @extends('UserSite.layouts.main.MainLayout',['homepage'=>true])
-@section('title', 'KUS Việt Nam -  Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam')
+@section('title', 'Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam')
 @section('content')
     <!-- Begin Uren's Banner Area -->
     <div class="slider-banner">
