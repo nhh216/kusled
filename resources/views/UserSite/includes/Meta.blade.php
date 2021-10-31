@@ -9,7 +9,8 @@
 <meta name="title" content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
 <meta name="description"
       content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
-<meta name="keywords" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">
+<meta name="keywords" content="Nhà phân phối chính hãng các sản phẩm bi led và laser thương hiệu Kus tại Việt Nam">
+{{--<meta name="keywords" content="Led siêu sáng - Bi Led - Bi Laser - Đèn trợ sáng KUS Việt Nam">--}}
 {{--<meta name="image" content="http://kusvietnam.com/upload/images/Garage-uy-tin-hien-dai-auto365-1.png?v=1.1.1">--}}
 <meta name="generator" content="Công Ty Thiết Kế HHW">
 <meta name="robots" content="index,follow">
