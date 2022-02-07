@@ -14,7 +14,7 @@
                     <ul class="list-group ">
                         @foreach($categories as $category)
                             <li class="li-main">
-                                <a href="{{asset("/danh-muc-tin-tuc") }}/{{ $category->slug }}_{{ $category->id }}"
+                                <a href="{{ $category->slug }}_{{ $category->id }}"
                                    class="a-main makeup">
                                     <span>{{ $category->name }}</span>
                                 </a>

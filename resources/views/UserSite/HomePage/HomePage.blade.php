@@ -3,9 +3,7 @@
 @section('content')
     <!-- Begin Uren's Banner Area -->
     <div class="slider-banner">
-
         @include('UserSite.components.slider.Slider')
-
     </div>
     <!-- Uren's Banner Area End Here -->
 
@@ -17,9 +15,7 @@
             </div>
             <div class="row no-gutters">
                 <div id="left-banner" class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
                     @include('UserSite.components.banner.LeftBanner')
-
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"></div>
                 <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">

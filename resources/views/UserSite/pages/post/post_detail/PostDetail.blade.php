@@ -15,7 +15,8 @@
                     <ul class="list-group ">
                         @foreach($categories as $cate)
                             <li class="list-group-item">
-                                <a href="{{ asset("/danh-muc-tin-tuc/") }}/{{$cate -> slug}}_{{$cate -> id}}" class="group-item active">
+                                <a href="{{ asset("/danh-muc-tin-tuc/") }}/{{$cate -> slug}}_{{$cate -> id}}"
+                                   class="group-item active">
                                     {{ $cate -> name }}
                                 </a>
                             </li>

@@ -9,8 +9,9 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="header-logo_area" >
-                        <a href="/">
-                            <img style="height: 60px;width: 300px;" src="{{asset($logo->link)}}" alt="Logo">
+                        <a href="{{ asset("") }}">
+                            <img style="height: 60px;width: 300px;"
+                                 src="{{ asset($logo->link)}} " alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -23,12 +24,12 @@
                                         <nav class="main-nav">
                                             <ul>
                                                 <li class="with-sub-menu hover">
-                                                    <a href="/danh-sach-san-pham" class="clearfix">
+                                                    <a href="{{  asset("danh-sach-san-pham") }}" class="clearfix">
                                                         <strong>SHOP SẢN PHẨM</strong>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/danh-muc-san-pham/phu-kien_4" class="clearfix">
+                                                    <a href=" {{ asset("danh-muc-san-pham/phu-kien_4") }}" class="clearfix">
                                                         <strong>PHỤ KIỆN ĐỘ ĐÈN</strong>
                                                     </a>
                                                 </li>

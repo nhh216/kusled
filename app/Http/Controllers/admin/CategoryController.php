@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -47,13 +48,20 @@ class CategoryController extends Controller
         ]);
         if ($validation->passes()) {
             try {
-                $category = new Category();
-                $category->name = trim($request->name);
-                $category->type = $request->type;
-                $category->slug = "danh-muc-san-pham/" .changeTitle(trim($request->name));
-                $category->save();
+                if (isset($request->type)) {
+                    $cate_slug = "danh-muc-san-pham/";
+                    if ($request->type == "POST") {
+                        $cate_slug = "danh-muc-tin-tuc/";
+                    }
 
-                return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+                    $category = new Category();
+                    $category->name = trim($request->name);
+                    $category->type = $request->type;
+                    $category->slug = $cate_slug .changeTitle(trim($request->name));
+                    $category->save();
+
+                    return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+                }
             } catch (\Exception $e) {
                 return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
             }
@@ -101,14 +109,20 @@ class CategoryController extends Controller
         ]);
         if ($validation->passes()) {
             try {
-                $category = Category::findOrFail($id);
-                $category->update([
-                    'name' => trim($request->name),
-                    'type' => $request->type,
-                    'slug' => "danh-muc-san-pham/" .changeTitle(trim($request->name)),
-                ]);
+                if (isset($request->type)) {
+                    $cate_slug = "danh-muc-san-pham/";
+                    if ($request->type == "POST") {
+                        $cate_slug = "danh-muc-tin-tuc/";
+                    }
+                    $category = Category::findOrFail($id);
+                    $category->update([
+                        'name' => trim($request->name),
+                        'type' => $request->type,
+                        'slug' => $cate_slug .changeTitle(trim($request->name)),
+                    ]);
 
-                return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+                    return redirect()->route('admin.category.index')->with('flash_message', 'Success!');
+                }
             } catch (\Exception $e) {
                 return redirect()->back()->withInput($request->input())->with('error_message', 'Error');
             }
