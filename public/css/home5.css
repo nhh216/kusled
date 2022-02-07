@@ -3874,8 +3874,7 @@ body .mfp-close {
     transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s ease-in-out 0s; }
-.blog-listitem .blog-item .blog-item-inner .itemBlogContent {
-    padding: 15px; }
+.blog-listitem .blog-item .blog-item-inner .itemBlogContent {}
 .blog-listitem .blog-item .blog-item-inner .blog-meta {
     display: inline-block;
     padding: 0px 0 10px;
