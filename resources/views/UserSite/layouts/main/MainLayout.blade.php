@@ -47,6 +47,26 @@
             </div>
         </div>
         <div>
+            <div>
+                <ul id="tnContact">
+                    <li>
+                        <a href="https://messenger.com/t/100012231600755" class="" target="_blank">
+                            <img src="{{ asset("upload/defaults/fb.png") }}" alt="">
+                        </a>
+                        <a href="https://messenger.com/t/100012231600755" class="" target="_blank">
+                            <span class="label fb" >Chat Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zalo.me/0358378357" class="iconzalo" target="_blank">
+                            <img src="{{ asset("upload/defaults/zalo.png") }}" alt="">
+                        </a>
+                        <a href="https://zalo.me/0358378357">
+                            <span class="label zalo">Nhắn tin Zalo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="hotline-phone-ring-wrap">
                 <div class="hotline-phone-ring">
                     <div class="hotline-phone-ring-circle"></div>
