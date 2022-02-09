@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="T7-kHEAyFFCFCYwlB01IARf-XXdHoLthz9F-o5EMpg4" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>@yield('title')</title>
